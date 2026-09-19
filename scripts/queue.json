@@ -5,7 +5,8 @@
     "description": "Estimate your commercial umbrella insurance cost. Enter revenue and underlying policy limits for instant premium estimates.",
     "inputs": "Industry, annual revenue, employees, underlying general liability limit, desired umbrella limit",
     "formula": "Base rate $800-$3000 depending on industry. Umbrella multiplier = 0.1% of selected limit. Industry and revenue adjustments applied.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-19T14:51:32.388086Z"
   },
   {
     "slug": "employment-practices-liability-calculator",

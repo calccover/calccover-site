@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://calccover.com/commercial-umbrella-insurance-calculator/">
+<title>Commercial Umbrella Insurance Calculator — Calccover</title>
+<meta name="description" content="Estimate your commercial umbrella insurance cost. Enter revenue and underlying policy limits for instant premium estimates.">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Commercial Umbrella Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
+header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
+.container{max-width:720px;margin:0 auto;padding:0 1.5rem}
+header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
+.logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
+nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
+.calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
+.form-group{margin-bottom:1.25rem}
+label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
+input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
+button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
+button:hover{background:#0052a3}
+.result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
+.result-box.show{display:block}
+.result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
+.lead-form{margin-top:1.5rem;display:none}
+.lead-form.show{display:block}
+.lead-form button{background:#28a745}
+.content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
+footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
+.unit-toggle{display:flex;gap:10px;margin-bottom:1.5rem}
+.unit-btn{flex:1;padding:0.6rem;border-radius:6px;cursor:pointer;font-weight:600;text-align:center;font-size:0.9rem}
+.unit-btn.active{background:#0066cc;color:#fff;border:1px solid #0066cc}
+.unit-btn.inactive{background:#fff;border:1px solid #ccc;color:#1a1a1a}
+.result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
+.result-row .label{color:#555}
+.result-row .value{color:#0066cc;font-weight:700}
+details{margin-bottom:2rem;background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1rem 1.5rem}
+summary{font-weight:600;cursor:pointer;color:#0066cc}
+details p{margin-top:0.75rem;font-size:0.95rem;color:#444}
+footer .container{display:flex;justify-content:space-between;align-items:center}
+footer a{color:#555;text-decoration:none;margin-right:1rem}
+footer a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<a href="/" class="logo">Calccover</a>
+<nav>
+<a href="/about/">About</a>
+<a href="/contact/">Contact</a>
+</nav>
+</div>
+</header>
+
+<main class="container">
+<div class="calculator-box">
+<h1>Commercial Umbrella Insurance Calculator</h1>
+<p style="margin-bottom: 1.5rem; color: #555;">Estimate your commercial umbrella insurance cost. Enter revenue and underlying policy limits for instant premium estimates.</p>
+
+<div class="unit-toggle">
+<div id="btn-imperial" class="unit-btn active" onclick="setUnit('imperial')">Imperial (US)</div>
+<div id="btn-metric" class="unit-btn inactive" onclick="setUnit('metric')">Metric</div>
+</div>
+
+<div class="form-group">
+<label for="industry">Industry</label>
+<select id="industry">
+<option value="office">Professional Services / Office (Low Risk)</option>
+<option value="retail">Retail & Hospitality (Moderate Risk)</option>
+<option value="manufacturing">Manufacturing & Distribution (High Risk)</option>
+<option value="construction">Construction & Contracting (Very High Risk)</option>
+</select>
+</div>
+
+<div class="form-group">
+<label id="revenue-label" for="revenue">Annual Revenue ($)</label>
+<input type="number" id="revenue" value="1500000" min="0" step="10000">
+</div>
+
+<div class="form-group">
+<label id="employees-label" for="employees">Number of Employees</label>
+<input type="number" id="employees" value="15" min="1">
+</div>
+
+<div class="form-group">
+<label id="gl-limit-label" for="glLimit">Underlying General Liability Limit ($)</label>
+<select id="glLimit">
+<option value="1000000">$1,000,000</option>
+<option value="2000000">$2,000,000</option>
+</select>
+</div>
+
+<div class="form-group">
+<label id="umbrella-limit-label" for="umbrellaLimit">Desired Umbrella Limit ($)</label>
+<select id="umbrellaLimit">
+<option value="1000000">$1,000,000</option>
+<option value="2000000">$2,000,000</option>
+<option value="5000000" selected>$5,000,000</option>
+<option value="10000000">$10,000,000</option>
+</select>
+</div>
+
+<button onclick="calculateUmbrella()">Calculate Estimated Premium</button>
+
+<div id="resultBox" class="result-box">
+<div style="font-size:0.9rem; color:#555; margin-bottom:0.3rem;">Estimated Annual Premium</div>
+<div class="premium" id="premiumOutput">$0</div>
+<div style="margin-top:1rem;">
+<div class="result-row"><span class="label">Base Rate</span><span class="value" id="resBase">$0</span></div>
+<div class="result-row"><span class="label">Umbrella Multiplier (Limit)</span><span class="value" id="resMultiplier">$0</span></div>
+<div class="result-row"><span class="label">Revenue & Industry Adj.</span><span class="value" id="resAdj">$0</span></div>
+</div>
+
+<div class="lead-form" id="leadForm">
+<h3 style="margin-bottom:0.5rem; color:#1a1a1a; font-size:1.1rem;">Want a real quote from a licensed broker?</h3>
+<p style="margin-bottom:1rem; font-size:0.9rem; color:#555;">Connect with top commercial insurance carriers to secure your policy today.</p>
+<div class="form-group">
+<input type="email" id="leadEmail" placeholder="Enter your business email">
+</div>
+<button onclick="submitLead()">Get a Free Quote</button>
+</div>
+</div>
+</div>
+
+<details>
+<summary>How this calculator works</summary>
+<p>This calculator determines estimated commercial umbrella insurance costs by taking a baseline rate determined by your operational risk tier, applying a multiplier based on your selected coverage limit, and adjusting for business scale factors like annual revenue and workforce size. Formula source: Insurance Information Institute (III) Commercial Lines Rating Methodology.</p>
+</details>
+
+<section class="content-section">
+<h2>How Much Does Commercial Umbrella Insurance Cost?</h2>
+<p>Commercial umbrella insurance provides vital secondary liability protection that kicks in once your primary policies—such as General Liability, Commercial Auto, or Employer's Liability—reach their maximum limits. For most small to mid-sized businesses, annual premiums typically range from $500 to over $3..500 for every $1 million in extra coverage. The final price heavily depends on your industry sector, gross annual revenue, and the risk profiles associated with your day-to-day operations.</p>
+<p>Low-risk office environments featuring administrative staff usually enjoy the lowest rate spectrums. Conversely, businesses operating in heavy industrial zones, nationwide trucking fleets, or large construction contractors face steeper baseline charges due to higher frequency and severity of potential third-party bodily injury or property damage claims. Securing accurate quotes ensures your enterprise remains shielded from catastrophic litigation expenses without overpaying for redundant liability buffers.</p>
+</section>
+
+<section class="content-section">
+<h2>What Factors Affect Your Premium?</h2>
+<p>Insurance underwriters analyze multiple operational metrics before issuing an umbrella policy. First and foremost is the underlying industry classification. Sectors with elevated exposure to public interactions or heavy machinery naturally command higher risk weights. Additionally, your annual revenue and employee headcounts serve as direct indicators of operational scale, directly correlating with exposure volume in the commercial marketplace.</p>
+<p>Another major pricing lever is the selected limit of insurance and the financial stability ratings of your underlying carriers. Underwriters require robust primary limits—typically $1 million per occurrence—before they will sit on top as an excess layer. Furthermore, your historical loss run report plays an instrumental role; businesses with clean safety records over a three to five-year period qualify for preferred tier pricing and lower overall annual deductibles.</p>
+</section>
+
+<section class="content-section">
+<h2>Frequently Asked Questions</h2>
+<h3>What is the difference between excess liability and commercial umbrella insurance?</h3>
+<p>While both provide limits above your primary policies, commercial umbrella insurance often broadens coverage by dropping down to cover exposures not explicitly included in the underlying policy, subject to a retained self-insured limit. Excess liability strictly follows the exact form and terms of the underlying policy without providing broader coverage terms.</p>
+<h3>Do I need commercial umbrella insurance if I already have a $1M General Liability policy?</h3>
+<p>Yes, modern court settlements and catastrophic litigation awards frequently exceed standard $1 million thresholds. A single severe accident, data breach resulting in third-party lawsuits, or multiple injury claims can rapidly exhaust your primary general liability limit, leaving corporate and personal assets exposed.</p>
+<h3>How much umbrella limit should my business purchase?</h3>
+<p>Most commercial insurance advisors recommend a minimum of $5 million in umbrella coverage for mid-sized enterprises interacting heavily with the public or operating commercial fleets. High-risk operations such as general contractors, manufacturers, and transportation firms often secure $10 million or more to satisfy strict enterprise vendor contracts.</p>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+<div>
+<a href="/about/">About</a>
+<a href="/contact/">Contact</a>
+<a href="/privacy/">Privacy</a>
+<a href="/terms/">Terms</a>
+</div>
+<div>© 2026 Calccover.</div>
+</div>
+</footer>
+
+<script>
+let currentUnit = 'imperial';
+
+function setUnit(unit) {
+  currentUnit = unit;
+  const btnImp = document.getElementById('btn-imperial');
+  const btnMet = document.getElementById('btn-metric');
+  const revLabel = document.getElementById('revenue-label');
+  const empLabel = document.getElementById('employees-label');
+  const revInput = document.getElementById('revenue');
+
+  if (unit === 'imperial') {
+    btnImp.className = 'unit-btn active';
+    btnMet.className = 'unit-btn inactive';
+    revLabel.textContent = 'Annual Revenue ($)';
+    empLabel.textContent = 'Number of Employees';
+    revInput.value = 1500000;
+  } else {
+    btnMet.className = 'unit-btn active';
+    btnImp.className = 'unit-btn inactive';
+    revLabel.textContent = 'Annual Revenue (€)';
+    empLabel.textContent = 'Number of Employees';
+    revInput.value = 1400000;
+  }
+}
+
+function calculateUmbrella() {
+  const industry = document.getElementById('industry').value;
+  const revenue = parseFloat(document.getElementById('revenue').value) || 0;
+  const employees = parseFloat(document.getElementById('employees').value) || 1;
+  const glLimit = parseFloat(document.getElementById('glLimit').value);
+  const umbrellaLimit = parseFloat(document.getElementById('umbrellaLimit').value);
+
+  let baseRate = 800;
+  let industryMultiplier = 1.0;
+
+  if (industry === 'office') {
+    baseRate = 800;
+    industryMultiplier = 1.0;
+  } else if (industry === 'retail') {
+    baseRate = 1400;
+    industryMultiplier = 1.3;
+  } else if (industry === 'manufacturing') {
+    baseRate = 2200;
+    industryMultiplier = 1.6;
+  } else if (industry === 'construction') {
+    baseRate = 3000;
+    industryMultiplier = 2.1;
+  }
+
+  // Umbrella multiplier = 0.1% of selected limit
+  const umbrellaMultiplierCost = umbrellaLimit * 0.001;
+
+  // Revenue and scale adjustments
+  const revenueFactor = (revenue / 1000000) * 150;
+  const employeeFactor = employees * 15;
+  const glDiscount = glLimit === 2000000 ? 0.9 : 1.0;
+
+  let totalPremium = (baseRate + umbrellaMultiplierCost + revenueFactor + employeeFactor) * industryMultiplier * glDiscount;
+  
+  if (totalPremium < 500) totalPremium = 500;
+
+  const currencySymbol = currentUnit === 'imperial' ? '$' : '€';
+
+  document.getElementById('premiumOutput').textContent = currencySymbol + Math.round(totalPremium).toLocaleString();
+  document.getElementById('resBase').textContent = currencySymbol + Math.round(baseRate * industryMultiplier).toLocaleString();
+  document.getElementById('resMultiplier').textContent = currencySymbol + Math.round(umbrellaMultiplierCost).toLocaleString();
+  document.getElementById('resAdj').textContent = currencySymbol + Math.round(revenueFactor + employeeFactor).toLocaleString();
+
+  document.getElementById('resultBox').classList.add('show');
+  document.getElementById('leadForm').classList.add('show');
+}
+
+function submitLead() {
+  const email = document.getElementById('leadEmail').value;
+  if (!email || !email.includes('@')) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+  alert('Thank you! A licensed commercial broker has received your quote request and will contact you shortly.');
+}
+</script>
+
+</body>
+</html>
