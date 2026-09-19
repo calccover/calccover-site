@@ -1,0 +1,242 @@
+[
+  {
+    "slug": "commercial-umbrella-insurance-calculator",
+    "name": "Commercial Umbrella Insurance Calculator",
+    "description": "Estimate your commercial umbrella insurance cost. Enter revenue and underlying policy limits for instant premium estimates.",
+    "inputs": "Industry, annual revenue, employees, underlying general liability limit, desired umbrella limit",
+    "formula": "Base rate $800-$3000 depending on industry. Umbrella multiplier = 0.1% of selected limit. Industry and revenue adjustments applied.",
+    "status": "pending"
+  },
+  {
+    "slug": "employment-practices-liability-calculator",
+    "name": "Employment Practices Liability Insurance Calculator",
+    "description": "Estimate your EPLI insurance cost. Covers wrongful termination, discrimination, and harassment claims.",
+    "inputs": "Number of employees, annual revenue, state, industry, claims history",
+    "formula": "Base per-employee rate of $40-$120. Revenue factor and state adjustments. Claims history multiplier.",
+    "status": "pending"
+  },
+  {
+    "slug": "inland-marine-insurance-calculator",
+    "name": "Inland Marine Insurance Calculator",
+    "description": "Estimate your inland marine insurance cost for tools, equipment, and goods in transit.",
+    "inputs": "Total equipment value, industry, annual revenue, transit coverage needed",
+    "formula": "Rate per $100 of insured value varies $0.30-$1.20 depending on industry and transit exposure.",
+    "status": "pending"
+  },
+  {
+    "slug": "short-term-rental-insurance-calculator",
+    "name": "Short-Term Rental Insurance Calculator",
+    "description": "Estimate your Airbnb or VRBO insurance cost. Covers property, liability, and lost rental income.",
+    "inputs": "Property value, annual rental revenue, location, property type, nightly rate",
+    "formula": "Base rate 1.5-3% of annual rental revenue. Property value factor and location adjustment.",
+    "status": "pending"
+  },
+  {
+    "slug": "home-based-business-insurance-calculator",
+    "name": "Home-Based Business Insurance Calculator",
+    "description": "Estimate your home-based business insurance cost. Covers liability, equipment, and business interruption.",
+    "inputs": "Industry, annual revenue, business equipment value, client visits to home",
+    "formula": "Base rate $500-$1500 depending on industry. Equipment value and client traffic adjustments.",
+    "status": "pending"
+  },
+  {
+    "slug": "cleaning-business-insurance-calculator",
+    "name": "Cleaning Business Insurance Calculator",
+    "description": "Estimate your cleaning business insurance cost. Covers liability, bonding, and workers comp.",
+    "inputs": "Revenue, number of employees, residential or commercial focus, state",
+    "formula": "Base GL rate $800-$2500. Workers comp based on payroll and class code 9014/9015.",
+    "status": "pending"
+  },
+  {
+    "slug": "landscaping-insurance-calculator",
+    "name": "Landscaping Insurance Calculator",
+    "description": "Estimate your landscaping or lawn care business insurance cost. Covers liability, workers comp, and commercial auto.",
+    "inputs": "Revenue, employees, equipment value, vehicles, state",
+    "formula": "Base GL $1200-$3000. Workers comp class 0042. Commercial auto per-vehicle rate.",
+    "status": "pending"
+  },
+  {
+    "slug": "salon-insurance-calculator",
+    "name": "Salon Insurance Calculator",
+    "description": "Estimate your hair salon or barbershop insurance cost. Covers general liability, property, and professional liability.",
+    "inputs": "Revenue, number of stylists, chairs, services offered (chemical treatments add risk)",
+    "formula": "Base GL $700-$1500. Professional liability adds $300-$800. Property based on value.",
+    "status": "pending"
+  },
+  {
+    "slug": "auto-repair-insurance-calculator",
+    "name": "Auto Repair Shop Insurance Calculator",
+    "description": "Estimate your auto repair shop insurance cost. Covers garage liability, garage keepers, and property.",
+    "inputs": "Revenue, number of bays, employees, vehicles kept overnight, state",
+    "formula": "Garage liability $2500-$6000. Garage keepers based on value of customer vehicles. Workers comp class 8380.",
+    "status": "pending"
+  },
+  {
+    "slug": "retail-store-insurance-calculator",
+    "name": "Retail Store Insurance Calculator",
+    "description": "Estimate your retail store insurance cost. Covers liability, property, and inventory.",
+    "inputs": "Revenue, square footage, inventory value, product type, state",
+    "formula": "Base GL $500-$1500. Property based on building and inventory value. Product liability for certain retail types.",
+    "status": "pending"
+  },
+  {
+    "slug": "electrician-insurance-calculator",
+    "name": "Electrician Insurance Calculator",
+    "description": "Estimate your electrician business insurance cost. Covers liability, workers comp, and tools.",
+    "inputs": "Revenue, employees, state, commercial vs residential focus",
+    "formula": "GL $1500-$3500. Workers comp class 5190 at $3-$6 per $100 payroll. Tools coverage based on value.",
+    "status": "pending"
+  },
+  {
+    "slug": "plumber-insurance-calculator",
+    "name": "Plumber Insurance Calculator",
+    "description": "Estimate your plumbing business insurance cost. Covers liability, workers comp, and commercial auto.",
+    "inputs": "Revenue, employees, vehicles, state, service or new construction",
+    "formula": "GL $1200-$3000. Workers comp class 5183 at $2-$5 per $100 payroll. Commercial auto per vehicle.",
+    "status": "pending"
+  },
+  {
+    "slug": "roofing-contractor-insurance-calculator",
+    "name": "Roofing Contractor Insurance Calculator",
+    "description": "Estimate your roofing contractor insurance cost. Covers liability, workers comp, and equipment.",
+    "inputs": "Revenue, employees, subcontractor usage, state, residential or commercial",
+    "formula": "GL $2500-$6000. Workers comp class 5551 at $8-$15 per $100 payroll. Highest risk trade.",
+    "status": "pending"
+  },
+  {
+    "slug": "event-planner-insurance-calculator",
+    "name": "Event Planner Insurance Calculator",
+    "description": "Estimate your event planning business insurance cost. Covers liability, cancellation, and vendor issues.",
+    "inputs": "Annual revenue, events per year, average event size, alcohol served at events",
+    "formula": "GL $500-$1500. Event cancellation $500-$2000 based on event value. Liquor liability if alcohol served.",
+    "status": "pending"
+  },
+  {
+    "slug": "personal-trainer-insurance-calculator",
+    "name": "Personal Trainer Insurance Calculator",
+    "description": "Estimate your personal trainer insurance cost. Covers liability and professional liability.",
+    "inputs": "Revenue, clients, online or in-person, studio or gym-based",
+    "formula": "Base policy $200-$600 per year. Professional liability adds $100-$300. Coverage limits affect premium.",
+    "status": "pending"
+  },
+  {
+    "slug": "dental-office-insurance-calculator",
+    "name": "Dental Office Insurance Calculator",
+    "description": "Estimate your dental practice insurance cost. Covers malpractice, property, and workers comp.",
+    "inputs": "Number of dentists, hygienists, staff, annual revenue, state",
+    "formula": "Malpractice $2000-$8000 per dentist. GL and property based on office size. Workers comp class 8832.",
+    "status": "pending"
+  },
+  {
+    "slug": "medical-office-insurance-calculator",
+    "name": "Medical Office Insurance Calculator",
+    "description": "Estimate your medical practice insurance cost. Covers malpractice, property, and business interruption.",
+    "inputs": "Specialty, number of providers, staff, revenue, state",
+    "formula": "Malpractice varies by specialty $3000-$20000 per provider. Property and GL based on office.",
+    "status": "pending"
+  },
+  {
+    "slug": "daycare-insurance-calculator",
+    "name": "Daycare Insurance Calculator",
+    "description": "Estimate your daycare or childcare insurance cost. Covers liability, property, and abuse coverage.",
+    "inputs": "Number of children, staff, home-based or commercial, state",
+    "formula": "GL $1500-$4000. Abuse coverage required in most states. Workers comp class 8834.",
+    "status": "pending"
+  },
+  {
+    "slug": "nonprofit-insurance-calculator",
+    "name": "Nonprofit Insurance Calculator",
+    "description": "Estimate your nonprofit organization insurance cost. Covers D&O, GL, and property.",
+    "inputs": "Annual budget, number of staff, board size, services offered",
+    "formula": "D&O $800-$3000. GL $500-$1500. Property based on assets. Total package discounts available.",
+    "status": "pending"
+  },
+  {
+    "slug": "it-consultant-insurance-calculator",
+    "name": "IT Consultant Insurance Calculator",
+    "description": "Estimate your IT consultant insurance cost. Covers E&O, cyber, and general liability.",
+    "inputs": "Revenue, clients, services offered, data handled, employees",
+    "formula": "E&O $800-$2500. Cyber $500-$2000 based on records handled. GL $500-$1200.",
+    "status": "pending"
+  },
+  {
+    "slug": "real-estate-agent-eo-insurance-calculator",
+    "name": "Real Estate Agent E&O Insurance Calculator",
+    "description": "Estimate your real estate E&O insurance cost. Required in most states for licensed agents.",
+    "inputs": "Annual commission revenue, transactions per year, state, brokerage size",
+    "formula": "Base E&O $400-$900. Per-transaction rate $25-$75. State requirements vary.",
+    "status": "pending"
+  },
+  {
+    "slug": "trucking-cargo-insurance-calculator",
+    "name": "Trucking Cargo Insurance Calculator",
+    "description": "Estimate your cargo insurance cost. Covers freight in transit up to your policy limit.",
+    "inputs": "Annual revenue, cargo value per load, cargo type, coverage limit",
+    "formula": "Rate per $1000 of cargo value $0.50-$2.00. Hazmat higher. Coverage limit $100k typical.",
+    "status": "pending"
+  },
+  {
+    "slug": "garage-keepers-insurance-calculator",
+    "name": "Garage Keepers Insurance Calculator",
+    "description": "Estimate your garage keepers insurance cost. Covers customer vehicles in your care.",
+    "inputs": "Number of vehicles on premises, average vehicle value, type of business",
+    "formula": "Rate 1-3% of maximum value of vehicles in care. Auto dealers, repair shops, and valet services.",
+    "status": "pending"
+  },
+  {
+    "slug": "farm-insurance-calculator",
+    "name": "Farm Insurance Calculator",
+    "description": "Estimate your farm or ranch insurance cost. Covers property, equipment, livestock, and liability.",
+    "inputs": "Acreage, farm type, building value, equipment value, livestock value, revenue",
+    "formula": "Farm package based on total insured value. Crop insurance separate. Livestock coverage per head.",
+    "status": "pending"
+  },
+  {
+    "slug": "hvac-contractor-insurance-calculator",
+    "name": "HVAC Contractor Insurance Calculator",
+    "description": "Estimate your HVAC contractor insurance cost. Covers liability, workers comp, and commercial auto.",
+    "inputs": "Revenue, employees, vehicles, state, residential or commercial",
+    "formula": "GL $1800-$4000. Workers comp class 5537. Commercial auto per vehicle. Refrigerant coverage add-on.",
+    "status": "pending"
+  },
+  {
+    "slug": "cybersecurity-insurance-calculator",
+    "name": "Cybersecurity Insurance Calculator",
+    "description": "Estimate your cybersecurity insurance cost. Covers ransomware, data breaches, and regulatory fines.",
+    "inputs": "Revenue, records stored, industry, security controls in place",
+    "formula": "Base rate 0.05-0.30% of revenue. Records factor. Security controls discounts up to 30%.",
+    "status": "pending"
+  },
+  {
+    "slug": "small-business-insurance-calculator",
+    "name": "Small Business Insurance Calculator",
+    "description": "Estimate your small business insurance cost. Bundles general liability and property into a BOP.",
+    "inputs": "Industry, revenue, employees, property value, state",
+    "formula": "BOP base $500-$3000 depending on industry. Property rider per $100 of value. Bundle discounts.",
+    "status": "pending"
+  },
+  {
+    "slug": "commercial-trucking-insurance-calculator",
+    "name": "Commercial Trucking Insurance Calculator",
+    "description": "Estimate your commercial trucking insurance cost. Covers primary liability, cargo, and physical damage.",
+    "inputs": "Number of trucks, annual revenue, cargo type, states operated, DOT number",
+    "formula": "Primary liability $6000-$15000 per truck. Cargo based on limit. Physical damage based on vehicle value.",
+    "status": "pending"
+  },
+  {
+    "slug": "business-owners-policy-calculator",
+    "name": "Business Owners Policy Calculator",
+    "description": "Estimate your BOP insurance cost. Bundles general liability and commercial property for small businesses.",
+    "inputs": "Industry, revenue, square footage, property value, inventory value, state",
+    "formula": "BOP base rate $0.30-$0.90 per $100 of insured value. GL component based on revenue and industry.",
+    "status": "pending"
+  },
+  {
+    "slug": "workers-compensation-by-state-calculator",
+    "name": "Workers Compensation Insurance Calculator",
+    "description": "Estimate workers comp costs by state, class code, and payroll. Essential for all employers.",
+    "inputs": "State, industry class code, annual payroll, experience mod, employees",
+    "formula": "Premium = (payroll / 100) * class_rate * experience_mod. Rates vary 0.25-15.00 per $100 by class and state.",
+    "status": "pending"
+  }
+]
