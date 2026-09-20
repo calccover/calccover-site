@@ -57,14 +57,20 @@ footer a{color:#555;text-decoration:none;margin-right:1rem}
 <button onclick="calculate()">Estimate My Coverage</button>
 </div>
 <div class="result-box" id="resultBox"><div class="label">Recommended coverage limit</div><div class="premium" id="premiumResult">$0</div><div class="label" style="margin-top:.5rem">Estimated annual premium: <span id="monthlyResult">$0</span></div></div>
-<div class="lead-form" id="leadForm"><h3>Want a real quote from a licensed broker?</h3><p style="font-size:.9rem;color:#555">Enter your email and we'll connect you with a business interruption specialist.</p><form action="https://formsubmit.co/hello@calccover.com" method="POST">
-    <input type="email" name="email" required placeholder="your@email.com">
-    <input type="hidden" name="calculator" value="Business Interruption Insurance Calculator">
-    <input type="hidden" name="page_url" id="pageUrl" value="">
-    <input type="hidden" name="_subject" value="New quote request — Business Interruption Insurance Calculator">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
-    <button type="submit">Get a Free Quote</button>
+<div class="lead-form" id="leadForm">
+    <h3>Want a real quote from a licensed broker?</h3>
+    <p style="font-size:.9rem;color:#555">Enter your email and we'll connect you with a business interruption insurance specialist. No obligation.</p>
+    <form action="https://formsubmit.co/hello@calccover.com" method="POST">
+        <input type="hidden" name="_url" value="https://calccover.com/business-interruption-insurance-calculator/">
+        <input type="email" name="email" required placeholder="your@email.com">
+        <input type="hidden" name="calculator" value="Business Interruption Insurance Calculator">
+        <input type="hidden" name="page_url" id="pageUrl" value="">
+        <input type="hidden" name="_subject" value="New quote request — Business Interruption Insurance Calculator">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
+        <button type="submit">Get a Free Quote</button>
+    </form>
+</div>
 </form>
 <script>document.getElementById('pageUrl').value = window.location.href;</script></div>
 <h2>How Much Business Interruption Coverage Do You Need?</h2>
