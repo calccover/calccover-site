@@ -93,17 +93,18 @@ REQUIREMENTS:
 - All option text must be plain English names only.
 - Factors and multipliers belong ONLY inside the JavaScript function, never in the HTML labels.
 5. Include a `.result-box` (hidden by default, shows on Calculate) with result rows. Each row uses `<div class="result-row"><span class="label">...</span><span class="value">...</span></div>` inside the result box. Add CSS: `.result-row{{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}}` and `.result-row .label{{color:#555}}` and `.result-row .value{{color:#0066cc;font-weight:700}}`.
-6. Include a `.lead-form` below the result box that appears when results show: heading "Want a real quote from a licensed broker?", short paragraph, and a working form with this exact structure:
-<form action="https://formsubmit.co/hello@calccover.com" method="POST">
+6. Include a `.lead-form` below the result box that appears when results show. Use this exact form structure:
+<form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
     <input type="email" name="email" required placeholder="your@email.com">
     <input type="hidden" name="calculator" value="{item['name']}">
     <input type="hidden" name="page_url" id="pageUrl" value="">
-    <input type="hidden" name="_subject" value="New quote request — {item['name']}">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
+    <input type="hidden" name="subject" value="New quote request — {item['name']}">
+    <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
     <button type="submit">Get a Free Quote</button>
 </form>
 <script>document.getElementById('pageUrl').value = window.location.href;</script>
+No JavaScript alert functions. No FormSubmit. Form submits directly to Web3Forms.
 The {item['name']} will be replaced with each calculator's actual name during generation. No JavaScript alert functions.
 7. Include a collapsible `<details>` section immediately below the calculator (before content sections) titled "How this calculator works". Inside: 2-3 sentences explaining the formula in plain English, plus one line: "Formula source: [Source]." This <details> section is MANDATORY. Do not skip it. It must appear immediately after the lead form, before the first content H2.
 8. Include 3 content sections, each wrapped in `<section class="content-section">`: "How Much Does [X] Cost?", "What Factors Affect Your Premium?", and "Frequently Asked Questions" with 3 Q&As each. Each section 100-200 words with real commercial insurance industry detail. Every content section MUST be wrapped in <section class="content-section">. The CSS MUST include .content-section{{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}}. Do NOT skip this wrapper.
