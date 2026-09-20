@@ -89,7 +89,7 @@ details p{margin-top:.75rem;font-size:.95rem;color:#444}
 <h3 style="margin-top:1rem;font-size:1.1rem;color:#0066cc;">Want a real quote from a licensed broker?</h3>
 <p style="margin:.5rem 0 1rem 0;font-size:.9rem;color:#555;">Submit your details below to receive competitive quotes tailored to your exact business specifications.</p>
 <form action="https://formsubmit.co/hello@calccover.com" method="POST">
-    <input type="email" name="email" required placeholder="your@email.com" style="margin-bottom:.75rem;">
+    <input type="email" name="email" required placeholder="your@email.com">
     <input type="hidden" name="calculator" value="Business Interruption Insurance Calculator">
     <input type="hidden" name="page_url" id="pageUrl" value="">
     <input type="hidden" name="_subject" value="New quote request — Business Interruption Insurance Calculator">
@@ -97,6 +97,7 @@ details p{margin-top:.75rem;font-size:.95rem;color:#444}
     <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
     <button type="submit">Get a Free Quote</button>
 </form>
+<script>document.getElementById('pageUrl').value = window.location.href;</script>
 </div>
 </div>
 </div>
