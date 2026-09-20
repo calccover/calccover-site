@@ -98,13 +98,16 @@ p{margin-bottom:1rem;color:#444}
             </div>
             
             <div class="lead-form" id="leadForm">
-                <h3 style="margin: 1.5rem 0 0.5rem 0; color: #1a1a1a;">Want a real quote from a licensed broker?</h3>
-                <p style="font-size: 0.9rem; color: #555; margin-bottom: 1rem;">Connect with certified commercial insurance specialists who can secure official binder paperwork for your business.</p>
-                <div class="form-group">
-                    <input type="email" id="leadEmail" placeholder="Enter your business email">
-                </div>
-                <button onclick="submitLead()">Get a Free Quote</button>
-            </div>
+    <h3>Want a real quote from a licensed broker?</h3>
+    <p style="font-size:.9rem;color:#555">Enter your email and we'll connect you with a commercial insurance specialist. No obligation.</p>
+    <form action="https://formsubmit.co/hello@calccover.com" method="POST">
+        <input type="email" name="email" required placeholder="your@email.com">
+        <input type="hidden" name="_subject" value="New quote request from Calccover">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
+        <button type="submit">Get a Free Quote</button>
+    </form>
+</div>
         </div>
     </div>
 
@@ -187,14 +190,6 @@ function calculatePremium() {
     document.getElementById('leadForm').classList.add('show');
 }
 
-function submitLead() {
-    const email = document.getElementById('leadEmail').value;
-    if(!email || !email.includes('@')) {
-        alert('Please enter a valid business email address.');
-        return;
-    }
-    alert('Thank you! A licensed commercial broker has received your request and will contact you shortly with formal quotes.');
-}
 </script>
 </body>
 </html>
