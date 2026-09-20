@@ -23,7 +23,8 @@
     "description": "Estimate your Business Owners Policy premium. Free calculator for small business owners. Instant premium estimate.",
     "inputs": "Industry, annual revenue, building and contents value, primary state",
     "formula": "Base rate $700-$2200 by industry. Revenue multiplier. Property value multiplier. State multiplier.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-20T14:48:50.788261Z"
   },
   {
     "slug": "commercial-property-insurance-calculator",
