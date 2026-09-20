@@ -14,7 +14,8 @@
     "description": "Estimate your professional liability (E&O) insurance cost. Free calculator for consultants, accountants, lawyers, and professional services.",
     "inputs": "Profession, annual revenue, number of employees, primary state",
     "formula": "Base rate $900-$3500 by profession. Revenue multiplier. Employee factor. State multiplier.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-20T14:46:53.300865Z"
   },
   {
     "slug": "business-owners-policy-calculator",
