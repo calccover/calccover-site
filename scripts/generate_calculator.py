@@ -88,7 +88,15 @@ REQUIREMENTS:
 3. Header: `<header><div class="container"><a href="/" class="logo">Calccover</a><nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>`
 4. Include a `.calculator-box` with labeled inputs relevant to commercial insurance (industry type, annual revenue, number of employees, state, coverage limits, claims history where applicable). All monetary values are in USD. No unit toggle is needed — insurance is a financial product, not a physical one.
 5. Include a `.result-box` (hidden by default, shows on Calculate) with result rows. Each row uses `<div class="result-row"><span class="label">...</span><span class="value">...</span></div>` inside the result box. Add CSS: `.result-row{{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}}` and `.result-row .label{{color:#555}}` and `.result-row .value{{color:#0066cc;font-weight:700}}`.
-6. Include a `.lead-form` below the result box that appears when results show: heading "Want a real quote from a licensed broker?", short paragraph, email input, and a green "Get a Free Quote" button that calls `submitLead()` — a JS function showing an alert confirmation.
+6. Include a `.lead-form` below the result box that appears when results show: heading "Want a real quote from a licensed broker?", short paragraph, and a working form with this exact structure:
+<form action="https://formsubmit.co/hello@calccover.com" method="POST">
+    <input type="email" name="email" required placeholder="your@email.com">
+    <input type="hidden" name="_subject" value="New quote request from Calccover — {item['name']}">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
+    <button type="submit">Get a Free Quote</button>
+</form>
+No JavaScript alert functions. The form posts directly to FormSubmit.
 7. Include a collapsible `<details>` section immediately below the calculator (before content sections) titled "How this calculator works". Inside: 2-3 sentences explaining the formula in plain English, plus one line: "Formula source: [Source]."
 8. Include 3 content sections, each wrapped in `<section class="content-section">`: "How Much Does [X] Cost?", "What Factors Affect Your Premium?", and "Frequently Asked Questions" with 3 Q&As each. Each section 100-200 words with real commercial insurance industry detail.
 9. For FAQ, use `<h3>Question</h3><p>Answer</p>` for each Q&A. Never put multiple Q&As in one `<p>`. Never use "Q:" or "A:" prefixes.
