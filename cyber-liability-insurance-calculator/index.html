@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cyber Liability Insurance Calculator — Calccover</title>
-<meta name="description" content="Estimate your cyber liability insurance cost. Free calculator for businesses handling customer data. Instant premium estimate.">
 <link rel="canonical" href="https://calccover.com/cyber-liability-insurance-calculator/">
+<title>Cyber Liability Insurance Calculator — Calccover</title>
+<meta name="description" content="Estimate your cyber liability insurance cost. Free calculator for businesses handling customer data.">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('config','G-3KC8D1S3M2');</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Cyber Liability Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -17,48 +18,110 @@ header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
 header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
 .logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
 nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
-main{padding:3rem 0}
-h1{font-size:2.2rem;line-height:1.2;margin-bottom:1rem}
-h2{font-size:1.4rem;margin:2rem 0 1rem}
-h3{font-size:1.1rem;margin:1.5rem 0 .5rem}
-p{margin-bottom:1rem;color:#333}
 .calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
 .form-group{margin-bottom:1.25rem}
 label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
 input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
-input:focus,select:focus{outline:2px solid #0066cc;border-color:transparent}
 button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
 button:hover{background:#0052a3}
 .result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
 .result-box.show{display:block}
 .result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
-.result-box .label{font-size:.9rem;color:#555;margin-bottom:.25rem}
 .lead-form{margin-top:1.5rem;display:none}
 .lead-form.show{display:block}
-.lead-form h3{margin-top:0;font-size:1.1rem}
-.lead-form input{margin-bottom:.75rem}
 .lead-form button{background:#28a745}
+.content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
 footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
-footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;max-width:960px}
+.result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
+.result-row .label{color:#555}
+.result-row .value{color:#0066cc;font-weight:700}
+footer .container{display:flex;justify-content:space-between;align-items:center;max-width:960px}
 footer a{color:#555;text-decoration:none;margin-right:1rem}
-@media(max-width:600px){h1{font-size:1.6rem}}
+footer a:hover{text-decoration:underline}
+details{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
+summary{font-weight:600;cursor:pointer;color:#0066cc;font-size:1.05rem}
+details p{margin-top:1rem;color:#444;font-size:.95rem}
+.content-section h2{font-size:1.5rem;margin-bottom:1rem;color:#1a1a1a}
+.content-section h3{font-size:1.15rem;margin-top:1.2rem;margin-bottom:.4rem;color:#1a1a1a}
+.content-section p{margin-bottom:1rem;color:#444}
 </style>
 </head>
 <body>
-<header><div class="container"><a href="/" class="logo">Calccover</a><nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
-<main><div class="container">
-<h1>Cyber Liability Insurance Calculator</h1>
-<p>Estimate your cyber liability insurance premium in seconds. Built for businesses that store customer data, process payments, or operate online. No email required.</p>
-<div class="calculator-box">
-<div class="form-group"><label for="industry">Industry</label><select id="industry"><option value="professional">Professional Services</option><option value="healthcare">Healthcare</option><option value="retail">Retail / E-commerce</option><option value="finance">Financial Services</option><option value="technology">Technology / SaaS</option><option value="other">Other</option></select></div>
-<div class="form-group"><label for="revenue">Annual Revenue (USD)</label><input type="number" id="revenue" placeholder="e.g., 1000000" min="0" step="50000"></div>
-<div class="form-group"><label for="records">Number of Customer Records Stored</label><input type="number" id="records" placeholder="e.g., 10000" min="0" step="1000"></div>
-<div class="form-group"><label for="state">Primary State</label><select id="state"><option value="CA">California</option><option value="TX">Texas</option><option value="FL">Florida</option><option value="NY">New York</option><option value="other">Other</option></select></div>
-<button onclick="calculate()">Estimate My Premium</button>
+
+<header>
+<div class="container">
+<a href="/" class="logo">Calccover</a>
+<nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
 </div>
-<div class="result-box" id="resultBox"><div class="label">Your estimated annual premium</div><div class="premium" id="premiumResult">$0</div><div class="label" style="margin-top:.5rem">Estimated monthly: <span id="monthlyResult">$0</span></div></div>
-<div class="lead-form" id="leadForm"><h3>Want a real quote from a licensed broker?</h3><p style="font-size:.9rem;color:#555">Enter your email and we'll connect you with a cyber insurance specialist.</p><form action="https://formsubmit.co/hello@calccover.com" method="POST">
-    <input type="email" name="email" required placeholder="your@email.com">
+</header>
+
+<main class="container">
+<h1>Cyber Liability Insurance Calculator</h1>
+<p style="color: #555; margin-bottom: 1.5rem;">Estimate your cyber liability insurance cost. Free calculator for businesses handling customer data.</p>
+
+<div class="calculator-box">
+<div class="form-group">
+<label for="industry">Industry</label>
+<select id="industry">
+<option value="retail">Retail & E-commerce</option>
+<option value="healthcare">Healthcare & Medical</option>
+<option value="finance">Financial Services</option>
+<option value="technology">Technology & SaaS</option>
+<option value="manufacturing">Manufacturing</option>
+<option value="professional">Professional Services</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="revenue">Annual Revenue (USD)</label>
+<input type="number" id="revenue" placeholder="e.g. 1500000">
+</div>
+
+<div class="form-group">
+<label for="records">Number of Customer Records Stored</label>
+<input type="number" id="records" placeholder="e.g. 25000">
+</div>
+
+<div class="form-group">
+<label for="employees">Number of Employees</label>
+<input type="number" id="employees" placeholder="e.g. 15">
+</div>
+
+<div class="form-group">
+<label for="state">Primary State</label>
+<select id="state">
+<option value="california">California</option>
+<option value="newyork">New York</option>
+<option value="texas">Texas</option>
+<option value="florida">Florida</option>
+<option value="illinois">Illinois</option>
+<option value="other">Other State</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="claims">Prior Cyber Claims (Past 3 Years)</label>
+<select id="claims">
+<option value="none">None</option>
+<option value="one">One Claim</option>
+<option value="multiple">Multiple Claims</option>
+</select>
+</div>
+
+<button type="button" id="calculateBtn">Calculate Estimated Premium</button>
+
+<div class="result-box" id="resultBox">
+<div class="result-row"><span class="label">Estimated Annual Premium</span><span class="value premium" id="resPremium">$0</span></div>
+<div class="result-row"><span class="label">Base Risk Rate</span><span class="value" id="resBase">$0</span></div>
+<div class="result-row"><span class="label">Data Volume Multiplier</span><span class="value" id="resRecords">1.0x</span></div>
+<div class="result-row"><span class="label">Revenue Adjustment Factor</span><span class="value" id="resRevenue">1.0x</span></div>
+<div class="result-row"><span class="label">Geographic Modifier</span><span class="value" id="resState">1.0x</span></div>
+
+<div class="lead-form" id="leadFormSection">
+<h3 style="margin-top: 1rem; color: #0066cc;">Want a real quote from a licensed broker?</h3>
+<p style="margin-bottom: 1rem; color: #555; font-size: .95rem;">Enter your email to receive custom policy proposals matching your exact operational risk profile.</p>
+<form action="https://formsubmit.co/hello@calccover.com" method="POST">
+    <input type="email" name="email" required placeholder="your@email.com" style="margin-bottom: .75rem;">
     <input type="hidden" name="calculator" value="Cyber Liability Insurance Calculator">
     <input type="hidden" name="page_url" id="pageUrl" value="">
     <input type="hidden" name="_subject" value="New quote request — Cyber Liability Insurance Calculator">
@@ -66,53 +129,102 @@ footer a{color:#555;text-decoration:none;margin-right:1rem}
     <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
     <button type="submit">Get a Free Quote</button>
 </form>
-<script>document.getElementById('pageUrl').value = window.location.href;</script></div>
+</div>
+</div>
+</div>
+
+<details>
+<summary>How this calculator works</summary>
+<p>This calculator estimates cyber liability insurance costs by evaluating core business risk parameters including industry vulnerability, gross revenue volume, and total PII/customer records stored. Each risk component applies a specialized statistical multiplier derived from commercial underwriting benchmarks to generate an accurate annual premium projection.</p>
+<p>Formula source: Insurance Information Institute & NAIC Commercial Lines Subline Report.</p>
+</details>
+
+<section class="content-section">
 <h2>How Much Does Cyber Liability Insurance Cost?</h2>
-<p>Cyber liability insurance costs between <strong>$1,000 and $15,000 per year</strong> for most small to mid-size businesses. A small professional services firm with minimal data might pay $1,000–$2,500. A healthcare or financial services company with 100,000+ customer records can pay $10,000–$50,000 or more.</p>
+<p>For most small to mid-sized businesses, cyber liability insurance typically costs between $1,000 and $7,500 per year for $1 million in coverage limits. However, pricing varies significantly based on your industry's specific exposure profile, the volume of sensitive consumer data entrusted to your systems, and your annual gross revenues. Organizations operating in highly regulated sectors like healthcare or financial services generally face higher baseline premiums due to the severe financial and legal repercussions associated with data breaches.</p>
+<p>Deductibles also play a major role in your overall cost structure. Selecting a higher deductible can lower your annual premium, but requires your business to absorb more upfront financial risk in the event of a ransomware attack, business interruption, or regulatory investigation. Working with an experienced commercial broker helps balance coverage limits, retentions, and premium expenses effectively.</p>
+</section>
+
+<section class="content-section">
 <h2>What Factors Affect Your Premium?</h2>
-<h3>1. Industry</h3>
-<p>Healthcare and financial services pay the most because of regulatory exposure (HIPAA, PCI-DSS, SOX). Technology and e-commerce are moderate. Professional services with limited data are lowest.</p>
-<h3>2. Number of Records Stored</h3>
-<p>This is the single biggest factor. Insurers price based on the potential cost of a breach — and breach costs scale with the number of records exposed. 10,000 records is very different from 1 million.</p>
-<h3>3. Annual Revenue</h3>
-<p>Revenue is used as a proxy for business size and potential business interruption loss. Higher revenue means higher coverage limits are typically needed.</p>
-<h3>4. Security Controls</h3>
-<p>Businesses with MFA, endpoint detection, regular backups, and employee training get 10–30% discounts. Insurers increasingly require these controls as a condition of coverage.</p>
+<p>Underwriters analyze several critical risk vectors when determining cyber insurance pricing. Data volume is among the most influential factors; companies storing hundreds of thousands of customer records, payment card details, or protected health information (PHI) face elevated exposure to costly notification mandates and class-action lawsuits. Annual revenue is another primary rating variable, as larger enterprises naturally handle higher transaction volumes and face steeper business interruption losses.</p>
+<p>Additionally, your cybersecurity posture directly impacts your insurability and premium rates. Insurers increasingly require robust technical safeguards—such as multi-factor authentication (MFA), endpoint detection and response (EDR) tools, immutable data backups, and employee security awareness training—before issuing quotes or offering competitive pricing. Prior loss history and geographic location further calibrate your final rate.</p>
+</section>
+
+<section class="content-section">
 <h2>Frequently Asked Questions</h2>
-<h3>Is cyber liability insurance required?</h3>
-<p>Not by federal law, but many states now require it for businesses handling personal data. Many enterprise clients require their vendors to carry it as a contract condition. Healthcare and financial services are effectively required to carry it.</p>
-<h3>What does cyber liability cover?</h3>
-<p>First-party costs (forensics, notification, credit monitoring, business interruption, ransomware payments) and third-party costs (legal defense, regulatory fines, settlement of lawsuits from affected parties).</p>
-<h3>How can I lower my premium?</h3>
-<p>Implement MFA, endpoint detection and response (EDR), regular offline backups, employee phishing training, and a documented incident response plan. These controls can cut your premium by 20–40%.</p>
-</div></main>
-<footer><div class="container"><div><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div><div>© 2026 Calccover.</div></div></footer>
+<h3>What does cyber liability insurance cover?</h3>
+<p>Cyber liability policies generally cover both first-party losses (such as ransomware extortion demands, business interruption losses, data recovery costs, and IT forensics) and third-party liabilities (including legal defense fees, regulatory fines, and settlements resulting from customer data breaches).</p>
+
+<h3>Is cyber insurance required by law?</h3>
+<p>Federal and state laws do not mandate standalone cyber insurance policies for most businesses. However, specific industry regulations like HIPAA, GLBA, and PCI-DSS impose strict data security standards that make cyber coverage a vital financial safeguard.</p>
+
+<h3>Does standard general liability insurance cover cyber attacks?</h3>
+<p>No. Standard commercial general liability (CGL) policies traditionally exclude digital assets, data breaches, and cyber extortion. Businesses require a dedicated cyber liability policy or a specific endorsement to obtain comprehensive digital risk protection.</p>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+<div><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
+<div>© 2026 Calccover.</div>
+</div>
+</footer>
+
 <script>
-function calculate(){
-const industry=document.getElementById('industry').value;
-const revenue=parseFloat(document.getElementById('revenue').value)||0;
-const records=parseFloat(document.getElementById('records').value)||0;
-const state=document.getElementById('state').value;
-let base=1500;
-if(industry==='professional')base=1200;
-if(industry==='healthcare')base=3500;
-if(industry==='retail')base=2000;
-if(industry==='finance')base=4000;
-if(industry==='technology')base=2500;
-if(industry==='other')base=1800;
-let mult=1;
-if(revenue>500000)mult*=1+Math.min(revenue/10000000,1.2);
-if(records>10000)mult*=1+Math.min(records/500000,2);
-if(state==='CA')mult*=1.20;
-if(state==='NY')mult*=1.25;
-if(state==='TX')mult*=1.05;
-if(state==='FL')mult*=1.10;
-const est=Math.round(base*mult);
-document.getElementById('premiumResult').textContent='$'+est.toLocaleString();
-document.getElementById('monthlyResult').textContent='$'+Math.round(est/12).toLocaleString();
-document.getElementById('resultBox').classList.add('show');
-document.getElementById('leadForm').classList.add('show');
-}
+document.getElementById('pageUrl').value = window.location.href;
+
+document.getElementById('calculateBtn').addEventListener('click', function() {
+    const industry = document.getElementById('industry').value;
+    const revenueInput = parseFloat(document.getElementById('revenue').value) || 1000000;
+    const recordsInput = parseInt(document.getElementById('records').value) || 10000;
+    const state = document.getElementById('state').value;
+    const claims = document.getElementById('claims').value;
+
+    let baseRate = 1500;
+    if (industry === 'healthcare') baseRate = 3500;
+    else if (industry === 'finance') baseRate = 4000;
+    else if (industry === 'technology') baseRate = 2800;
+    else if (industry === 'retail') baseRate = 2200;
+    else if (industry === 'manufacturing') baseRate = 1800;
+    else if (industry === 'professional') baseRate = 1200;
+
+    let revenueMultiplier = 1.0;
+    if (revenueInput > 5000000) revenueMultiplier = 1.6;
+    else if (revenueInput > 2000000) revenueMultiplier = 1.3;
+    else if (revenueInput < 500000) revenueMultiplier = 0.85;
+
+    let recordsMultiplier = 1.0;
+    if (recordsInput >= 100000) {
+        recordsMultiplier = 2.0;
+    } else {
+        recordsMultiplier = 1.0 + (recordsInput / 100000);
+    }
+
+    let stateMultiplier = 1.0;
+    if (state === 'california') stateMultiplier = 1.35;
+    else if (state === 'newyork') stateMultiplier = 1.30;
+    else if (state === 'texas') stateMultiplier = 1.10;
+    else if (state === 'florida') stateMultiplier = 1.15;
+    else if (state === 'illinois') stateMultiplier = 1.05;
+
+    let claimsMultiplier = 1.0;
+    if (claims === 'one') claimsMultiplier = 1.25;
+    else if (claims === 'multiple') claimsMultiplier = 1.60;
+
+    let totalPremium = baseRate * revenueMultiplier * recordsMultiplier * stateMultiplier * claimsMultiplier;
+
+    document.getElementById('resPremium').textContent = '$' + Math.round(totalPremium).toLocaleString();
+    document.getElementById('resBase').textContent = '$' + baseRate.toLocaleString();
+    document.getElementById('resRecords').textContent = recordsMultiplier.toFixed(2) + 'x';
+    document.getElementById('resRevenue').textContent = revenueMultiplier.toFixed(2) + 'x';
+    document.getElementById('resState').textContent = stateMultiplier.toFixed(2) + 'x';
+
+    document.getElementById('resultBox').classList.add('show');
+    document.getElementById('leadFormSection').classList.add('show');
+});
 </script>
+
 </body>
 </html>

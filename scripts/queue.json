@@ -1,12 +1,12 @@
 [
-  
   {
     "slug": "cyber-liability-insurance-calculator",
     "name": "Cyber Liability Insurance Calculator",
     "description": "Estimate your cyber liability insurance cost. Free calculator for businesses handling customer data.",
     "inputs": "Industry, annual revenue, number of customer records stored, primary state",
     "formula": "Base rate $1200-$4000 by industry. Revenue multiplier. Records multiplier up to 2x for 100K+ records. State multiplier.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-20T14:43:38.231188Z"
   },
   {
     "slug": "professional-liability-insurance-calculator",
