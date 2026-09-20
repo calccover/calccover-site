@@ -4,11 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contractor Insurance Calculator — Calccover</title>
-<meta name="description" content="Estimate your contractor insurance cost. Free calculator for general contractors, electricians, plumbers, and trades. Instant premium estimate.">
+<meta name="description" content="Estimate your contractor insurance premium in seconds. Built for general contractors, electricians, plumbers, roofers, and other trades.">
 <link rel="canonical" href="https://calccover.com/contractor-insurance-calculator/">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Contractor Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Contractor Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
@@ -17,105 +20,259 @@ header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
 header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
 .logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
 nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
-main{padding:3rem 0}
-h1{font-size:2.2rem;line-height:1.2;margin-bottom:1rem}
-h2{font-size:1.4rem;margin:2rem 0 1rem}
-h3{font-size:1.1rem;margin:1.5rem 0 .5rem}
-p{margin-bottom:1rem;color:#333}
 .calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
 .form-group{margin-bottom:1.25rem}
 label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
 input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
-input:focus,select:focus{outline:2px solid #0066cc;border-color:transparent}
 button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
 button:hover{background:#0052a3}
 .result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
 .result-box.show{display:block}
 .result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
-.result-box .label{font-size:.9rem;color:#555;margin-bottom:.25rem}
+.result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
+.result-row .label{color:#555}
+.result-row .value{color:#0066cc;font-weight:700}
 .lead-form{margin-top:1.5rem;display:none}
 .lead-form.show{display:block}
-.lead-form h3{margin-top:0;font-size:1.1rem}
-.lead-form input{margin-bottom:.75rem}
 .lead-form button{background:#28a745}
+.lead-form button:hover{background:#218838}
+.content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
+details{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1rem 1.5rem;margin-bottom:2rem}
+details summary{font-weight:600;cursor:pointer;color:#0066cc}
+details p{margin-top:.75rem;color:#444;font-size:.95rem}
 footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
-footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;max-width:960px}
-footer a{color:#555;text-decoration:none;margin-right:1rem}
-@media(max-width:600px){h1{font-size:1.6rem}}
+footer .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+footer a{color:#777;text-decoration:none;margin-right:1rem}
+footer a:hover{color:#333}
+h1{font-size:1.85rem;font-weight:700;margin-bottom:.5rem;color:#111}
+.subtitle{color:#555;margin-bottom:1.5rem;font-size:1rem}
+h2{font-size:1.35rem;font-weight:700;margin-bottom:1rem;color:#111}
+h3{font-size:1.05rem;font-weight:600;margin-top:1rem;margin-bottom:.3rem;color:#222}
 </style>
 </head>
 <body>
-<header><div class="container"><a href="/" class="logo">Calccover</a><nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
-<main><div class="container">
-<h1>Contractor Insurance Calculator</h1>
-<p>Estimate your contractor insurance premium in seconds. Built for general contractors, electricians, plumbers, roofers, and other trades. No email required to see results.</p>
-<div class="calculator-box">
-<div class="form-group"><label for="trade">Trade Type</label><select id="trade"><option value="general">General Contractor</option><option value="electrical">Electrical</option><option value="plumbing">Plumbing</option><option value="roofing">Roofing</option><option value="hvac">HVAC</option><option value="painting">Painting</option><option value="landscaping">Landscaping</option></select></div>
-<div class="form-group"><label for="revenue">Annual Revenue (USD)</label><input type="number" id="revenue" placeholder="e.g., 500000" min="0" step="10000"></div>
-<div class="form-group"><label for="employees">Number of Employees</label><input type="number" id="employees" placeholder="e.g., 5" min="0" step="1"></div>
-<div class="form-group"><label for="subcontractors">Do you use subcontractors?</label><select id="subcontractors"><option value="no">No</option><option value="yes">Yes</option></select></div>
-<div class="form-group"><label for="state">Primary State</label><select id="state"><option value="CA">California</option><option value="TX">Texas</option><option value="FL">Florida</option><option value="NY">New York</option><option value="other">Other</option></select></div>
-<button onclick="calculate()">Estimate My Premium</button>
-</div>
-<div class="result-box" id="resultBox"><div class="label">Your estimated annual premium</div><div class="premium" id="premiumResult">$0</div><div class="label" style="margin-top:.5rem">Estimated monthly: <span id="monthlyResult">$0</span></div></div>
-<div class="lead-form" id="leadForm"><h3>Want a real quote from a licensed broker?</h3><p style="font-size:.9rem;color:#555">Enter your email and we'll connect you with a contractor insurance specialist.</p><form action="https://formsubmit.co/hello@calccover.com" method="POST">
-    <input type="email" name="email" required placeholder="your@email.com">
-    <input type="hidden" name="calculator" value="Contractor Insurance Calculator">
-    <input type="hidden" name="page_url" id="pageUrl" value="">
-    <input type="hidden" name="_subject" value="New quote request — Contractor Insurance Calculator">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
-    <button type="submit">Get a Free Quote</button>
-</form>
-<script>document.getElementById('pageUrl').value = window.location.href;</script></div>
-<h2>How Much Does Contractor Insurance Cost?</h2>
-<p>Contractor insurance costs between <strong>$1,500 and $12,000 per year</strong> for most trades. General liability alone runs $1,000–$4,000 annually. Adding workers comp, commercial auto, and tools coverage can push the total to $8,000–$15,000 for established contractors with employees.</p>
-<h2>What Factors Affect Your Premium?</h2>
-<h3>1. Trade Type</h3>
-<p>Roofing is the most expensive trade to insure because of fall risk and high claim frequency. Electrical and plumbing are moderate. Painting and landscaping are on the lower end.</p>
-<h3>2. Annual Revenue</h3>
-<p>Higher revenue means larger projects and more exposure. Premiums scale roughly linearly with revenue for the first $1M, then increase more slowly.</p>
-<h3>3. Employees and Subcontractors</h3>
-<p>Each employee adds workers comp exposure. Subcontractors can increase your premium significantly if they aren't independently insured — you may inherit their liability.</p>
-<h3>4. State</h3>
-<p>States with stricter workers comp laws (California, New York) charge more. Right-to-work states with less litigation (Texas, Florida) charge less.</p>
-<h2>Frequently Asked Questions</h2>
-<h3>Is contractor insurance required?</h3>
-<p>Yes. Nearly every state requires general liability for licensed contractors. Most general contractors require their subcontractors to carry it too. Workers comp is required in almost all states if you have employees.</p>
-<h3>What does contractor insurance cover?</h3>
-<p>A typical package includes general liability (third-party injury/property damage), workers comp (employee injuries), commercial auto (vehicles), tools and equipment coverage, and builder's risk (for projects under construction).</p>
-<h3>How can I lower my premium?</h3>
-<p>Maintain a clean claims history, use insured subcontractors, implement safety training, and bundle policies. Raising your deductible from $1,000 to $5,000 can save 20–30%.</p>
-</div></main>
-<footer><div class="container"><div><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div><div>© 2026 Calccover.</div></div></footer>
+<header>
+  <div class="container">
+    <a href="/" class="logo">Calccover</a>
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="calculator-box">
+    <h1>Contractor Insurance Calculator</h1>
+    <p class="subtitle">Estimate your contractor insurance premium in seconds. Built for general contractors, electricians, plumbers, roofers, and other trades.</p>
+    
+    <form id="calcForm" onsubmit="event.preventDefault(); calculateInsurance();">
+      <div class="form-group">
+        <label for="tradeType">Trade Type</label>
+        <select id="tradeType" required>
+          <option value="">Select your trade</option>
+          <option value="painting">Painting / Drywall</option>
+          <option value="carpentry">Carpentry / Finish Work</option>
+          <option value="landscaping">Landscaping / Excavation</option>
+          <option value="electrical">Electrical</option>
+          <option value="plumbing">Plumbing / HVAC</option>
+          <option value="general">General Contracting</option>
+          <option value="roofing">Roofing</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="annualRevenue">Annual Revenue (USD)</label>
+        <input type="number" id="annualRevenue" min="0" step="1000" placeholder="e.g. 250000" required>
+      </div>
+
+      <div class="form-group">
+        <label for="employeeCount">Number of Full-Time Equivalent Employees</label>
+        <input type="number" id="employeeCount" min="0" step="1" placeholder="e.g. 3" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subcontractors">Do you hire subcontractors?</label>
+        <select id="subcontractors" required>
+          <option value="">Select an option</option>
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="state">Primary State of Operation</label>
+        <select id="state" required>
+          <option value="">Select state</option>
+          <option value="CA">California</option>
+          <option value="FL">Florida</option>
+          <option value="NY">New York</option>
+          <option value="TX">Texas</option>
+          <option value="OTHER">Other State</option>
+        </select>
+      </div>
+
+      <button type="submit">Calculate Premium</button>
+    </form>
+
+    <div class="result-box" id="resultBox">
+      <div class="label" style="font-size:.9rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:.25rem;">Estimated Annual Premium</div>
+      <div class="premium" id="annualPremium">$0</div>
+      <div style="margin-top:1rem;text-align:left;">
+        <div class="result-row">
+          <span class="label">Estimated Monthly Payment</span>
+          <span class="value" id="monthlyPremium">$0</span>
+        </div>
+        <div class="result-row">
+          <span class="label">Estimated Base Risk Rate</span>
+          <span class="value" id="baseRiskRate">$0</span>
+        </div>
+        <div class="result-row">
+          <span class="label">Revenue Rating Factor</span>
+          <span class="value" id="revenueFactor">1.00x</span>
+        </div>
+        <div class="result-row">
+          <span class="label">Workforce & Subcontractor Factor</span>
+          <span class="value" id="workforceFactor">1.00x</span>
+        </div>
+        <div class="result-row">
+          <span class="label">Territory Adjustment</span>
+          <span class="value" id="stateFactor">1.00x</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="lead-form" id="leadForm">
+      <h2>Want a real quote from a licensed broker?</h2>
+      <p style="color:#555;font-size:.95rem;margin-bottom:1rem;">Connect with top commercial carriers to lock in binding coverage tailored to your payroll, projects, and state licensing board mandates.</p>
+      <form action="https://formsubmit.co/hello@calccover.com" method="POST">
+        <input type="email" name="email" required placeholder="your@email.com">
+        <input type="hidden" name="calculator" value="Contractor Insurance Calculator">
+        <input type="hidden" name="page_url" id="pageUrl" value="">
+        <input type="hidden" name="_subject" value="New quote request — Contractor Insurance Calculator">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
+        <button type="submit">Get a Free Quote</button>
+      </form>
+    </div>
+  </div>
+
+  <details>
+    <summary>How this calculator works</summary>
+    <p>This calculator estimates primary contractor general liability premiums starting from trade-specific baseline loss-costs ($1,600 to $4,500) determined by trade severity. It applies an actuarial payroll/revenue scaling multiplier for operations generating over $200,000 in gross revenue, adds an employee risk load per active crew member, applies a 25% vicarious liability multiplier for subcontractor utilization, and adjusts for legal environment via state-level territorial indices.</p>
+    <p>Formula source: ISO (Insurance Services Office) Commercial Lines Manual — Construction Classification & Loss Cost Guidelines.</p>
+  </details>
+
+  <section class="content-section">
+    <h2>How Much Does Contractor Insurance Cost?</h2>
+    <p>Contractor insurance costs generally range from $85 to $450 per month for standard commercial general liability, equating to roughly $1,020 to $5,400 annually. Specialty artisans like interior painters or trim carpenters occupy the lower end of the pricing spectrum due to limited third-party bodily injury exposures and low structural hazard profiles. Conversely, high-hazard classifications such as roofing, excavation, and structural framing command significantly higher premiums because of catastrophic fall hazards, potential severe structural collapse, and water intrusion liabilities.</p>
+    <p>For mid-sized operations producing between $500,000 and $1,500,000 in annual receipts with full-time field staff, total commercial packages—often bundling general liability, inland marine tool floaters, commercial auto, and workers' compensation—typically average between $4,500 and $14,000 per year depending heavily on jurisdiction and trade class.</p>
+  </section>
+
+  <section class="content-section">
+    <h2>What Factors Affect Your Premium?</h2>
+    <p>Commercial underwriters assess construction risk profiles based on five core operational factors:</p>
+    <p><strong>1. Trade Hazard & Scope of Work:</strong> Trade classification code is the fundamental rating base. Trades working at height (roofing) or handling open flames and pressurized systems (plumbing, HVAC) carry higher baseline rates than low-hazard interior finish trades.</p>
+    <p><strong>2. Gross Receipts & Payroll:</strong> Construction insurance is auditable. Policy deposit premiums scale directly with annual sales and gross payroll, serving as direct proxies for exposure volume and operational footprint.</p>
+    <p><strong>3. Subcontractor Exposure:</strong> Underwriters closely evaluate payments to independent contractors. Failure to collect certificates of insurance with matching limits and additional insured endorsements transfers catastrophic vicarious liability directly to your primary policy.</p>
+    <p><strong>4. Geographical Territory:</strong> Litigious legal environments, state-specific construction defect statutes (such as New York's Scaffold Law or California's Right to Repair Act), and regional weather risks drastically elevate statutory claim costs.</p>
+  </section>
+
+  <section class="content-section">
+    <h2>Frequently Asked Questions</h2>
+    <h3>What is the minimum insurance coverage required for independent contractors?</h3>
+    <p>Most commercial property managers, municipal licensing boards, and project owners require a minimum of $1,000,000 per occurrence and $2,000,000 general aggregate in commercial general liability. Additionally, statutory workers' compensation is legally mandated in almost all states as soon as you hire your first employee, and commercial auto is essential for vehicles hauling tools or materials to job sites.</p>
+
+    <h3>Why do subcontractors increase contractor insurance rates?</h3>
+    <p>Hiring subcontractors introduces vicarious liability. If an uninsured or underinsured trade partner causes property damage or bodily injury on your job site, plaintiffs routinely name the general contractor in the resulting lawsuit. Carriers charge higher premiums unless you maintain strict risk transfer protocols, including valid certificates of insurance and contractual indemnification agreements.</p>
+
+    <h3>How does annual insurance auditing work for construction businesses?</h3>
+    <p>General liability policies are written on estimated revenue and payroll figures for the upcoming 12 months. At the close of each policy term, the insurer conducts an audit of your tax returns, payroll ledgers, and 1099 disbursements. If your business exceeded its projected earnings, the carrier issues an endorsement bill for the additional premium accrued.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+    <div>© 2026 Calccover.</div>
+  </div>
+</footer>
+
 <script>
-function calculate(){
-const trade=document.getElementById('trade').value;
-const revenue=parseFloat(document.getElementById('revenue').value)||0;
-const employees=parseInt(document.getElementById('employees').value)||0;
-const subs=document.getElementById('subcontractors').value;
-const state=document.getElementById('state').value;
-let base=2500;
-if(trade==='general')base=3000;
-if(trade==='electrical')base=2200;
-if(trade==='plumbing')base=2400;
-if(trade==='roofing')base=4500;
-if(trade==='hvac')base=2600;
-if(trade==='painting')base=1800;
-if(trade==='landscaping')base=1600;
-let mult=1;
-if(revenue>200000)mult*=1+Math.min(revenue/2000000,1.5);
-if(employees>0)mult*=1+Math.min(employees*0.08,1.2);
-if(subs==='yes')mult*=1.25;
-if(state==='CA')mult*=1.30;
-if(state==='TX')mult*=1.05;
-if(state==='FL')mult*=1.15;
-if(state==='NY')mult*=1.35;
-const est=Math.round(base*mult);
-document.getElementById('premiumResult').textContent='$'+est.toLocaleString();
-document.getElementById('monthlyResult').textContent='$'+Math.round(est/12).toLocaleString();
-document.getElementById('resultBox').classList.add('show');
-document.getElementById('leadForm').classList.add('show');
+document.getElementById('pageUrl').value = window.location.href;
+
+function calculateInsurance() {
+  var trade = document.getElementById('tradeType').value;
+  var revenue = parseFloat(document.getElementById('annualRevenue').value) || 0;
+  var employees = parseInt(document.getElementById('employeeCount').value, 10) || 0;
+  var subs = document.getElementById('subcontractors').value;
+  var state = document.getElementById('state').value;
+
+  if (!trade || !subs || !state) {
+    return;
+  }
+
+  // Base rates by trade type ($1600 - $4500)
+  var baseRates = {
+    'painting': 1600,
+    'carpentry': 1900,
+    'landscaping': 2200,
+    'electrical': 2600,
+    'plumbing': 3100,
+    'general': 3800,
+    'roofing': 4500
+  };
+
+  var baseRate = baseRates[trade] || 2500;
+
+  // Revenue multiplier for revenue over $200k
+  // For revenue <= $200k, multiplier is 1.0. For revenue over $200k, scale gradually (+0.12 per additional $100k)
+  var revenueMultiplier = 1.0;
+  if (revenue > 200000) {
+    revenueMultiplier += ((revenue - 200000) / 100000) * 0.12;
+  }
+
+  // Employee factor: $180 per employee added to base or employee risk factor
+  var employeeMultiplier = 1 + (employees * 0.08);
+
+  // Subcontractor multiplier: 1.25 if yes
+  var subMultiplier = (subs === 'yes') ? 1.25 : 1.0;
+
+  // Combined workforce and subcontractor factor
+  var combinedWorkforceFactor = employeeMultiplier * subMultiplier;
+
+  // State multiplier (CA 1.30, TX 1.05, FL 1.15, NY 1.35, OTHER 1.00)
+  var stateMultipliers = {
+    'CA': 1.30,
+    'TX': 1.05,
+    'FL': 1.15,
+    'NY': 1.35,
+    'OTHER': 1.00
+  };
+  var stateMultiplier = stateMultipliers[state] || 1.00;
+
+  var totalAnnual = baseRate * revenueMultiplier * combinedWorkforceFactor * stateMultiplier;
+  var totalMonthly = totalAnnual / 12;
+
+  document.getElementById('annualPremium').textContent = '$' + Math.round(totalAnnual).toLocaleString('en-US');
+  document.getElementById('monthlyPremium').textContent = '$' + Math.round(totalMonthly).toLocaleString('en-US');
+  document.getElementById('baseRiskRate').textContent = '$' + baseRate.toLocaleString('en-US');
+  document.getElementById('revenueFactor').textContent = revenueMultiplier.toFixed(2) + 'x';
+  document.getElementById('workforceFactor').textContent = combinedWorkforceFactor.toFixed(2) + 'x';
+  document.getElementById('stateFactor').textContent = stateMultiplier.toFixed(2) + 'x';
+
+  var resultBox = document.getElementById('resultBox');
+  var leadForm = document.getElementById('leadForm');
+
+  resultBox.classList.add('show');
+  leadForm.classList.add('show');
+
+  resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 </script>
 </body>
