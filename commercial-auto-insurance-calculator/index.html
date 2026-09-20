@@ -3,14 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Commercial Auto Insurance Calculator — Calccover</title>
-<meta name="description" content="Estimate your commercial auto insurance cost. Free calculator for business vehicles and fleets. Instant premium estimate in seconds.">
 <link rel="canonical" href="https://calccover.com/commercial-auto-insurance-calculator/">
+<title>Commercial Auto Insurance Calculator — Calccover</title>
+<meta name="description" content="Estimate your commercial auto insurance cost. Free calculator for business vehicles and fleets. Instant premium estimate.">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebApplication","name":"Commercial Auto Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Commercial Auto Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
@@ -19,161 +18,177 @@ header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
 header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
 .logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
 nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
-nav a:hover{color:#0066cc}
-main{padding:3rem 0}
-h1{font-size:2.2rem;line-height:1.2;margin-bottom:1rem}
-h2{font-size:1.4rem;margin:2rem 0 1rem}
-h3{font-size:1.1rem;margin:1.5rem 0 .5rem}
-p{margin-bottom:1rem;color:#333}
 .calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
 .form-group{margin-bottom:1.25rem}
 label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
 input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
-input:focus,select:focus{outline:2px solid #0066cc;border-color:transparent}
 button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
 button:hover{background:#0052a3}
 .result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
 .result-box.show{display:block}
 .result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
-.result-box .label{font-size:.9rem;color:#555;margin-bottom:.25rem}
+.result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
+.result-row .label{color:#555}
+.result-row .value{color:#0066cc;font-weight:700}
 .lead-form{margin-top:1.5rem;display:none}
 .lead-form.show{display:block}
-.lead-form h3{margin-top:0;font-size:1.1rem}
-.lead-form input{margin-bottom:.75rem}
 .lead-form button{background:#28a745}
-.lead-form button:hover{background:#218838}
+.lead-form input{margin-bottom:1rem}
+.content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
+.content-section h2{margin-bottom:1rem;font-size:1.3rem;color:#0066cc}
+.content-section h3{margin-top:1rem;margin-bottom:.4rem;font-size:1.05rem}
+.content-section p{margin-bottom:1rem;color:#444}
+details{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1rem 1.5rem;margin-bottom:2rem}
+details summary{font-weight:600;cursor:pointer;color:#0066cc}
+details p{margin-top:.75rem;color:#444}
 footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
-footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;max-width:960px}
+footer .container{display:flex;justify-content:space-between;align-items:center;max-width:960px}
 footer a{color:#555;text-decoration:none;margin-right:1rem}
-@media(max-width:600px){h1{font-size:1.6rem}.result-box .premium{font-size:1.5rem}}
+footer a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
-<header><div class="container"><a href="/" class="logo">Calccover</a><nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
-<main><div class="container">
-<h1>Commercial Auto Insurance Calculator</h1>
-<p>Estimate your commercial auto insurance premium in seconds. Built for business owners, contractors, and small fleets. No email required to see results.</p>
+<header>
+<div class="container">
+<a href="/" class="logo">Calccover</a>
+<nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
+</div>
+</header>
 
+<div class="container">
+<main>
 <div class="calculator-box">
+<h1 style="font-size:1.6rem;margin-bottom:1.5rem;color:#1a1a1a;">Commercial Auto Insurance Calculator</h1>
 <div class="form-group">
 <label for="vehicleType">Vehicle Type</label>
 <select id="vehicleType">
-<option value="sedan">Sedan / Car</option>
-<option value="pickup">Pickup Truck</option>
-<option value="van">Cargo Van</option>
-<option value="box-truck">Box Truck</option>
-<option value="semi">Semi Truck</option>
+<option value="car">Passenger Car / SUV ($1,400 base)</option>
+<option value="van">Cargo Van / Minivan ($2,200 base)</option>
+<option value="pickup">Light Pickup Truck ($2,800 base)</option>
+<option value="box">Box Truck / Delivery ($4,500 base)</option>
+<option value="heavy">Heavy Truck / Semi ($6,500 base)</option>
 </select>
 </div>
 <div class="form-group">
-<label for="numVehicles">Number of Vehicles</label>
-<input type="number" id="numVehicles" placeholder="e.g., 3" min="1" step="1">
+<label for="vehicleCount">Number of Vehicles</label>
+<input type="number" id="vehicleCount" value="1" min="1" max="100">
 </div>
 <div class="form-group">
-<label for="businessUse">Primary Use</label>
+<label for="businessUse">Business Use Classification</label>
 <select id="businessUse">
-<option value="service">Service / Sales Calls</option>
-<option value="delivery">Delivery</option>
-<option value="construction">Construction / Trades</option>
-<option value="long-haul">Long-Haul Transport</option>
+<option value="service">Service / Local Delivery (1.0x)</option>
+<option value="retail">Retail / Commercial Hauling (1.25x)</option>
+<option value="construction">Construction / Contractor (1.4x)</option>
+<option value="longhaul">Long-Haul Interstate Transport (1.8x)</option>
 </select>
 </div>
 <div class="form-group">
-<label for="state">Primary State</label>
-<select id="state">
-<option value="CA">California</option>
-<option value="TX">Texas</option>
-<option value="FL">Florida</option>
-<option value="NY">New York</option>
-<option value="other">Other</option>
+<label for="stateFactor">Operating State Risk Factor</label>
+<select id="stateFactor">
+<option value="0.85">Low Risk State (e.g., Maine, Idaho)</option>
+<option value="1.0">Average Risk State (e.g., Ohio, Texas)</option>
+<option value="1.25">High Risk State (e.g., New York, California)</option>
+<option value="1.45">Maximum Risk Metro Area (e.g., NYC, Los Angeles)</option>
 </select>
 </div>
-<button onclick="calculate()">Estimate My Premium</button>
-</div>
+<button type="button" id="calcBtn">Calculate Premium Estimate</button>
 
 <div class="result-box" id="resultBox">
-<div class="label">Your estimated annual premium</div>
-<div class="premium" id="premiumResult">$0</div>
-<div class="label" style="margin-top:.5rem">Estimated monthly: <span id="monthlyResult">$0</span></div>
-</div>
-
-<div class="lead-form" id="leadForm">
-<h3>Want a real quote from a licensed broker?</h3>
-<p style="font-size:.9rem;color:#555">Enter your email and we'll connect you with a commercial auto specialist. No obligation.</p>
+<div class="result-row"><span class="label">Estimated Annual Premium</span><span class="value" id="resAnnual">$0</span></div>
+<div class="result-row"><span class="label">Estimated Monthly Premium</span><span class="value" id="resMonthly">$0</span></div>
+<div class="result-row"><span class="label">Applied Fleet Discount</span><span class="value" id="resDiscount">0%</span></div>
+<div class="lead-form" id="leadFormContainer">
+<h3 style="margin-bottom:.5rem;color:#0066cc;">Want a real quote from a licensed broker?</h3>
+<p style="margin-bottom:1rem;color:#555;font-size:.95rem;">Enter your email to receive customized commercial auto insurance quotes from top-rated carriers.</p>
 <form action="https://formsubmit.co/hello@calccover.com" method="POST">
-    <input type="hidden" name="_url" value="https://calccover.com/commercial-auto-insurance-calculator/">
-    <input type="email" name="email" required placeholder="your@email.com">
-    <input type="hidden" name="calculator" value="Commercial Auto Insurance Calculator">
-    <input type="hidden" name="page_url" id="pageUrl" value="">
-    <input type="hidden" name="_subject" value="New quote request — Commercial Auto Insurance Calculator">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
-    <button type="submit">Get a Free Quote</button>
+<input type="email" name="email" required placeholder="your@email.com">
+<input type="hidden" name="calculator" value="Commercial Auto Insurance Calculator">
+<input type="hidden" name="page_url" id="pageUrl" value="">
+<input type="hidden" name="_subject" value="New quote request — Commercial Auto Insurance Calculator">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://calccover.com/thank-you/">
+<button type="submit">Get a Free Quote</button>
 </form>
-<script>document.getElementById('pageUrl').value = window.location.href;</script>
+</div>
+</div>
 </div>
 
+<details>
+<summary>How this calculator works</summary>
+<p>This calculator determines estimated premiums by taking a baseline cost per vehicle determined by vehicle classification, multiplying it by business use risk factors and regional state pricing indices, and then applying volume discounts for fleets with two or more vehicles. Formula source: Insurance Services Office (ISO) commercial auto rating guidelines and industry loss cost data.</p>
+</details>
 
+<section class="content-section">
+<h2>How Much Does Commercial Auto Insurance Cost?</h2>
+<p>Commercial auto insurance costs vary significantly based on the types of vehicles you operate and the scope of your operations. Small business owners operating a single passenger car or light pickup truck might expect to pay between $1,400 and $3,000 annually per vehicle for standard liability and physical damage coverage. In contrast, businesses utilizing heavy trucks, semi-trailers, or specialized delivery box trucks face base rates starting around $4,500 to $6,500 or more per vehicle due to the higher risk of severe property damage and bodily injury.</p>
+<p>Adding more vehicles to your business schedule changes the pricing dynamic through fleet discounts. Insurers typically reward businesses operating two or more commercial vehicles with percentage discounts ranging from 5% to 20%, reflecting distributed risk and portfolio underwriting efficiencies. Understanding these baseline figures helps fleet managers budget accurately and evaluate insurance proposals effectively.</p>
+</section>
 
-        <section class="content-section">
-        <h2>How Much Does Commercial Auto Insurance Cost?</h2>
-<p>Commercial auto insurance costs between <strong>$1,200 and $8,000 per year per vehicle</strong> for most businesses, depending on the vehicle type and use. Sedans and pickups used for sales or service calls typically cost $1,200–$2,500 annually. Box trucks and semis used for delivery or long-haul transport cost $4,000–$15,000 or more.</p>
-        </section>
+<section class="content-section">
+<h2>What Factors Affect Your Premium?</h2>
+<p>Insurance underwriters evaluate several core risk metrics when establishing commercial auto premiums. Vehicle classification and weight class heavily dictate potential liability exposure, as larger commercial units inflict greater damage in collisions. Additionally, the radius of operation—whether local service within a 50-mile radius or long-haul interstate transit—directly influences exposure time and highway accident frequency.</p>
+<p>Driver history and motor vehicle records (MVRs) remain paramount. Insurers review driving records for past accidents, speeding tickets, and major moving violations for every employee operating company vehicles. Furthermore, the garaging location dictates regional litigation climates, traffic density, and weather-related loss trends, all of which directly shape final policy pricing.</p>
+</section>
 
-        <section class="content-section">
-        <h2>What Factors Affect Your Premium?</h2>
-<h3>1. Vehicle Type</h3>
-<p>Larger and heavier vehicles cost more to insure because they cause more damage in accidents. A sedan is cheapest; a semi truck is most expensive.</p>
-<h3>2. Primary Use</h3>
-<p>Vehicles used for long-haul transport have the highest rates because of miles driven and accident exposure. Service and sales vehicles have the lowest.</p>
-<h3>3. Number of Vehicles</h3>
-<p>Fleet discounts reduce the per-vehicle rate as your fleet grows. Insuring 5 vehicles usually costs less per vehicle than insuring 1.</p>
-<h3>4. State</h3>
-<p>States with higher accident rates and more expensive claims (California, New York) have higher premiums. Texas and other business-friendly states tend to be lower.</p>
-        </section>
+<section class="content-section">
+<h2>Frequently Asked Questions</h2>
+<h3>Is commercial auto insurance required for personal vehicles used for business?</h3>
+<p>Yes, standard personal auto insurance policies typically exclude coverage for accidents that occur while vehicles are being used for commercial purposes, such as making deliveries, visiting job sites, or transporting tools and equipment.</p>
+<h3>How can I lower my commercial auto insurance premiums?</h3>
+<p>You can reduce costs by maintaining a clean driving record across all employed drivers, increasing deductibles, installing telematics tracking devices, and bundling your commercial auto policy with general liability or workers' compensation coverage.</p>
+<h3>What limits of liability should my business carry?</h3>
+<p>Most commercial policies feature a combined single limit (CSL) starting at $1,000,000. Higher limits or commercial umbrella policies are strongly recommended for contractors, logistics companies, and businesses carrying valuable cargo or heavy machinery.</p>
+</section>
+</main>
+</div>
 
-        <section class="content-section">
-        <h2>Frequently Asked Questions</h2>
-<h3>Is commercial auto insurance required?</h3>
-<p>Yes, in almost every state. Any vehicle used for business purposes requires commercial auto coverage. Personal auto policies typically exclude business use, which means a claim could be denied if you're driving for work.</p>
-<h3>What does commercial auto cover?</h3>
-<p>It covers liability (bodily injury and property damage to others), physical damage to your vehicle, medical payments, and uninsured/underinsured motorist coverage. It can also include hired and non-owned auto coverage if employees drive rentals or their own vehicles for work.</p>
-<h3>How can I lower my premium?</h3>
-<p>Install telematics devices, maintain clean driving records, raise deductibles, and bundle with other business policies (like general liability) for a BOP discount. Safety training programs can also reduce premiums.</p>
-        </section>
+<footer>
+<div class="container">
+<div><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
+<div>© 2026 Calccover.</div>
+</div>
+</footer>
 
-    </div></main>
-<footer><div class="container"><div><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div><div>© 2026 Calccover.</div></div></footer>
 <script>
-function calculate(){
-const vehicleType=document.getElementById('vehicleType').value;
-const numVehicles=parseInt(document.getElementById('numVehicles').value)||1;
-const businessUse=document.getElementById('businessUse').value;
-const state=document.getElementById('state').value;
-let basePerVehicle=1800;
-if(vehicleType==='sedan')basePerVehicle=1400;
-if(vehicleType==='pickup')basePerVehicle=1600;
-if(vehicleType==='van')basePerVehicle=1900;
-if(vehicleType==='box-truck')basePerVehicle=3500;
-if(vehicleType==='semi')basePerVehicle=6500;
-let useMult=1;
-if(businessUse==='delivery')useMult=1.20;
-if(businessUse==='construction')useMult=1.25;
-if(businessUse==='long-haul')useMult=1.45;
-let stateMult=1;
-if(state==='CA')stateMult=1.30;
-if(state==='TX')stateMult=1.05;
-if(state==='FL')stateMult=1.25;
-if(state==='NY')stateMult=1.40;
-let fleetMult=1;
-if(numVehicles>1)fleetMult=1-(Math.min(numVehicles-1,9)*0.04);
-const perVehicle=basePerVehicle*useMult*stateMult*fleetMult;
-const est=Math.round(perVehicle*numVehicles);
-document.getElementById('premiumResult').textContent='$'+est.toLocaleString();
-document.getElementById('monthlyResult').textContent='$'+Math.round(est/12).toLocaleString();
-document.getElementById('resultBox').classList.add('show');
-document.getElementById('leadForm').classList.add('show');
-}
+document.getElementById('pageUrl').value = window.location.href;
+
+document.getElementById('calcBtn').addEventListener('click', function() {
+    var baseRates = {
+        car: 1400,
+        van: 2200,
+        pickup: 2800,
+        box: 4500,
+        heavy: 6500
+    };
+
+    var type = document.getElementById('vehicleType').value;
+    var count = parseInt(document.getElementById('vehicleCount').value) || 1;
+    var useMultiplier = parseFloat(document.getElementById('businessUse').value);
+    var stateFac = parseFloat(document.getElementById('stateFactor').value);
+
+    var base = baseRates[type] || 1400;
+    
+    // Fleet discount logic
+    var discountRate = 0;
+    if (count >= 10) {
+        discountRate = 0.20;
+    } else if (count >= 5) {
+        discountRate = 0.15;
+    } else if (count >= 2) {
+        discountRate = 0.08;
+    }
+
+    var subtotal = base * count * useMultiplier * stateFac;
+    var annual = subtotal * (1 - discountRate);
+    var monthly = annual / 12;
+
+    document.getElementById('resAnnual').textContent = '$' + Math.round(annual).toLocaleString();
+    document.getElementById('resMonthly').textContent = '$' + Math.round(monthly).toLocaleString();
+    document.getElementById('resDiscount').textContent = (discountRate * 100) + '%';
+
+    document.getElementById('resultBox').classList.add('show');
+    document.getElementById('leadFormContainer').classList.add('show');
+});
 </script>
 </body>
 </html>

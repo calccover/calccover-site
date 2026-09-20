@@ -14,7 +14,8 @@
     "description": "Estimate your commercial auto insurance cost. Free calculator for business vehicles and fleets. Instant premium estimate.",
     "inputs": "Vehicle type, number of vehicles, business use, state",
     "formula": "Base rate per vehicle $1400-$6500 by vehicle type. Use multiplier and state factor applied. Fleet discounts for 2+ vehicles.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-20T09:08:57.643223Z"
   },
   {
     "slug": "commercial-umbrella-insurance-calculator",
