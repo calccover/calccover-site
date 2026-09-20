@@ -1,0 +1,28 @@
+name: Patch Forms to Web3Forms
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Patch forms
+        run: python scripts/patch_forms_web3.py
+        continue-on-error: true
+      - name: Commit
+        run: |
+          git config user.name "Calccover Bot"
+          git config user.email "bot@calccover.com"
+          if [[ -n $(git status --porcelain) ]]; then
+            git add .
+            git commit -m "Switch all forms to Web3Forms"
+            git push
+          fi
