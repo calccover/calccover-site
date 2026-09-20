@@ -1,11 +1,12 @@
 [
-    {
+  {
     "slug": "general-liability-insurance-calculator",
     "name": "General Liability Insurance Calculator",
     "description": "Estimate your general liability insurance cost. Free calculator for small business owners, contractors, and service providers.",
     "inputs": "Industry, annual revenue, number of employees, primary state",
     "formula": "Base rate $600-$2200 by industry. Revenue multiplier for revenue over $100K. Employee factor. State multiplier (CA 1.25, TX 1.10, FL 1.20, NY 1.30).",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-20T13:45:28.341242Z"
   },
   {
     "slug": "commercial-truck-insurance-calculator",
