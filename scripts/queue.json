@@ -1,4 +1,12 @@
 [
+    {
+    "slug": "contractor-insurance-calculator",
+    "name": "Contractor Insurance Calculator",
+    "description": "Estimate your contractor insurance premium in seconds. Built for general contractors, electricians, plumbers, roofers, and other trades.",
+    "inputs": "Trade type, annual revenue, number of employees, subcontractor usage, primary state",
+    "formula": "Base rate $1600-$4500 by trade type. Revenue multiplier for revenue over $200K. Employee factor per additional employee. Subcontractor multiplier 1.25 if yes. State multiplier (CA 1.30, TX 1.05, FL 1.15, NY 1.35).",
+    "status": "pending"
+  },
   {
     "slug": "restaurant-insurance-calculator",
     "name": "Restaurant Insurance Calculator",
