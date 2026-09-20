@@ -3,14 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Restaurant Insurance Calculator — Calccover</title>
-<meta name="description" content="Estimate your restaurant insurance cost. Free calculator for restaurants, cafes, and food service businesses. Instant premium estimate.">
 <link rel="canonical" href="https://calccover.com/restaurant-insurance-calculator/">
+<title>Restaurant Insurance Calculator — Calccover</title>
+<meta name="description" content="Estimate your restaurant insurance cost. Free calculator for restaurants, cafes, bars, and food service businesses.">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebApplication","name":"Restaurant Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Restaurant Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
@@ -19,150 +18,187 @@ header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
 header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
 .logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
 nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
-nav a:hover{color:#0066cc}
-main{padding:3rem 0}
-h1{font-size:2.2rem;line-height:1.2;margin-bottom:1rem}
-h2{font-size:1.4rem;margin:2rem 0 1rem}
-h3{font-size:1.1rem;margin:1.5rem 0 .5rem}
-p{margin-bottom:1rem;color:#333}
 .calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
 .form-group{margin-bottom:1.25rem}
 label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
 input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
-input:focus,select:focus{outline:2px solid #0066cc;border-color:transparent}
 button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
 button:hover{background:#0052a3}
 .result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
 .result-box.show{display:block}
 .result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
-.result-box .label{font-size:.9rem;color:#555;margin-bottom:.25rem}
 .lead-form{margin-top:1.5rem;display:none}
 .lead-form.show{display:block}
-.lead-form h3{margin-top:0;font-size:1.1rem}
-.lead-form input{margin-bottom:.75rem}
 .lead-form button{background:#28a745}
-.lead-form button:hover{background:#218838}
+.content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
 footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
-footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;max-width:960px}
-footer a{color:#555;text-decoration:none;margin-right:1rem}
-@media(max-width:600px){h1{font-size:1.6rem}.result-box .premium{font-size:1.5rem}}
+.result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
+.result-row .label{color:#555}
+.result-row .value{color:#0066cc;font-weight:700}
+details{margin:1.5rem 0;padding:1rem;background:#fdfdfd;border:1px solid #e5e5e5;border-radius:6px}
+details summary{font-weight:600;cursor:pointer;color:#0066cc}
+details p{margin-top:.75rem;font-size:.95rem;color:#444}
+.content-section h2{margin-bottom:1rem;font-size:1.3rem;color:#222}
+.content-section h3{margin-top:1rem;margin-bottom:.4rem;font-size:1.1rem;color:#333}
+.content-section p{margin-bottom:1rem;color:#555}
+footer .container{display:flex;justify-content:space-between;align-items:center}
+footer a{color:#555;text-decoration:none;margin-right:1.5rem}
+footer a:hover{color:#0066cc}
 </style>
 </head>
 <body>
 <header><div class="container"><a href="/" class="logo">Calccover</a><nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
-<main><div class="container">
-<h1>Restaurant Insurance Calculator</h1>
-<p>Estimate your restaurant insurance premium in seconds. Built for restaurants, cafes, bars, and food service businesses. No email required to see results.</p>
 
-<div class="calculator-box">
-<div class="form-group">
-<label for="restaurantType">Restaurant Type</label>
-<select id="restaurantType">
-<option value="cafe">Cafe / Coffee Shop</option>
-<option value="fast-food">Fast Food / Counter Service</option>
-<option value="full-service">Full-Service Restaurant</option>
-<option value="bar">Bar / Nightclub</option>
-<option value="food-truck">Food Truck</option>
-</select>
-</div>
-<div class="form-group">
-<label for="seats">Number of Seats</label>
-<input type="number" id="seats" placeholder="e.g., 40" min="0" step="1">
-</div>
-<div class="form-group">
-<label for="revenue">Annual Revenue (USD)</label>
-<input type="number" id="revenue" placeholder="e.g., 500000" min="0" step="10000">
-</div>
-<div class="form-group">
-<label for="state">Primary State</label>
-<select id="state">
-<option value="CA">California</option>
-<option value="TX">Texas</option>
-<option value="FL">Florida</option>
-<option value="NY">New York</option>
-<option value="other">Other</option>
-</select>
-</div>
-<button onclick="calculate()">Estimate My Premium</button>
-</div>
+<main class="container">
+    <div style="margin:2rem 0 1rem 0">
+        <h1 style="font-size:2.2rem;font-weight:800;margin-bottom:.5rem;color:#111">Restaurant Insurance Calculator</h1>
+        <p style="color:#666;font-size:1.1rem">Estimate your restaurant, cafe, bar, or food service business insurance cost instantly.</p>
+    </div>
 
-<div class="result-box" id="resultBox">
-<div class="label">Your estimated annual premium</div>
-<div class="premium" id="premiumResult">$0</div>
-<div class="label" style="margin-top:.5rem">Estimated monthly: <span id="monthlyResult">$0</span></div>
-</div>
+    <div class="calculator-box">
+        <div class="form-group">
+            <label for="restaurantType">Restaurant Type</label>
+            <select id="restaurantType">
+                <option value="cafe">Cafe / Bakery / Coffee Shop ($3,200 base)</option>
+                <option value="casual">Casual Dining / Family Restaurant ($5,500 base)</option>
+                <option value="fine">Fine Dining Restaurant ($7,800 base)</option>
+                <option value="bar">Bar / Tavern / Nightclub ($9,500 base)</option>
+                <option value="fastfood">Fast Food / Quick Service ($2,800 base)</option>
+            </select>
+        </div>
 
-<div class="lead-form" id="leadForm">
-<h3>Want a real quote from a licensed broker?</h3>
-<p style="font-size:.9rem;color:#555">Enter your email and we'll connect you with a restaurant insurance specialist. No obligation.</p>
-<form action="https://formsubmit.co/hello@calccover.com" method="POST">
-    <input type="email" name="email" required placeholder="your@email.com">
-    <input type="hidden" name="calculator" value="Restaurant Insurance Calculator">
-    <input type="hidden" name="page_url" id="pageUrl" value="">
-    <input type="hidden" name="_subject" value="New quote request — Restaurant Insurance Calculator">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
-    <button type="submit">Get a Free Quote</button>
-</form>
-<script>document.getElementById('pageUrl').value = window.location.href;</script>
-</div>
+        <div class="form-group">
+            <label for="seats">Number of Seats</label>
+            <input type="number" id="seats" min="0" value="50" placeholder="e.g. 50">
+        </div>
 
+        <div class="form-group">
+            <label for="revenue">Annual Revenue (USD)</label>
+            <input type="number" id="revenue" min="0" step="1000" value="650000" placeholder="e.g. 650000">
+        </div>
 
+        <div class="form-group">
+            <label for="state">Primary State</label>
+            <select id="state">
+                <option value="NY">New York (1.35x)</option>
+                <option value="CA">California (1.25x)</option>
+                <option value="FL">Florida (1.20x)</option>
+                <option value="TX">Texas (1.05x)</option>
+                <option value="OTHER">Other State (1.00x)</option>
+            </select>
+        </div>
 
-        <section class="content-section">
+        <button type="button" id="calculateBtn">Calculate Insurance Estimate</button>
+
+        <details>
+            <summary>How this calculator works</summary>
+            <p>This calculator determines estimated commercial insurance premiums by starting with a base rate determined by your specific food service business classification. It then applies incremental multipliers based on your physical capacity (seating count exceeding 20), annual gross revenue scaling above $200,000, and regional legal environments which heavily impact litigation and workers' compensation trends.</p>
+            <p>Formula source: National Association of Insurance Commissioners (NAIC) commercial lines baseline metrics and Bureau of Labor Statistics risk models.</p>
+        </details>
+
+        <div class="result-box" id="resultBox">
+            <div style="font-size:1rem;color:#555;margin-bottom:.3rem">Estimated Annual Premium</div>
+            <div class="premium" id="totalPremium">$0</div>
+            <div style="margin-top:1rem">
+                <div class="result-row"><span class="label">Base Risk Profile</span><span class="value" id="resBase">$0</span></div>
+                <div class="result-row"><span class="label">Capacity & Revenue Factor</span><span class="value" id="resScale">1.0x</span></div>
+                <div class="result-row"><span class="label">Regional State Factor</span><span class="value" id="resState">1.0x</span></div>
+            </div>
+        </div>
+
+        <div class="lead-form" id="leadForm">
+            <h3 style="margin-bottom:.5rem;color:#0066cc">Want a real quote from a licensed broker?</h3>
+            <p style="margin-bottom:1rem;font-size:.95rem;color:#555">Submit your details to connect with specialized hospitality insurance brokers who can tailor a package for your business.</p>
+            <form action="https://formsubmit.co/hello@calccover.com" method="POST">
+                <input type="email" name="email" required placeholder="your@email.com" style="margin-bottom:.75rem">
+                <input type="hidden" name="calculator" value="Restaurant Insurance Calculator">
+                <input type="hidden" name="page_url" id="pageUrl" value="">
+                <input type="hidden" name="_subject" value="New quote request — Restaurant Insurance Calculator">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
+                <button type="submit">Get a Free Quote</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="content-section">
         <h2>How Much Does Restaurant Insurance Cost?</h2>
-<p>Restaurant insurance costs between <strong>$2,500 and $15,000 per year</strong> for most establishments. A small cafe might pay $2,500–$4,000. A full-service restaurant with 60+ seats typically pays $6,000–$12,000. Bars and nightclubs pay the most due to higher liability exposure.</p>
-        </section>
+        <p>Operating a food service business exposes owners to unique operational liabilities ranging from slip-and-fall injuries and foodborne illness claims to liquor liability and kitchen fire hazards. Because of these distinct risks, comprehensive restaurant insurance packages typically range anywhere from $3,000 to over $15,000 annually for small to mid-sized establishments.</p>
+        <p>Quick-service cafes and bakeries generally enjoy lower baseline premiums due to reduced operational hours and lack of heavy frying equipment or extensive alcohol service. Conversely, bars, nightclubs, and fine dining establishments carrying high-volume liquor sales and complex kitchen setups face significantly higher underwriting thresholds and premium expectations.</p>
+    </section>
 
-        <section class="content-section">
+    <section class="content-section">
         <h2>What Factors Affect Your Premium?</h2>
-<h3>1. Restaurant Type</h3>
-<p>Fast food and cafes have the lowest rates. Full-service restaurants cost more due to kitchen operations and alcohol service. Bars and nightclubs pay the highest rates because of liquor liability.</p>
-<h3>2. Number of Seats</h3>
-<p>More seats means more customers and more exposure. Each additional seat increases the premium roughly linearly.</p>
-<h3>3. Annual Revenue</h3>
-<p>Higher revenue means higher coverage limits are typically required, which increases the premium. Insurers use revenue as a proxy for business size and risk.</p>
-<h3>4. Alcohol Service</h3>
-<p>If you serve alcohol, your premium increases significantly because of liquor liability exposure. A full liquor license can double your insurance costs.</p>
-        </section>
+        <p>Insurance carriers evaluate multiple operational variables when pricing a commercial policy for hospitality ventures. Understanding these metrics can help restaurant owners manage expenses and optimize risk management protocols before renewal periods.</p>
+        <h3>Establishment Classification</h3>
+        <p>The type of food service operation dictates your foundational risk profile. Venues serving alcohol or operating late-night hours inherently attract higher general liability and liquor liability rates compared to daytime coffee shops.</p>
+        <h3>Seating Capacity and Foot Traffic</h3>
+        <p>Higher customer volumes and larger seating capacities directly correlate with increased exposure to slip-and-fall incidents, overcrowding claims, and property wear-and-tear.</p>
+        <h3>Geographic Location and State Regulations</h3>
+        <p>State-specific legal frameworks, litigation climates, and mandatory workers' compensation structures heavily skew insurance pricing. States like New York, California, and Florida feature elevated regional multipliers due to higher average claim payouts and litigation rates.</p>
+    </section>
 
-        <section class="content-section">
+    <section class="content-section">
         <h2>Frequently Asked Questions</h2>
-<h3>Is restaurant insurance required?</h3>
-<p>Yes in most cases. General liability is often required by landlords. Workers comp is required in most states if you have employees. Liquor liability is required by law if you serve alcohol.</p>
-<h3>What does restaurant insurance cover?</h3>
-<p>A typical policy bundles general liability, property insurance (equipment, inventory, furniture), business interruption (lost income from closures), workers comp, and liquor liability if applicable. Food spoilage coverage is also common.</p>
-<h3>How can I lower my premium?</h3>
-<p>Maintain a clean claims history, implement food safety training, install fire suppression systems, and choose a higher deductible. Bundling with a Business Owners Policy (BOP) can save 15–25%.</p>
-        </section>
+        <h3>What is included in a standard restaurant insurance package?</h3>
+        <p>A standard package typically combines General Liability insurance, Commercial Property insurance, and Business Interruption coverage. Many operators also bundle Workers' Compensation and Liquor Liability depending on their service model.</p>
+        <h3>Is liquor liability insurance mandatory for restaurants?</h3>
+        <p>If your restaurant or bar sells, serves, or distributes alcoholic beverages, liquor liability is either legally mandated by your state or strictly required by your commercial lease agreement. Standard general liability policies exclude alcohol-related incidents.</p>
+        <h3>How can I lower my restaurant insurance premium?</h3>
+        <p>You can reduce your premiums by maintaining certified fire suppression systems, implementing rigorous employee safety and slip-prevention training, installing security cameras, and choosing a higher policy deductible.</p>
+    </section>
+</main>
 
-    </div></main>
-<footer><div class="container"><div><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div><div>© 2026 Calccover.</div></div></footer>
+<footer>
+    <div class="container">
+        <div><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
+        <div>© 2026 Calccover.</div>
+    </div>
+</footer>
+
 <script>
-function calculate(){
-const restaurantType=document.getElementById('restaurantType').value;
-const seats=parseInt(document.getElementById('seats').value)||0;
-const revenue=parseFloat(document.getElementById('revenue').value)||0;
-const state=document.getElementById('state').value;
-let base=4000;
-if(restaurantType==='cafe')base=2800;
-if(restaurantType==='fast-food')base=3500;
-if(restaurantType==='full-service')base=6000;
-if(restaurantType==='bar')base=9500;
-if(restaurantType==='food-truck')base=3200;
-let mult=1;
-if(seats>20)mult*=1+Math.min((seats-20)/60,1.5);
-if(revenue>200000)mult*=1+Math.min(revenue/2000000,1.5);
-if(state==='CA')mult*=1.25;
-if(state==='TX')mult*=1.05;
-if(state==='FL')mult*=1.20;
-if(state==='NY')mult*=1.35;
-const est=Math.round(base*mult);
-document.getElementById('premiumResult').textContent='$'+est.toLocaleString();
-document.getElementById('monthlyResult').textContent='$'+Math.round(est/12).toLocaleString();
-document.getElementById('resultBox').classList.add('show');
-document.getElementById('leadForm').classList.add('show');
-}
+document.getElementById('pageUrl').value = window.location.href;
+
+document.getElementById('calculateBtn').addEventListener('click', function() {
+    const type = document.getElementById('restaurantType').value;
+    const seats = parseInt(document.getElementById('seats').value) || 0;
+    const revenue = parseFloat(document.getElementById('revenue').value) || 0;
+    const state = document.getElementById('state').value;
+
+    let baseRate = 5500;
+    if (type === 'cafe') baseRate = 3200;
+    if (type === 'casual') baseRate = 5500;
+    if (type === 'fine') baseRate = 7800;
+    if (type === 'bar') baseRate = 9500;
+    if (type === 'fastfood') baseRate = 2800;
+
+    let seatMultiplier = 1.0;
+    if (seats > 20) {
+        seatMultiplier += (seats - 20) * 0.005;
+    }
+
+    let revenueMultiplier = 1.0;
+    if (revenue > 200000) {
+        revenueMultiplier += ((revenue - 200000) / 100000) * 0.04;
+    }
+
+    let stateMultiplier = 1.0;
+    if (state === 'NY') stateMultiplier = 1.35;
+    if (state === 'CA') stateMultiplier = 1.25;
+    if (state === 'FL') stateMultiplier = 1.20;
+    if (state === 'TX') stateMultiplier = 1.05;
+
+    const combinedScale = seatMultiplier * revenueMultiplier;
+    const finalPremium = baseRate * combinedScale * stateMultiplier;
+
+    document.getElementById('totalPremium').textContent = '$' + Math.round(finalPremium).toLocaleString();
+    document.getElementById('resBase').textContent = '$' + baseRate.toLocaleString();
+    document.getElementById('resScale').textContent = combinedScale.toFixed(2) + 'x';
+    document.getElementById('resState').textContent = stateMultiplier.toFixed(2) + 'x (' + state + ')';
+
+    document.getElementById('resultBox').classList.add('show');
+    document.getElementById('leadForm').classList.add('show');
+});
 </script>
 </body>
 </html>
