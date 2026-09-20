@@ -16,12 +16,16 @@ jobs:
           python-version: '3.11'
       - name: Patch pages
         run: python scripts/patch_broken_pages.py
+        continue-on-error: true
       - name: Commit and push
         run: |
           git config user.name "Calccover Bot"
           git config user.email "bot@calccover.com"
           if [[ -n $(git status --porcelain) ]]; then
             git add .
-            git commit -m "Fix broken JS and content-section wrappers"
+            git commit -m "Fix broken calculator pages"
             git push
+            echo "Committed"
+          else
+            echo "Nothing to commit"
           fi
