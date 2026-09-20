@@ -91,12 +91,15 @@ REQUIREMENTS:
 6. Include a `.lead-form` below the result box that appears when results show: heading "Want a real quote from a licensed broker?", short paragraph, and a working form with this exact structure:
 <form action="https://formsubmit.co/hello@calccover.com" method="POST">
     <input type="email" name="email" required placeholder="your@email.com">
-    <input type="hidden" name="_subject" value="New quote request from Calccover — {item['name']}">
+    <input type="hidden" name="calculator" value="{item['name']}">
+    <input type="hidden" name="page_url" id="pageUrl" value="">
+    <input type="hidden" name="_subject" value="New quote request — {item['name']}">
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
     <button type="submit">Get a Free Quote</button>
 </form>
-No JavaScript alert functions. The form posts directly to FormSubmit.
+<script>document.getElementById('pageUrl').value = window.location.href;</script>
+The {item['name']} will be replaced with each calculator's actual name during generation. No JavaScript alert functions.
 7. Include a collapsible `<details>` section immediately below the calculator (before content sections) titled "How this calculator works". Inside: 2-3 sentences explaining the formula in plain English, plus one line: "Formula source: [Source]."
 8. Include 3 content sections, each wrapped in `<section class="content-section">`: "How Much Does [X] Cost?", "What Factors Affect Your Premium?", and "Frequently Asked Questions" with 3 Q&As each. Each section 100-200 words with real commercial insurance industry detail.
 9. For FAQ, use `<h3>Question</h3><p>Answer</p>` for each Q&A. Never put multiple Q&As in one `<p>`. Never use "Q:" or "A:" prefixes.
