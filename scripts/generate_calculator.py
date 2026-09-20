@@ -18,12 +18,12 @@ if not API_KEY:
     sys.exit(1)
 
 MODEL_CANDIDATES = [
-    "gemini-3.5-flash-lite",
-    "gemini-3.1-flash-lite",
-    "gemini-2.5-flash-lite",
     "gemini-3.5-flash",
     "gemini-3.8-flash",
     "gemini-2.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite",
+    "gemini-2.5-flash-lite",
 ]
 
 BASE_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
@@ -86,7 +86,12 @@ REQUIREMENTS:
    - `footer{{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}}`
    Do NOT use CSS custom properties. Do NOT use dark theme. The primary action button MUST be #0066cc blue.
 3. Header: `<header><div class="container"><a href="/" class="logo">Calccover</a><nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>`
-4. Include a `.calculator-box` with labeled inputs relevant to commercial insurance (industry type, annual revenue, number of employees, state, coverage limits, claims history where applicable). All monetary values are in USD. No unit toggle is needed — insurance is a financial product, not a physical one.
+4. Include a `.calculator-box` with labeled inputs relevant to commercial insurance (industry type, annual revenue, number of employees, state, coverage limits, claims history where applicable). All monetary values are in USD. No unit toggle is needed — insurance is a financial product, not a physical one. STRICT RULES — do not violate:
+- Do NOT include internal calculation factors, base rates, multipliers, or any numeric annotation in the visible label or option text. For example, write "Retail" not "Retail (3,200 base)". Write "California" not "California (1.35X)".
+- Do NOT prefill any input field. No value="..." attribute on number, text, or email inputs.
+- Do NOT use the selected attribute on any <option>.
+- All option text must be plain English names only.
+- Factors and multipliers belong ONLY inside the JavaScript function, never in the HTML labels.
 5. Include a `.result-box` (hidden by default, shows on Calculate) with result rows. Each row uses `<div class="result-row"><span class="label">...</span><span class="value">...</span></div>` inside the result box. Add CSS: `.result-row{{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}}` and `.result-row .label{{color:#555}}` and `.result-row .value{{color:#0066cc;font-weight:700}}`.
 6. Include a `.lead-form` below the result box that appears when results show: heading "Want a real quote from a licensed broker?", short paragraph, and a working form with this exact structure:
 <form action="https://formsubmit.co/hello@calccover.com" method="POST">
@@ -100,7 +105,7 @@ REQUIREMENTS:
 </form>
 <script>document.getElementById('pageUrl').value = window.location.href;</script>
 The {item['name']} will be replaced with each calculator's actual name during generation. No JavaScript alert functions.
-7. Include a collapsible `<details>` section immediately below the calculator (before content sections) titled "How this calculator works". Inside: 2-3 sentences explaining the formula in plain English, plus one line: "Formula source: [Source]."
+7. Include a collapsible `<details>` section immediately below the calculator (before content sections) titled "How this calculator works". Inside: 2-3 sentences explaining the formula in plain English, plus one line: "Formula source: [Source]." This <details> section is MANDATORY. Do not skip it. It must appear immediately after the lead form, before the first content H2.
 8. Include 3 content sections, each wrapped in `<section class="content-section">`: "How Much Does [X] Cost?", "What Factors Affect Your Premium?", and "Frequently Asked Questions" with 3 Q&As each. Each section 100-200 words with real commercial insurance industry detail. Every content section MUST be wrapped in <section class="content-section">. The CSS MUST include .content-section{{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}}. Do NOT skip this wrapper.
 9. For FAQ, use `<h3>Question</h3><p>Answer</p>` for each Q&A. Never put multiple Q&As in one `<p>`. Never use "Q:" or "A:" prefixes.
 10. Include footer: `<footer><div class="container"><div><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div><div>© 2026 Calccover.</div></div></footer>`
