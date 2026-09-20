@@ -57,7 +57,16 @@ footer a{color:#555;text-decoration:none;margin-right:1rem}
 <button onclick="calculate()">Estimate My Premium</button>
 </div>
 <div class="result-box" id="resultBox"><div class="label">Your estimated annual premium</div><div class="premium" id="premiumResult">$0</div><div class="label" style="margin-top:.5rem">Estimated monthly: <span id="monthlyResult">$0</span></div></div>
-<div class="lead-form" id="leadForm"><h3>Want a real quote from a licensed broker?</h3><p style="font-size:.9rem;color:#555">Enter your email and we'll connect you with a cyber insurance specialist.</p><input type="email" id="leadEmail" placeholder="your@email.com"><button onclick="submitLead()">Get a Free Quote</button></div>
+<div class="lead-form" id="leadForm"><h3>Want a real quote from a licensed broker?</h3><p style="font-size:.9rem;color:#555">Enter your email and we'll connect you with a cyber insurance specialist.</p><form action="https://formsubmit.co/hello@calccover.com" method="POST">
+    <input type="email" name="email" required placeholder="your@email.com">
+    <input type="hidden" name="calculator" value="Cyber Liability Insurance Calculator">
+    <input type="hidden" name="page_url" id="pageUrl" value="">
+    <input type="hidden" name="_subject" value="New quote request — Cyber Liability Insurance Calculator">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
+    <button type="submit">Get a Free Quote</button>
+</form>
+<script>document.getElementById('pageUrl').value = window.location.href;</script></div>
 <h2>How Much Does Cyber Liability Insurance Cost?</h2>
 <p>Cyber liability insurance costs between <strong>$1,000 and $15,000 per year</strong> for most small to mid-size businesses. A small professional services firm with minimal data might pay $1,000–$2,500. A healthcare or financial services company with 100,000+ customer records can pay $10,000–$50,000 or more.</p>
 <h2>What Factors Affect Your Premium?</h2>
@@ -104,7 +113,6 @@ document.getElementById('monthlyResult').textContent='$'+Math.round(est/12).toLo
 document.getElementById('resultBox').classList.add('show');
 document.getElementById('leadForm').classList.add('show');
 }
-function submitLead(){const email=document.getElementById('leadEmail').value;if(email&&email.includes('@')){alert('Thanks! A broker will contact you at '+email+' shortly.');}else{alert('Please enter a valid email address.');}}
 </script>
 </body>
 </html>

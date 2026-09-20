@@ -57,7 +57,16 @@ footer a{color:#555;text-decoration:none;margin-right:1rem}
 <button onclick="calculate()">Estimate My Premium</button>
 </div>
 <div class="result-box" id="resultBox"><div class="label">Your estimated annual premium</div><div class="premium" id="premiumResult">$0</div><div class="label" style="margin-top:.5rem">Estimated monthly: <span id="monthlyResult">$0</span></div></div>
-<div class="lead-form" id="leadForm"><h3>Want a real quote from a licensed broker?</h3><p style="font-size:.9rem;color:#555">Enter your email and we'll connect you with a BOP specialist.</p><input type="email" id="leadEmail" placeholder="your@email.com"><button onclick="submitLead()">Get a Free Quote</button></div>
+<div class="lead-form" id="leadForm"><h3>Want a real quote from a licensed broker?</h3><p style="font-size:.9rem;color:#555">Enter your email and we'll connect you with a BOP specialist.</p><form action="https://formsubmit.co/hello@calccover.com" method="POST">
+    <input type="email" name="email" required placeholder="your@email.com">
+    <input type="hidden" name="calculator" value="Business Owners Policy (BOP) Calculator">
+    <input type="hidden" name="page_url" id="pageUrl" value="">
+    <input type="hidden" name="_subject" value="New quote request — Business Owners Policy (BOP) Calculator">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
+    <button type="submit">Get a Free Quote</button>
+</form>
+<script>document.getElementById('pageUrl').value = window.location.href;</script></div>
 <h2>How Much Does a Business Owners Policy Cost?</h2>
 <p>A Business Owners Policy costs between <strong>$500 and $6,000 per year</strong> for most small businesses. A home-based office might pay $500–$1,200. A restaurant with $500K revenue and $250K in property might pay $3,500–$6,000.</p>
 <h2>What Does a BOP Cover?</h2>
@@ -101,7 +110,6 @@ document.getElementById('monthlyResult').textContent='$'+Math.round(est/12).toLo
 document.getElementById('resultBox').classList.add('show');
 document.getElementById('leadForm').classList.add('show');
 }
-function submitLead(){const e=document.getElementById('leadEmail').value;if(e&&e.includes('@')){alert('Thanks! A broker will contact you at '+e+' shortly.');}else{alert('Please enter a valid email address.');}}
 </script>
 </body>
 </html>

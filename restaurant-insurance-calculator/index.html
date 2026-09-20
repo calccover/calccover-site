@@ -95,8 +95,16 @@ footer a{color:#555;text-decoration:none;margin-right:1rem}
 <div class="lead-form" id="leadForm">
 <h3>Want a real quote from a licensed broker?</h3>
 <p style="font-size:.9rem;color:#555">Enter your email and we'll connect you with a restaurant insurance specialist. No obligation.</p>
-<input type="email" id="leadEmail" placeholder="your@email.com">
-<button onclick="submitLead()">Get a Free Quote</button>
+<form action="https://formsubmit.co/hello@calccover.com" method="POST">
+    <input type="email" name="email" required placeholder="your@email.com">
+    <input type="hidden" name="calculator" value="Restaurant Insurance Calculator">
+    <input type="hidden" name="page_url" id="pageUrl" value="">
+    <input type="hidden" name="_subject" value="New quote request — Restaurant Insurance Calculator">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
+    <button type="submit">Get a Free Quote</button>
+</form>
+<script>document.getElementById('pageUrl').value = window.location.href;</script>
 </div>
 
 <h2>How Much Does Restaurant Insurance Cost?</h2>
@@ -146,9 +154,6 @@ document.getElementById('monthlyResult').textContent='$'+Math.round(est/12).toLo
 document.getElementById('resultBox').classList.add('show');
 document.getElementById('leadForm').classList.add('show');
 }
-function submitLead(){
-const email=document.getElementById('leadEmail').value;
-if(email&&email.includes('@')){alert('Thanks! A broker will contact you at '+email+' shortly.');}
 else{alert('Please enter a valid email address.');}
 }
 </script>
