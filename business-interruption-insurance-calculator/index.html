@@ -83,17 +83,20 @@ details p{margin-top:.75rem;font-size:.95rem;color:#444}
 <button type="button" id="calcBtn">Calculate Coverage & Premium</button>
 
 <div class="result-box" id="resultBox">
-<div class="result-row"><span class="label">Total Coverage Limit Needed</span><span class="value" id="resLimit">$0</span></div>
+<div class="result-row"><span class="label">Recommended Coverage Limit</span><span class="value" id="resLimit">$0</span></div>
 <div class="result-row"><span class="label">Estimated Annual Premium</span><span class="value premium" id="resPremium">$0</span></div>
+<div class="result-row"><span class="label">Estimated Monthly Premium</span><span class="value" id="resMonthly">$0</span></div>
+</div>
+</div>
 <div class="lead-form" id="leadForm">
 <h3 style="margin-top:1rem;font-size:1.1rem;color:#0066cc;">Want a real quote from a licensed broker?</h3>
 <p style="margin:.5rem 0 1rem 0;font-size:.9rem;color:#555;">Submit your details below to receive competitive quotes tailored to your exact business specifications.</p>
 <form action="https://api.web3forms.com/submit" method="POST">
     <input type="hidden" name="access_key" value="7ddf27ee-45e4-4fe4-afd3-5b802ece6846">
     <input type="email" name="email" required placeholder="your@email.com">
-    <input type="hidden" name="calculator" value="Commercial Auto Insurance Calculator">
+    <input type="hidden" name="calculator" value="Business Interruption Insurance Calculator">
     <input type="hidden" name="page_url" id="pageUrl" value="">
-    <input type="hidden" name="subject" value="New quote request — Commercial Auto Insurance Calculator">
+    <input type="hidden" name="subject" value="New quote request — Business Interruption Insurance Calculator">
     <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
     <button type="submit">Get a Free Quote</button>
 </form>
@@ -153,7 +156,8 @@ document.getElementById('calcBtn').addEventListener('click', function() {
 
     document.getElementById('resLimit').textContent = '$' + coverageLimit.toLocaleString('en-US', {maximumFractionDigits: 0});
     document.getElementById('resPremium').textContent = '$' + estimatedPremium.toLocaleString('en-US', {maximumFractionDigits: 0});
-
+    document.getElementById('resMonthly').textContent = '$' + Math.round(estimatedPremium / 12).toLocaleString('en-US', {maximumFractionDigits: 0});
+     
     document.getElementById('resultBox').classList.add('show');
     document.getElementById('leadForm').classList.add('show');
 });
