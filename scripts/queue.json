@@ -32,7 +32,8 @@
     "description": "Estimate your commercial property insurance cost. Free calculator for building and contents coverage.",
     "inputs": "Property type, building value, contents value, construction type, primary state",
     "formula": "Rate per $100 of insured value $0.40-$0.85 by type. Construction multiplier. State multiplier.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-20T14:52:38.003825Z"
   },
   {
     "slug": "errors-omissions-insurance-calculator",
