@@ -41,7 +41,8 @@
     "description": "Estimate your Errors & Omissions (E&O) insurance cost. Free calculator for professionals and service firms.",
     "inputs": "Profession, annual revenue, number of employees, coverage limit, primary state",
     "formula": "Base rate $700-$1800 by profession. Revenue multiplier. Employee factor. Coverage limit multiplier. State multiplier.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-20T14:56:02.061338Z"
   },
   {
     "slug": "liquor-liability-insurance-calculator",

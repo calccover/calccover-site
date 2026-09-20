@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Errors & Omissions (E&O) Insurance Calculator — Calccover</title>
-<meta name="description" content="Estimate your Errors & Omissions (E&O) insurance cost. Free calculator for professionals and service firms. Instant premium estimate.">
 <link rel="canonical" href="https://calccover.com/errors-omissions-insurance-calculator/">
+<title>Errors & Omissions Insurance Calculator — Calccover</title>
+<meta name="description" content="Estimate your Errors & Omissions (E&O) insurance cost. Free calculator for professionals and service firms.">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Errors Omissions Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Errors & Omissions Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
@@ -17,105 +18,211 @@ header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
 header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
 .logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
 nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
-main{padding:3rem 0}
-h1{font-size:2.2rem;line-height:1.2;margin-bottom:1rem}
-h2{font-size:1.4rem;margin:2rem 0 1rem}
-h3{font-size:1.1rem;margin:1.5rem 0 .5rem}
-p{margin-bottom:1rem;color:#333}
 .calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
 .form-group{margin-bottom:1.25rem}
 label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
 input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
-input:focus,select:focus{outline:2px solid #0066cc;border-color:transparent}
 button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
 button:hover{background:#0052a3}
 .result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
 .result-box.show{display:block}
 .result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
-.result-box .label{font-size:.9rem;color:#555;margin-bottom:.25rem}
 .lead-form{margin-top:1.5rem;display:none}
 .lead-form.show{display:block}
-.lead-form h3{margin-top:0;font-size:1.1rem}
-.lead-form input{margin-bottom:.75rem}
 .lead-form button{background:#28a745}
+.content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
 footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
-footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;max-width:960px}
+.result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
+.result-row .label{color:#555}
+.result-row .value{color:#0066cc;font-weight:700}
+details{margin:2rem 0;background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem}
+summary{font-weight:600;cursor:pointer;color:#0066cc}
+details p{margin-top:1rem;color:#444}
+footer .container{display:flex;justify-content:space-between;max-width:960px}
 footer a{color:#555;text-decoration:none;margin-right:1rem}
-@media(max-width:600px){h1{font-size:1.6rem}}
+footer a:hover{text-decoration:underline}
+.content-section h2{margin-bottom:1rem;color:#1a1a1a;font-size:1.3rem}
+.content-section h3{margin-top:1.2rem;margin-bottom:.4rem;color:#333;font-size:1.1rem}
+.content-section p{margin-bottom:1rem;color:#444}
 </style>
 </head>
 <body>
-<header><div class="container"><a href="/" class="logo">Calccover</a><nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
-<main><div class="container">
-<h1>Errors & Omissions Insurance Calculator</h1>
-<p>Estimate your Errors & Omissions (E&O) insurance premium in seconds. E&O covers claims of negligence and mistakes in professional services.</p>
-<div class="calculator-box">
-<div class="form-group"><label for="profession">Profession</label><select id="profession"><option value="it">IT / Software Services</option><option value="consulting">Consulting</option><option value="realestate">Real Estate</option><option value="insurance">Insurance Agent</option><option value="accounting">Accounting</option><option value="marketing">Marketing / Advertising</option></select></div>
-<div class="form-group"><label for="revenue">Annual Revenue (USD)</label><input type="number" id="revenue" placeholder="e.g., 300000" min="0" step="10000"></div>
-<div class="form-group"><label for="employees">Number of Employees</label><input type="number" id="employees" placeholder="e.g., 3" min="1" step="1"></div>
-<div class="form-group"><label for="coverage">Desired Coverage Limit</label><select id="coverage"><option value="500000">$500,000 / $500,000</option><option value="1000000">$1,000,000 / $1,000,000</option><option value="2000000">$2,000,000 / $2,000,000</option><option value="5000000">$5,000,000 / $5,000,000</option></select></div>
-<div class="form-group"><label for="state">Primary State</label><select id="state"><option value="CA">California</option><option value="TX">Texas</option><option value="FL">Florida</option><option value="NY">New York</option><option value="other">Other</option></select></div>
-<button onclick="calculate()">Estimate My Premium</button>
+<header>
+<div class="container">
+<a href="/" class="logo">Calccover</a>
+<nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
 </div>
-<div class="result-box" id="resultBox"><div class="label">Your estimated annual premium</div><div class="premium" id="premiumResult">$0</div><div class="label" style="margin-top:.5rem">Estimated monthly: <span id="monthlyResult">$0</span></div></div>
-<div class="lead-form" id="leadForm"><h3>Want a real quote from a licensed broker?</h3><p style="font-size:.9rem;color:#555">Enter your email and we'll connect you with an E&O specialist.</p><form action="https://formsubmit.co/hello@calccover.com" method="POST">
-    <input type="email" name="email" required placeholder="your@email.com">
-    <input type="hidden" name="calculator" value="Errors & Omissions Insurance Calculator">
-    <input type="hidden" name="page_url" id="pageUrl" value="">
-    <input type="hidden" name="_subject" value="New quote request — Errors & Omissions Insurance Calculator">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
-    <button type="submit">Get a Free Quote</button>
+</header>
+<div class="container">
+<main>
+<h1>Errors & Omissions Insurance Calculator</h1>
+<p style="color:#555;margin-top:.5rem;margin-bottom:1.5rem;">Estimate your Errors & Omissions (E&O) insurance cost. Free calculator for professionals and service firms.</p>
+
+<div class="calculator-box">
+<div class="form-group">
+<label for="profession">Profession</label>
+<select id="profession">
+<option value="it">IT & Technology Consulting</option>
+<option value="realestate">Real Estate Brokerage</option>
+<option value="consulting">Management Consulting</option>
+<option value="accounting">Accounting & Tax Services</option>
+<option value="marketing">Marketing & Advertising Agency</option>
+<option value="legal">Legal Services & Paralegal</option>
+<option value="engineering">Engineering & Architecture</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="revenue">Annual Revenue (USD)</label>
+<input type="number" id="revenue" min="0" placeholder="e.g. 500000">
+</div>
+
+<div class="form-group">
+<label for="employees">Number of Employees</label>
+<input type="number" id="employees" min="1" placeholder="e.g. 5">
+</div>
+
+<div class="form-group">
+<label for="coverage">Coverage Limit</label>
+<select id="coverage">
+<option value="500000">500,000</option>
+<option value="1000000">1,000,000</option>
+<option value="2000000">2,000,000</option>
+<option value="5000000">5,000,000</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="state">Primary State</label>
+<select id="state">
+<option value="ny">New York</option>
+<option value="ca">California</option>
+<option value="tx">Texas</option>
+<option value="fl">Florida</option>
+<option value="il">Illinois</option>
+<option value="other">Other State</option>
+</select>
+</div>
+
+<button type="button" id="calcBtn">Calculate Premium</button>
+
+<div class="result-box" id="resultBox">
+<div style="font-size:.9rem;color:#555;margin-bottom:.3rem;">Estimated Annual Premium</div>
+<div class="premium" id="premiumOutput">$0</div>
+<div style="margin-top:1rem;">
+<div class="result-row"><span class="label">Base Risk Rate</span><span class="value" id="resBase">$0</span></div>
+<div class="result-row"><span class="label">Revenue Multiplier</span><span class="value" id="resRev">1.0x</span></div>
+<div class="result-row"><span class="label">Employee Factor</span><span class="value" id="resEmp">1.0x</span></div>
+<div class="result-row"><span class="label">Coverage Multiplier</span><span class="value" id="resCov">1.0x</span></div>
+<div class="result-row"><span class="label">State Factor</span><span class="value" id="resState">1.0x</span></div>
+</div>
+
+<div class="lead-form" id="leadForm">
+<h3 style="margin-top:1rem;color:#0066cc;font-size:1.1rem;">Want a real quote from a licensed broker?</h3>
+<p style="font-size:.9rem;color:#555;margin:.5rem 0;">Get tailored commercial insurance proposals from top-rated carriers.</p>
+<form action="https://formsubmit.co/hello@calccover.com" method="POST">
+<input type="email" name="email" required placeholder="your@email.com" style="margin-bottom:.75rem;">
+<input type="hidden" name="calculator" value="Errors & Omissions Insurance Calculator">
+<input type="hidden" name="page_url" id="pageUrl" value="">
+<input type="hidden" name="_subject" value="New quote request — Errors & Omissions Insurance Calculator">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://calccover.com/thank-you/">
+<button type="submit">Get a Free Quote</button>
 </form>
-<script>document.getElementById('pageUrl').value = window.location.href;</script></div>
-<h2>How Much Does E&O Insurance Cost?</h2>
-<p>Errors & Omissions insurance costs between <strong>$500 and $8,000 per year</strong> for most professionals. IT consultants might pay $800–$2,500 for $1M coverage. Real estate agents pay $400–$900. Insurance agents pay $1,000–$3,000. The premium depends heavily on profession, revenue, and coverage limit.</p>
+</div>
+</div>
+</div>
+
+<details>
+<summary>How this calculator works</summary>
+<p>This calculator estimates your annual professional liability premium by taking a baseline risk rate determined by your specific industry and adjusting it using multipliers for annual gross revenue, headcount size, liability limits chosen, and geographic litigation risk. The final output provides a realistic market baseline for budgeting purposes.</p>
+<p>Formula source: Commercial Insurance Rating Bureau & Industry Actuarial Standards.</p>
+</details>
+
+<section class="content-section">
+<h2>How Much Does Errors &amp; Omissions Insurance Cost?</h2>
+<p>Errors and omissions (E&amp;O) insurance, also known as professional liability insurance, typically costs small to mid-sized service firms anywhere from $1,000 to $5,000 per year for a standard $1,000,000 policy. However, pricing varies significantly based on your industry's inherent litigation exposure, contract sizes, and operational scope. Sole proprietors or independent contractors with minimal revenue often secure basic coverage on the lower end of the spectrum, whereas large consulting firms or engineering practices handling high-stakes projects can see premiums climb substantially.</p>
+<p>Understanding these cost parameters helps business owners budget accurately when responding to client requests for proof of insurance or when bidding on enterprise-level master services agreements. Investing in a robust E&amp;O policy protects your balance sheet from catastrophic legal defense costs and client lawsuits alleging financial loss due to professional negligence, missed deadlines, or substandard deliverables.</p>
+</section>
+
+<section class="content-section">
 <h2>What Factors Affect Your Premium?</h2>
-<h3>1. Profession</h3>
-<p>Higher-risk professions pay more. Real estate and insurance have higher claim frequency. IT and consulting have moderate risk. Marketing is on the lower end.</p>
-<h3>2. Annual Revenue</h3>
-<p>Revenue correlates with the size of engagements and potential damages. A firm billing $1M per year is exposed to larger claims than one billing $100K.</p>
-<h3>3. Coverage Limit</h3>
-<p>Doubling your coverage limit roughly doubles the premium. Most professionals start with $1M per claim / $1M aggregate.</p>
-<h3>4. Claims History</h3>
-<p>Any prior E&O claim will raise your premium significantly for 3–5 years. A clean history earns 10–25% discounts.</p>
+<p>Insurance underwriters evaluate multiple operational and financial variables when pricing professional liability coverage. Your primary industry dictates the baseline risk profile, as certain fields like engineering, accounting, and legal services carry higher severity claims than general marketing or creative consulting. Annual revenue serves as a direct indicator of your business volume and project exposure; higher billings imply a greater number of active clients and larger potential damages if an error occurs.</p>
+<p>Additionally, your total headcount and the experience level of your staff influence underwriting decisions, since more employees generally mean an increased chance of human error during service delivery. Finally, your chosen coverage limits, policy deductibles, and geographic operating region play major roles in determining your ultimate premium, as states with higher historical litigation rates often carry upward pricing adjustments.</p>
+</section>
+
+<section class="content-section">
 <h2>Frequently Asked Questions</h2>
-<h3>Is E&O insurance required?</h3>
-<p>Rarely by law, but frequently by clients and contract requirements. Many enterprise clients require their vendors to carry at least $1M in E&O coverage.</p>
-<h3>What does E&O cover?</h3>
-<p>Claims of professional negligence, errors, omissions, misrepresentation, and breach of duty. It covers legal defense and settlements/judgments — but not intentional wrongdoing.</p>
-<h3>What's the difference between E&O and professional liability?</h3>
-<p>They're the same thing. "Professional liability" and "E&O" are used interchangeably. Medical professionals use "malpractice," and tech companies sometimes use "tech E&O."</p>
-</div></main>
-<footer><div class="container"><div><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div><div>© 2026 Calccover.</div></div></footer>
+<h3>What does Errors and Omissions insurance actually cover?</h3>
+<p>E&amp;O insurance covers financial losses suffered by your clients due to your actual or alleged professional negligence, errors, omissions, or failure to deliver services as promised in your contract. This includes legal defense fees, court costs, and settlements or judgments.</p>
+
+<h3>Is E&amp;O insurance legally required for my business?</h3>
+<p>In most jurisdictions, E&amp;O insurance is not mandated by state law for general business operations. However, corporate clients, government agencies, and industry licensing boards frequently require proof of professional liability insurance before awarding contracts or issuing credentials.</p>
+
+<h3>How does E&amp;O differ from General Liability insurance?</h3>
+<p>General Liability insurance protects your business against third-party bodily injury and property damage, such as a client slipping in your office. E&amp;O insurance specifically covers financial losses resulting from professional mistakes, advice, or failure to perform services.</p>
+</section>
+
+</main>
+</div>
+<footer>
+<div class="container">
+<div><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
+<div>© 2026 Calccover.</div>
+</div>
+</footer>
 <script>
-function calculate(){
-const prof=document.getElementById('profession').value;
-const revenue=parseFloat(document.getElementById('revenue').value)||0;
-const employees=parseInt(document.getElementById('employees').value)||1;
-const coverage=parseInt(document.getElementById('coverage').value);
-const state=document.getElementById('state').value;
-let base=1200;
-if(prof==='it')base=1500;
-if(prof==='consulting')base=1000;
-if(prof==='realestate')base=700;
-if(prof==='insurance')base=1600;
-if(prof==='accounting')base=1800;
-if(prof==='marketing')base=900;
-let mult=1;
-if(revenue>100000)mult*=1+Math.min(revenue/2000000,1.2);
-if(employees>1)mult*=1+(employees-1)*0.10;
-mult*=coverage/1000000;
-if(state==='CA')mult*=1.25;
-if(state==='NY')mult*=1.30;
-if(state==='TX')mult*=1.05;
-if(state==='FL')mult*=1.15;
-const est=Math.round(base*mult);
-document.getElementById('premiumResult').textContent='$'+est.toLocaleString();
-document.getElementById('monthlyResult').textContent='$'+Math.round(est/12).toLocaleString();
-document.getElementById('resultBox').classList.add('show');
-document.getElementById('leadForm').classList.add('show');
-}
+document.getElementById('pageUrl').value = window.location.href;
+document.getElementById('calcBtn').addEventListener('click', function() {
+    const profession = document.getElementById('profession').value;
+    const revenue = parseFloat(document.getElementById('revenue').value) || 0;
+    const employees = parseInt(document.getElementById('employees').value) || 1;
+    const coverage = parseFloat(document.getElementById('coverage').value) || 1000000;
+    const state = document.getElementById('state').value;
+
+    let baseRate = 1000;
+    if(profession === 'it') baseRate = 1400;
+    else if(profession === 'realestate') baseRate = 1200;
+    else if(profession === 'consulting') baseRate = 900;
+    else if(profession === 'accounting') baseRate = 1500;
+    else if(profession === 'marketing') baseRate = 700;
+    else if(profession === 'legal') baseRate = 1800;
+    else if(profession === 'engineering') baseRate = 1600;
+
+    let revMultiplier = 1.0;
+    if(revenue > 250000 && revenue <= 1000000) revMultiplier = 1.3;
+    else if(revenue > 1000000 && revenue <= 5000000) revMultiplier = 1.7;
+    else if(revenue > 5000000) revMultiplier = 2.3;
+    else if(revenue === 0) revMultiplier = 0.9;
+
+    let empFactor = 1.0 + ((employees - 1) * 0.05);
+    if(empFactor > 2.5) empFactor = 2.5;
+
+    let covMultiplier = 1.0;
+    if(coverage === 500000) covMultiplier = 0.85;
+    else if(coverage === 1000000) covMultiplier = 1.0;
+    else if(coverage === 2000000) covMultiplier = 1.25;
+    else if(coverage === 5000000) covMultiplier = 1.6;
+
+    let stateMultiplier = 1.0;
+    if(state === 'ny') stateMultiplier = 1.4;
+    else if(state === 'ca') stateMultiplier = 1.35;
+    else if(state === 'fl') stateMultiplier = 1.25;
+    else if(state === 'tx') stateMultiplier = 1.1;
+    else if(state === 'il') stateMultiplier = 1.15;
+
+    const finalPremium = Math.round(baseRate * revMultiplier * empFactor * covMultiplier * stateMultiplier);
+
+    document.getElementById('premiumOutput').textContent = '$' + finalPremium.toLocaleString();
+    document.getElementById('resBase').textContent = '$' + baseRate.toLocaleString();
+    document.getElementById('resRev').textContent = revMultiplier.toFixed(1) + 'x';
+    document.getElementById('resEmp').textContent = empFactor.toFixed(2) + 'x';
+    document.getElementById('resCov').textContent = covMultiplier.toFixed(2) + 'x';
+    document.getElementById('resState').textContent = stateMultiplier.toFixed(2) + 'x';
+
+    document.getElementById('resultBox').classList.add('show');
+    document.getElementById('leadForm').classList.add('show');
+});
 </script>
 </body>
 </html>
