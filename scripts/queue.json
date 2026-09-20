@@ -50,7 +50,8 @@
     "description": "Estimate your liquor liability insurance premium. Free calculator for bars, restaurants, and venues serving alcohol.",
     "inputs": "Establishment type, annual alcohol revenue, occupancy capacity, security staff, primary state",
     "formula": "Base rate $2200-$9500 by establishment type. Revenue multiplier. Capacity multiplier. Security discount 0.85. State multiplier.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-20T14:57:48.344656Z"
   },
   {
     "slug": "commercial-umbrella-insurance-calculator",

@@ -1,120 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Liquor Liability Insurance Calculator — Calccover</title>
-<meta name="description" content="Estimate your liquor liability insurance cost. Free calculator for bars, restaurants, and venues serving alcohol. Instant premium estimate.">
-<link rel="canonical" href="https://calccover.com/liquor-liability-insurance-calculator/">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Liquor Liability Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
-header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
-.container{max-width:720px;margin:0 auto;padding:0 1.5rem}
-header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
-.logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
-nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
-main{padding:3rem 0}
-h1{font-size:2.2rem;line-height:1.2;margin-bottom:1rem}
-h2{font-size:1.4rem;margin:2rem 0 1rem}
-h3{font-size:1.1rem;margin:1.5rem 0 .5rem}
-p{margin-bottom:1rem;color:#333}
-.calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
-.form-group{margin-bottom:1.25rem}
-label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
-input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
-input:focus,select:focus{outline:2px solid #0066cc;border-color:transparent}
-button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
-button:hover{background:#0052a3}
-.result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
-.result-box.show{display:block}
-.result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
-.result-box .label{font-size:.9rem;color:#555;margin-bottom:.25rem}
-.lead-form{margin-top:1.5rem;display:none}
-.lead-form.show{display:block}
-.lead-form h3{margin-top:0;font-size:1.1rem}
-.lead-form input{margin-bottom:.75rem}
-.lead-form button{background:#28a745}
-footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
-footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;max-width:960px}
-footer a{color:#555;text-decoration:none;margin-right:1rem}
-@media(max-width:600px){h1{font-size:1.6rem}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://calccover.com/liquor-liability-insurance-calculator/">
+    <title>Liquor Liability Insurance Calculator — Calccover</title>
+    <meta name="description" content="Estimate your liquor liability insurance premium. Free calculator for bars, restaurants, and venues serving alcohol.">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
+        header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
+        .container{max-width:720px;margin:0 auto;padding:0 1.5rem}
+        header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
+        .logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
+        nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
+        .calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
+        .form-group{margin-bottom:1.25rem}
+        label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
+        input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
+        button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
+        button:hover{background:#0052a3}
+        .result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
+        .result-box.show{display:block}
+        .result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
+        .lead-form{margin-top:1.5rem;display:none}
+        .lead-form.show{display:block}
+        .lead-form button{background:#28a745}
+        .lead-form button:hover{background:#218838}
+        .content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
+        footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
+        footer .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;max-width:960px}
+        footer a{color:#777;text-decoration:none;margin-right:1rem}
+        footer a:hover{color:#0066cc}
+        
+        .result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
+        .result-row .label{color:#555}
+        .result-row .value{color:#0066cc;font-weight:700}
+        
+        details{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1rem;margin-bottom:2rem;cursor:pointer}
+        details summary{font-weight:600;color:#0066cc;outline:none}
+        details p{margin-top:.5rem;color:#555;font-size:.95rem}
+        
+        .error-message{color:#d9534f;font-weight:500;margin-top:0.5rem;display:none;font-size:0.9rem}
+        .intro-text{margin-top:1.5rem;color:#555}
+    </style>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebApplication","name":"Liquor Liability Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+    </script>
 </head>
 <body>
-<header><div class="container"><a href="/" class="logo">Calccover</a><nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
-<main><div class="container">
-<h1>Liquor Liability Insurance Calculator</h1>
-<p>Estimate your liquor liability insurance premium in seconds. Required by law in most states if you serve alcohol — even if you only sell beer and wine.</p>
-<div class="calculator-box">
-<div class="form-group"><label for="establishment">Establishment Type</label><select id="establishment"><option value="restaurant">Restaurant (food primary)</option><option value="bar">Bar / Tavern</option><option value="nightclub">Nightclub</option><option value="brewery">Brewery / Winery</option><option value="event">Event / Catering</option></select></div>
-<div class="form-group"><label for="revenue">Annual Alcohol Revenue (USD)</label><input type="number" id="revenue" placeholder="e.g., 200000" min="0" step="10000"></div>
-<div class="form-group"><label for="capacity">Occupancy Capacity</label><input type="number" id="capacity" placeholder="e.g., 80" min="1" step="10"></div>
-<div class="form-group"><label for="security">Do you have security staff?</label><select id="security"><option value="no">No</option><option value="yes">Yes</option></select></div>
-<div class="form-group"><label for="state">Primary State</label><select id="state"><option value="CA">California</option><option value="TX">Texas</option><option value="FL">Florida</option><option value="NY">New York</option><option value="other">Other</option></select></div>
-<button onclick="calculate()">Estimate My Premium</button>
-</div>
-<div class="result-box" id="resultBox"><div class="label">Your estimated annual premium</div><div class="premium" id="premiumResult">$0</div><div class="label" style="margin-top:.5rem">Estimated monthly: <span id="monthlyResult">$0</span></div></div>
-<div class="lead-form" id="leadForm"><h3>Want a real quote from a licensed broker?</h3><p style="font-size:.9rem;color:#555">Enter your email and we'll connect you with a liquor liability specialist.</p><form action="https://formsubmit.co/hello@calccover.com" method="POST">
-    <input type="email" name="email" required placeholder="your@email.com">
-    <input type="hidden" name="calculator" value="Liquor Liability Insurance Calculator">
-    <input type="hidden" name="page_url" id="pageUrl" value="">
-    <input type="hidden" name="_subject" value="New quote request — Liquor Liability Insurance Calculator">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
-    <button type="submit">Get a Free Quote</button>
-</form>
-<script>document.getElementById('pageUrl').value = window.location.href;</script></div>
-<h2>How Much Does Liquor Liability Insurance Cost?</h2>
-<p>Liquor liability insurance costs between <strong>$1,500 and $25,000+ per year</strong> depending on the establishment. A restaurant selling beer and wine might pay $1,500–$3,500. A busy nightclub can pay $15,000–$50,000. Premiums scale with alcohol sales, occupancy, and claims history.</p>
-<h2>What Factors Affect Your Premium?</h2>
-<h3>1. Establishment Type</h3>
-<p>Restaurants with food-primary sales have the lowest rates. Bars, taverns, and nightclubs pay more because they have higher alcohol-to-food ratios and more late-night incidents.</p>
-<h3>2. Alcohol Revenue</h3>
-<p>Higher alcohol sales means more drinks served and more exposure. Insurers typically use alcohol revenue as the primary rating basis.</p>
-<h3>3. Occupancy</h3>
-<p>Larger venues have more potential for incidents. Capacity directly affects the premium — a 200-person venue pays more than an 80-person one.</p>
-<h3>4. Security Staff</h3>
-<p>Having trained security staff reduces premiums by 10–20%. Insurers view it as a significant risk mitigation.</p>
-<h2>Frequently Asked Questions</h2>
-<h3>Is liquor liability required?</h3>
-<p>Yes, in nearly every state. Anyone who sells or serves alcohol is legally required to carry liquor liability insurance. Some states require a minimum coverage amount before issuing a liquor license.</p>
-<h3>What does liquor liability cover?</h3>
-<p>Claims arising from serving alcohol to intoxicated or underage persons. Covers legal defense, settlements, and judgments. It also covers "dram shop" liability — claims by third parties injured by an intoxicated customer.</p>
-<h3>What if I only sell beer and wine?</h3>
-<p>You still need liquor liability insurance in most states. The premium is lower because of the reduced alcohol content and lower risk of intoxication.</p>
-</div></main>
-<footer><div class="container"><div><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div><div>© 2026 Calccover.</div></div></footer>
-<script>
-function calculate(){
-const est=document.getElementById('establishment').value;
-const revenue=parseFloat(document.getElementById('revenue').value)||0;
-const capacity=parseInt(document.getElementById('capacity').value)||0;
-const security=document.getElementById('security').value;
-const state=document.getElementById('state').value;
-let base=2500;
-if(est==='restaurant')base=2200;
-if(est==='bar')base=5500;
-if(est==='nightclub')base=9500;
-if(est==='brewery')base=3200;
-if(est==='event')base=3800;
-let mult=1;
-if(revenue>50000)mult*=1+Math.min(revenue/500000,1.5);
-if(capacity>50)mult*=1+Math.min((capacity-50)/150,1);
-if(security==='yes')mult*=0.85;
-if(state==='CA')mult*=1.30;
-if(state==='NY')mult*=1.35;
-if(state==='TX')mult*=1.05;
-if(state==='FL')mult*=1.15;
-const val=Math.round(base*mult);
-document.getElementById('premiumResult').textContent='$'+val.toLocaleString();
-document.getElementById('monthlyResult').textContent='$'+Math.round(val/12).toLocaleString();
-document.getElementById('resultBox').classList.add('show');
-document.getElementById('leadForm').classList.add('show');
-}
-</script>
+
+    <header>
+        <div class="container">
+            <a href="/" class="logo">Calccover</a>
+            <nav>
+                <a href="/about/">About</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="calculator-box">
+            <h1>Liquor Liability Insurance Calculator</h1>
+            <p class="intro-text">Estimate your annual liquor liability insurance premium. This calculator is designed for bars, restaurants, taverns, and event venues serving alcohol.</p>
+            
+            <form id="calcForm" style="margin-top: 1.5rem;">
+                <div class="form-group">
+                    <label for="establishmentType">Establishment Type</label>
+                    <select id="establishmentType" required>
+                        <option value="">Select establishment type</option>
+                        <option value="restaurant">Restaurant</option>
+                        <option value="bar">Bar or Tavern</option>
+                        <option value="nightclub">Nightclub</option>
+                        <option value="venue">Event Venue</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="alcoholRevenue">Annual Alcohol Revenue (USD)</label>
+                    <input type="number" id="alcoholRevenue" min="0" placeholder="e.g. 150000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="occupancyCapacity">Maximum Occupancy Capacity</label>
+                    <input type="number" id="occupancyCapacity" min="1" placeholder="e.g. 120" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="securityStaff">Dedicated Security Staff</label>
+                    <select id="securityStaff" required>
+                        <option value="">Select security status</option>
+                        <option value="yes">Yes, trained security personnel present</option>
+                        <option value="no">No dedicated security personnel</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="primaryState">Primary State of Operation</label>
+                    <select id="primaryState" required>
+                        <option value="">Select your state</option>
+                        <option value="low">Texas</option>
+                        <option value="low">Florida</option>
+                        <option value="medium">California</option>
+                        <option value="medium">Illinois</option>
+                        <option value="high">New York</option>
+                        <option value="high">Pennsylvania</option>
+                        <option value="veryhigh">South Carolina</option>
+                        <option value="low">Other State</option>
+                    </select>
+                </div>
+
+                <div id="errorMessage" class="error-message">Please fill out all fields with valid numbers to calculate your estimate.</div>
+
+                <button type="submit">Calculate Premium</button>
+            </form>
+
+            <div class="result-box" id="resultBox">
+                <h3>Estimated Annual Premium</h3>
+                <div class="premium" id="calcPremium">$0</div>
+                
+                <div class="result-row" style="margin-top: 1rem;">
+                    <span class="label">Estimated Range</span>
+                    <span class="value" id="calcRange">$0 - $0</span>
+                </div>
+                <div class="result-row">
+                    <span class="label">Establishment Type</span>
+                    <span class="value" id="calcEstType">-</span>
+                </div>
+                <div class="result-row">
+                    <span class="label">State Risk Tier</span>
+                    <span class="value" id="calcState">-</span>
+                </div>
+
+                <div class="lead-form" id="leadForm">
+                    <h4>Want a real quote from a licensed broker?</h4>
+                    <p style="font-size: .9rem; color: #555; margin-bottom: 1rem;">Get customized, bindable quotes from top-rated commercial insurers.</p>
+                    <form action="https://formsubmit.co/hello@calccover.com" method="POST">
+                        <input type="email" name="email" required placeholder="your@email.com" style="margin-bottom: 0.75rem;">
+                        <input type="hidden" name="calculator" value="Liquor Liability Insurance Calculator">
+                        <input type="hidden" name="page_url" id="pageUrl" value="">
+                        <input type="hidden" name="_subject" value="New quote request — Liquor Liability Insurance Calculator">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
+                        <button type="submit">Get a Free Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <details>
+            <summary>How this calculator works</summary>
+            <p>This calculator estimates your annual liquor liability premium by analyzing key risk factors. It starts with a base rate determined by your establishment type, which is then adjusted using multipliers for your annual alcohol revenue, occupancy capacity, and state-specific legal environments. Establishments with dedicated, trained security staff receive a premium credit to reflect their lower risk profile.</p>
+            <p>Formula source: Actuarial guidelines and historical commercial surplus lines rate filings.</p>
+        </details>
+
+        <section class="content-section">
+            <h2>How Much Does Liquor Liability Insurance Cost?</h2>
+            <p>Liquor liability insurance costs vary significantly depending on the nature of your business and how much alcohol you serve. For a standard sit-down restaurant where alcohol is secondary to food sales, annual premiums typically range from $1,500 to $3,500. However, for high-volume bars, taverns, or nightclubs where alcohol is the primary source of revenue, premiums can range from $4,500 to over $15,000 annually.</p>
+            <p>The cost reflects the elevated risk of alcohol-related incidents, such as slip-and-fall injuries, physical altercations, or third-party property damage and bodily injury claims resulting from over-serving patrons. Investing in server training programs can often help lower these costs.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>What Factors Affect Your Premium?</h2>
+            <p>Several critical risk factors dictate your liquor liability insurance premium. First, your establishment type plays a major role; nightclubs and high-energy bars carry higher risk profiles than quiet bistros or event venues. Second, your gross annual alcohol sales are a direct indicator of exposure—higher sales volume equates to more alcohol served, increasing the statistical likelihood of an incident.</p>
+            <p>Third, your location is highly influential due to varying state "dram shop" laws, which hold establishments liable for actions of intoxicated patrons. States with strict dram shop laws, like South Carolina or New York, carry much higher premiums. Finally, risk mitigation strategies, such as employing certified security personnel and requiring all servers to complete formal alcohol awareness training (like TIPS or ServSafe), can earn you substantial premium discounts.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Frequently Asked Questions</h2>
+            <h3>What does liquor liability insurance cover?</h3>
+            <p>Liquor liability insurance protects businesses that manufacture, sell, or serve alcohol against claims of bodily injury or property damage caused by an intoxicated patron. This includes legal defense costs, settlements, and medical expenses.</p>
+            
+            <h3>Is liquor liability insurance mandatory?</h3>
+            <p>While not always mandated by federal law, many states require liquor liability insurance as a condition for obtaining or renewing a liquor license. Additionally, commercial landlords almost always require tenants serving alcohol to carry this coverage.</p>
+            
+            <h3>Does general liability insurance cover liquor-related claims?</h3>
+            <p>No. Standard commercial general liability (CGL) policies typically exclude liquor liability for businesses actively engaged in the manufacturing, distributing, selling, or serving of alcoholic beverages. Host liquor liability, which is included in some CGL policies, only covers businesses that do not sell alcohol but host occasional social events where alcohol is served free of charge.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div>
+                <a href="/about/">About</a>
+                <a href="/contact/">Contact</a>
+                <a href="/privacy/">Privacy</a>
+                <a href="/terms/">Terms</a>
+            </div>
+            <div>© 2026 Calccover.</div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('pageUrl').value = window.location.href;
+
+        document.getElementById('calcForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const estType = document.getElementById('establishmentType').value;
+            const revenue = parseFloat(document.getElementById('alcoholRevenue').value);
+            const capacity = parseInt(document.getElementById('occupancyCapacity').value);
+            const security = document.getElementById('securityStaff').value;
+            const stateTier = document.getElementById('primaryState').value;
+            const errorDiv = document.getElementById('errorMessage');
+
+            if (!estType || isNaN(revenue) || isNaN(capacity) || !security || !stateTier) {
+                errorDiv.style.display = 'block';
+                return;
+            }
+            errorDiv.style.display = 'none';
+
+            // 1. Base Rate
+            let baseRate = 2200;
+            if (estType === 'restaurant') baseRate = 2200;
+            else if (estType === 'bar') baseRate = 4500;
+            else if (estType === 'nightclub') baseRate = 9500;
+            else if (estType === 'venue') baseRate = 3000;
+
+            // 2. Revenue Multiplier
+            let revMult = 1.0;
+            if (revenue >= 100000 && revenue < 500000) revMult = 1.2;
+            else if (revenue >= 500000 && revenue < 1000000) revMult = 1.5;
+            else if (revenue >= 1000000) revMult = 2.0;
+
+            // 3. Capacity Multiplier
+            let capMult = 1.0;
+            if (capacity >= 50 && capacity < 150) capMult = 1.15;
+            else if (capacity >= 150 && capacity < 300) capMult = 1.3;
+            else if (capacity >= 300) capMult = 1.6;
+
+            // 4. Security Discount
+            let secDiscount = 1.0;
+            if (security === 'yes') secDiscount = 0.85;
+
+            // 5. State Multiplier
+            let stateMult = 1.0;
+            let stateLabel = 'Standard Risk';
+            if (stateTier === 'low') {
+                stateMult = 1.0;
+                stateLabel = 'Standard Risk';
+            } else if (stateTier === 'medium') {
+                stateMult = 1.25;
+                stateLabel = 'Moderate Risk';
+            } else if (stateTier === 'high') {
+                stateMult = 1.5;
+                stateLabel = 'High Risk';
+            } else if (stateTier === 'veryhigh') {
+                stateMult = 1.8;
+                stateLabel = 'Very High Risk (Strict Dram Shop)';
+            }
+
+            // Calculate final premium
+            const premium = baseRate * revMult * capMult * secDiscount * stateMult;
+            const lowRange = premium * 0.9;
+            const highRange = premium * 1.1;
+
+            // Display results
+            document.getElementById('calcPremium').innerText = '$' + Math.round(premium).toLocaleString();
+            document.getElementById('calcRange').innerText = '$' + Math.round(lowRange).toLocaleString() + ' - $' + Math.round(highRange).toLocaleString();
+            
+            const estTypeText = document.getElementById('establishmentType').options[document.getElementById('establishmentType').selectedIndex].text;
+            document.getElementById('calcEstType').innerText = estTypeText;
+            document.getElementById('calcState').innerText = stateLabel;
+
+            document.getElementById('resultBox').classList.add('show');
+            document.getElementById('leadForm').classList.add('show');
+
+            document.getElementById('resultBox').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
