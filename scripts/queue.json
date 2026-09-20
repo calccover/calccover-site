@@ -1,4 +1,20 @@
 [
+    {
+    "slug": "business-interruption-insurance-calculator",
+    "name": "Business Interruption Insurance Calculator",
+    "description": "Calculate how much business interruption coverage your business needs to protect against lost income during a covered closure.",
+    "inputs": "Monthly revenue, monthly fixed expenses, months of coverage needed, industry type",
+    "formula": "Coverage limit = (monthly revenue - monthly expenses) * months + (monthly expenses * months). Premium = coverage limit * 0.005-0.009 depending on industry.",
+    "status": "pending"
+  },
+  {
+    "slug": "commercial-auto-insurance-calculator",
+    "name": "Commercial Auto Insurance Calculator",
+    "description": "Estimate your commercial auto insurance cost. Free calculator for business vehicles and fleets. Instant premium estimate.",
+    "inputs": "Vehicle type, number of vehicles, business use, state",
+    "formula": "Base rate per vehicle $1400-$6500 by vehicle type. Use multiplier and state factor applied. Fleet discounts for 2+ vehicles.",
+    "status": "pending"
+  },
   {
     "slug": "commercial-umbrella-insurance-calculator",
     "name": "Commercial Umbrella Insurance Calculator",
