@@ -1,11 +1,12 @@
 [
-    {
+  {
     "slug": "commercial-truck-insurance-calculator",
     "name": "Commercial Truck Insurance Calculator",
     "description": "Estimate your commercial truck insurance costs. Free calculator for owner-operators and small fleets. Instant premium estimate.",
     "inputs": "Business type, annual revenue, number of trucks, primary state, cargo type",
     "formula": "Base rate $8000-$22000 by business type. Cargo multiplier (general 1.0, refrigerated 1.15, flatbed 1.25, hazmat 1.75). State multiplier. Fleet discount for 2+ trucks.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-20T13:41:24.252230Z"
   },
   {
     "slug": "business-interruption-insurance-calculator",
