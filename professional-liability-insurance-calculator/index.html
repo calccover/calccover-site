@@ -112,15 +112,16 @@ details p{margin-top:.75rem;color:#555}
       <div class="lead-form" id="leadForm">
         <h3 style="margin-bottom:.5rem;color:#0066cc;">Want a real quote from a licensed broker?</h3>
         <p style="margin-bottom:1rem;color:#555;font-size:.9rem;">Connect with top-rated commercial carriers tailored to your exact professional risk profile.</p>
-        <form action="https://formsubmit.co/hello@calccover.com" method="POST">
-            <input type="email" name="email" required placeholder="your@email.com">
-            <input type="hidden" name="calculator" value="Professional Liability Insurance Calculator">
-            <input type="hidden" name="page_url" id="pageUrl" value="">
-            <input type="hidden" name="_subject" value="New quote request — Professional Liability Insurance Calculator">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
-            <button type="submit">Get a Free Quote</button>
-        </form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="7ddf27ee-45e4-4fe4-afd3-5b802ece6846">
+    <input type="email" name="email" required placeholder="your@email.com">
+    <input type="hidden" name="calculator" value="Professional Liability Insurance Calculator">
+    <input type="hidden" name="page_url" id="pageUrl" value="">
+    <input type="hidden" name="subject" value="New quote request — Professional Liability Insurance Calculator">
+    <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
+    <button type="submit">Get a Free Quote</button>
+</form>
+<script>document.getElementById('pageUrl').value = window.location.href;</script>
       </div>
     </div>
   </div>

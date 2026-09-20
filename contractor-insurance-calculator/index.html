@@ -145,15 +145,16 @@ h3{font-size:1.05rem;font-weight:600;margin-top:1rem;margin-bottom:.3rem;color:#
     <div class="lead-form" id="leadForm">
       <h2>Want a real quote from a licensed broker?</h2>
       <p style="color:#555;font-size:.95rem;margin-bottom:1rem;">Connect with top commercial carriers to lock in binding coverage tailored to your payroll, projects, and state licensing board mandates.</p>
-      <form action="https://formsubmit.co/hello@calccover.com" method="POST">
-        <input type="email" name="email" required placeholder="your@email.com">
-        <input type="hidden" name="calculator" value="Contractor Insurance Calculator">
-        <input type="hidden" name="page_url" id="pageUrl" value="">
-        <input type="hidden" name="_subject" value="New quote request — Contractor Insurance Calculator">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
-        <button type="submit">Get a Free Quote</button>
-      </form>
+      <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="7ddf27ee-45e4-4fe4-afd3-5b802ece6846">
+    <input type="email" name="email" required placeholder="your@email.com">
+    <input type="hidden" name="calculator" value="Contractor Insurance Calculator">
+    <input type="hidden" name="page_url" id="pageUrl" value="">
+    <input type="hidden" name="subject" value="New quote request — Contractor Insurance Calculator">
+    <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
+    <button type="submit">Get a Free Quote</button>
+</form>
+<script>document.getElementById('pageUrl').value = window.location.href;</script>
     </div>
   </div>
 

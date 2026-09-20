@@ -100,15 +100,16 @@ summary{font-weight:600;cursor:pointer;color:#0066cc}
             <div class="lead-form" id="leadForm">
                 <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem; color: #1a1a1a;">Want a real quote from a licensed broker?</h3>
                 <p style="margin-bottom: 1rem; color: #555; font-size: 0.9rem;">Submit your details to connect with commercial insurance experts who can lock in your exact rate.</p>
-                <form action="https://formsubmit.co/hello@calccover.com" method="POST">
-                    <input type="email" name="email" required placeholder="your@email.com" style="margin-bottom: 1rem;">
-                    <input type="hidden" name="calculator" value="General Liability Insurance Calculator">
-                    <input type="hidden" name="page_url" id="pageUrl" value="">
-                    <input type="hidden" name="_subject" value="New quote request — General Liability Insurance Calculator">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
-                    <button type="submit">Get a Free Quote</button>
-                </form>
+                <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="7ddf27ee-45e4-4fe4-afd3-5b802ece6846">
+    <input type="email" name="email" required placeholder="your@email.com">
+    <input type="hidden" name="calculator" value="General Liability Insurance Calculator">
+    <input type="hidden" name="page_url" id="pageUrl" value="">
+    <input type="hidden" name="subject" value="New quote request — General Liability Insurance Calculator">
+    <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
+    <button type="submit">Get a Free Quote</button>
+</form>
+<script>document.getElementById('pageUrl').value = window.location.href;</script>
             </div>
         </div>
     </div>

@@ -149,15 +149,16 @@
             <div class="lead-form" id="leadForm">
                 <h3>Want a real quote from a licensed broker?</h3>
                 <p style="color:#555; font-size:0.95rem; margin-bottom:1rem;">Get a personalized, binding quote tailored to your specific restaurant operations.</p>
-                <form action="https://formsubmit.co/hello@calccover.com" method="POST">
-                    <input type="email" name="email" required placeholder="your@email.com" style="margin-bottom: 0.75rem;">
-                    <input type="hidden" name="calculator" value="Restaurant Insurance Calculator">
-                    <input type="hidden" name="page_url" id="pageUrl" value="">
-                    <input type="hidden" name="_subject" value="New quote request — Restaurant Insurance Calculator">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
-                    <button type="submit">Get a Free Quote</button>
-                </form>
+                <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="7ddf27ee-45e4-4fe4-afd3-5b802ece6846">
+    <input type="email" name="email" required placeholder="your@email.com">
+    <input type="hidden" name="calculator" value="Restaurant Insurance Calculator">
+    <input type="hidden" name="page_url" id="pageUrl" value="">
+    <input type="hidden" name="subject" value="New quote request — Restaurant Insurance Calculator">
+    <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
+    <button type="submit">Get a Free Quote</button>
+</form>
+<script>document.getElementById('pageUrl').value = window.location.href;</script>
             </div>
         </div>
 

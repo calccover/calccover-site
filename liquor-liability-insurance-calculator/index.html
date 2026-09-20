@@ -142,15 +142,16 @@
                 <div class="lead-form" id="leadForm">
                     <h4>Want a real quote from a licensed broker?</h4>
                     <p style="font-size: .9rem; color: #555; margin-bottom: 1rem;">Get customized, bindable quotes from top-rated commercial insurers.</p>
-                    <form action="https://formsubmit.co/hello@calccover.com" method="POST">
-                        <input type="email" name="email" required placeholder="your@email.com" style="margin-bottom: 0.75rem;">
-                        <input type="hidden" name="calculator" value="Liquor Liability Insurance Calculator">
-                        <input type="hidden" name="page_url" id="pageUrl" value="">
-                        <input type="hidden" name="_subject" value="New quote request — Liquor Liability Insurance Calculator">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://calccover.com/thank-you/">
-                        <button type="submit">Get a Free Quote</button>
-                    </form>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="7ddf27ee-45e4-4fe4-afd3-5b802ece6846">
+    <input type="email" name="email" required placeholder="your@email.com">
+    <input type="hidden" name="calculator" value="Liquor Liability Insurance Calculator">
+    <input type="hidden" name="page_url" id="pageUrl" value="">
+    <input type="hidden" name="subject" value="New quote request — Liquor Liability Insurance Calculator">
+    <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
+    <button type="submit">Get a Free Quote</button>
+</form>
+<script>document.getElementById('pageUrl').value = window.location.href;</script>
                 </div>
             </div>
         </div>
