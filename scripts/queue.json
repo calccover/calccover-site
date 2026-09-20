@@ -1,4 +1,12 @@
 [
+    {
+    "slug": "restaurant-insurance-calculator",
+    "name": "Restaurant Insurance Calculator",
+    "description": "Estimate your restaurant insurance cost. Free calculator for restaurants, cafes, bars, and food service businesses.",
+    "inputs": "Restaurant type, number of seats, annual revenue, primary state",
+    "formula": "Base rate $2800-$9500 by restaurant type. Seat multiplier for 20+ seats. Revenue multiplier for $200K+. State multiplier (CA 1.25, TX 1.05, FL 1.20, NY 1.35).",
+    "status": "pending"
+  },
   {
     "slug": "general-liability-insurance-calculator",
     "name": "General Liability Insurance Calculator",
