@@ -18,7 +18,7 @@ jobs:
           python-version: '3.11'
       - name: Generate calculator
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEYS }}
         run: python scripts/generate_calculator.py
       - name: Commit and push
         run: |
