@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://calccover.com/inland-marine-insurance-calculator/">
+<title>Inland Marine Insurance Calculator — Calccover</title>
+<meta name="description" content="Estimate your inland marine insurance cost for tools, equipment, and goods in transit.">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Inland Marine Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
+header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
+.container{max-width:720px;margin:0 auto;padding:0 1.5rem}
+header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
+.logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
+nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
+.calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
+.form-group{margin-bottom:1.25rem}
+label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
+input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
+button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
+button:hover{background:#0052a3}
+.result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
+.result-box.show{display:block}
+.result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
+.lead-form{margin-top:1.5rem;display:none}
+.lead-form.show{display:block}
+.lead-form button{background:#28a745}
+.content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
+footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
+.result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
+.result-row .label{color:#555}
+.result-row .value{color:#0066cc;font-weight:700}
+details{margin:2rem 0;background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.2rem;font-size:.95rem}
+summary{font-weight:600;cursor:pointer;color:#0066cc}
+details p{margin-top:.8rem;color:#444}
+.formula-source{margin-top:.6rem;font-size:.85rem;color:#666;font-style:italic}
+footer .container{display:flex;justify-content:space-between;align-items:center;max-width:960px}
+footer a{color:#555;text-decoration:none;margin-right:1rem}
+footer a:hover{text-decoration:underline}
+h2{margin-bottom:1rem;color:#1a1a1a;font-size:1.4rem}
+h3{margin-top:1.2rem;margin-bottom:.4rem;color:#222;font-size:1.1rem}
+p{margin-bottom:1rem;color:#444}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<a href="/" class="logo">Calccover</a>
+<nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
+</div>
+</header>
+
+<main class="container">
+<h1>Inland Marine Insurance Calculator</h1>
+<p>Estimate your inland marine insurance cost for tools, equipment, and goods in transit.</p>
+
+<div class="calculator-box">
+<div class="form-group">
+<label for="equipmentValue">Total Equipment Value ($)</label>
+<input type="number" id="equipmentValue" placeholder="e.g. 150000">
+</div>
+
+<div class="form-group">
+<label for="industry">Industry</label>
+<select id="industry">
+<option value="construction">Construction & Contracting</option>
+<option value="manufacturing">Manufacturing & Logistics</option>
+<option value="transportation">Transportation & Delivery</option>
+<option value="technology">Technology & Professional Services</option>
+<option value="retail">Retail & Wholesale</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="annualRevenue">Annual Revenue ($)</label>
+<input type="number" id="annualRevenue" placeholder="e.g. 1200000">
+</div>
+
+<div class="form-group">
+<label for="transitCoverage">Transit Coverage Needed</label>
+<select id="transitCoverage">
+<option value="local">Local Delivery / Short Haul</option>
+<option value="regional">Regional Transit</option>
+<option value="national">National Long Haul</option>
+<option value="none">Tools & Equipment Only (No Transit)</option>
+</select>
+</div>
+
+<button type="button" id="calculateBtn">Calculate Premium</button>
+
+<div class="result-box" id="resultBox">
+<div class="result-row"><span class="label">Estimated Annual Premium</span><span class="value" id="annualPremium"></span></div>
+<div class="result-row"><span class="label">Estimated Monthly Premium</span><span class="value" id="monthlyPremium"></span></div>
+<div class="result-row"><span class="label">Effective Rate per $100 Value</span><span class="value" id="effectiveRate"></span></div>
+
+<div class="lead-form" id="leadFormContainer">
+<form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="7ddf27ee-45e4-4fe4-afd3-5b802ece6846">
+    <input type="email" name="email" required placeholder="your@email.com">
+    <input type="hidden" name="calculator" value="Inland Marine Insurance Calculator">
+    <input type="hidden" name="page_id" id="pageUrl" value="">
+    <input type="hidden" name="subject" value="New quote request — Inland Marine Insurance Calculator">
+    <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
+    <button type="submit">Get a Free Quote</button>
+</form>
+</div>
+</div>
+</div>
+
+<details>
+<summary>How this calculator works</summary>
+<p>This calculator determines your estimated insurance rate based on the total declared value of your mobile equipment, tools, and cargo, factoring in your core industry risks and the geographical extent of your transit exposures. Underwriters assess these metrics to apply a rate per $100 of insured value, scaling premiums proportionally to your risk profile.</p>
+<p class="formula-source">Formula source: Insurance Services Office (ISO) Inland Marine underwriting guidelines and commercial property rating manuals.</p>
+</details>
+
+<section class="content-section">
+<h2>How Much Does Inland Marine Insurance Cost?</h2>
+<p>Inland marine insurance premiums typically range from $500 to over $3,000 annually for small to mid-sized businesses, heavily dependent on the total insured value of your equipment and goods in transit. Businesses that insure specialized heavy machinery or extensive commercial truck cargo face higher baseline rates due to increased loss severities. For standard contractors carrying standard tool sets valued under $50,000, basic policies often sit on the lower end of the pricing spectrum.</p>
+<p>Your ultimate cost is determined primarily by applying a specific rate per $100 of insured value. When you scale your coverage limits to match high-value job site assets or cross-country inventory shipments, your premium adjusts directly. Working with carriers who specialize in your specific vertical can uncover package discounts when bundling general liability with inland marine floaters.</p>
+</section>
+
+<section class="content-section">
+<h2>What Factors Affect Your Premium?</h2>
+<p>Industry risk classification plays a massive role in determining your rate per $100 of value. Construction and heavy contracting businesses face elevated theft and damage hazards on open job sites compared to tech consultants transporting portable diagnostic gear. Consequently, construction rate factors sit significantly higher than professional service brackets.</p>
+<p>Transit exposure is another core rating variable. Hauling goods across national highways introduces severe risks compared to storing tools securely in a locked commercial warehouse overnight. Deductible choices, equipment security measures like GPS tracking devices, and historical loss frequency further dictate whether your final policy leans toward the minimum $0.30 rate or approaches the maximum $1.20 rate per $100 of coverage.</p>
+</section>
+
+<section class="content-section">
+<h2>Frequently Asked Questions</h2>
+<h3>What does inland marine insurance cover?</h3>
+<p>It covers property that is mobile, in transit, or stored off-premises. This includes contractor's tools, installation floaters, electronic data processing equipment, and commercial cargo moving via truck, rail, or air.</p>
+<h3>Is inland marine insurance required by law?</h3>
+<p>Unlike commercial auto liability, inland marine is rarely mandated by state statute. However, project owners, general contractors, or equipment leasing companies frequently require proof of inland marine coverage before allowing you on site.</p>
+<h3>Does standard general liability cover my tools and equipment?</h3>
+<p>Standard general liability policies generally exclude damage to or theft of your own tools, equipment, and inventory while away from your primary business location. You need an inland marine floater to properly protect these mobile assets.</p>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+<div><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
+<div>© 2026 Calccover.</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('pageUrl').value = window.location.href;
+
+document.getElementById('calculateBtn').addEventListener('click', function() {
+    const eqValue = parseFloat(document.getElementById('equipmentValue').value) || 0;
+    const rev = parseFloat(document.getElementById('annualRevenue').value) || 0;
+    const industry = document.getElementById('industry').value;
+    const transit = document.getElementById('transitCoverage').value;
+
+    if(eqValue <= 0) {
+        alert('Please enter a valid equipment value.');
+        return;
+    }
+
+    let baseRate = 0.50;
+    if(industry === 'construction') baseRate = 0.95;
+    if(industry === 'manufacturing') baseRate = 0.70;
+    if(industry === 'transportation') baseRate = 1.10;
+    if(industry === 'technology') baseRate = 0.35;
+    if(industry === 'retail') baseRate = 0.55;
+
+    let transitMultiplier = 1.0;
+    if(transit === 'local') transitMultiplier = 1.15;
+    if(transit === 'regional') transitMultiplier = 1.35;
+    if(transit === 'national') transitMultiplier = 1.60;
+    if(transit === 'none') transitMultiplier = 0.85;
+
+    let calculatedRate = baseRate * transitMultiplier;
+    if(calculatedRate < 0.30) calculatedRate = 0.30;
+    if(calculatedRate > 1.20) calculatedRate = 1.20;
+
+    const annualPremium = (eqValue / 100) * calculatedRate;
+    const monthlyPremium = annualPremium / 12;
+
+    document.getElementById('annualPremium').textContent = '$' + annualPremium.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById('monthlyPremium').textContent = '$' + monthlyPremium.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById('effectiveRate').textContent = '$' + calculatedRate.toFixed(2);
+
+    document.getElementById('resultBox').classList.add('show');
+    document.getElementById('leadFormContainer').classList.add('show');
+});
+</script>
+
+</body>
+</html>
