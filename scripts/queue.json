@@ -1,4 +1,28 @@
 [
+    {
+    "slug": "cargo-insurance-calculator",
+    "name": "Cargo Insurance Calculator",
+    "description": "Calculate cargo insurance cost for freight shipments. Enter cargo value, load frequency, and coverage limit for instant premium estimates.",
+    "inputs": "Average cargo value per load, loads per year, cargo type (general, refrigerated, hazmat, electronics, produce), coverage limit",
+    "formula": "Base rate per $1000 of cargo value: general $0.50, refrigerated $0.70, hazmat $1.20, electronics $0.90, produce $0.60. Coverage limit multiplier based on selected limit ($100K, $250K, $500K). Annual premium = (avg cargo value / 1000) * rate * (loads per year / 12) * coverage factor.",
+    "status": "pending"
+  },
+  {
+    "slug": "semi-truck-insurance-cost-calculator",
+    "name": "Semi Truck Insurance Cost Calculator",
+    "description": "Estimate semi truck insurance costs by state, driving record, and operation type. Includes breakdown of liability, cargo, and physical damage.",
+    "inputs": "Number of trucks, operation radius (local, intermediate, long-haul), driving record (clean, minor violations, major violations), years of experience, state, cargo type",
+    "formula": "Base annual premium per truck: $8,000-$15,000 depending on operation radius. Driving record multiplier: clean 1.0, minor 1.25, major 1.65. Experience factor: 0-2 years 1.35, 3-5 years 1.10, 6+ years 1.0. State multiplier. Cargo type multiplier.",
+    "status": "pending"
+  },
+  {
+    "slug": "owner-operator-insurance-calculator",
+    "name": "Owner-Operator Insurance Calculator",
+    "description": "Estimate insurance costs for owner-operators with single trucks. Includes primary liability, cargo, physical damage, and occupational accident coverage.",
+    "inputs": "Annual revenue, cargo type, operation radius, driving record, state, truck value, DOT authority age",
+    "formula": "Primary liability base $7,000-$12,000 based on radius. Cargo rate based on cargo type. Physical damage 2-4% of truck value. Occupational accident $1,500-$3,000. New authority multiplier 1.25 for first 2 years. State multiplier.",
+    "status": "pending"
+  },
   {
     "slug": "cyber-liability-insurance-calculator",
     "name": "Cyber Liability Insurance Calculator",
