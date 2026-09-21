@@ -95,7 +95,7 @@ REQUIREMENTS:
 5. Include a `.result-box` (hidden by default, shows on Calculate) with result rows. Each row uses `<div class="result-row"><span class="label">...</span><span class="value">...</span></div>` inside the result box. Add CSS: `.result-row{{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}}` and `.result-row .label{{color:#555}}` and `.result-row .value{{color:#0066cc;font-weight:700}}`.
 6. Include a `.lead-form` below the result box that appears when results show. Use this exact form structure:
 <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+    <input type="hidden" name="access_key" value="7ddf27ee-45e4-4fe4-afd3-5b802ece6846">
     <input type="email" name="email" required placeholder="your@email.com">
     <input type="hidden" name="calculator" value="{item['name']}">
     <input type="hidden" name="page_url" id="pageUrl" value="">
