@@ -12,18 +12,18 @@ import urllib.request
 import urllib.error
 from datetime import datetime
 
-API_KEY = os.environ.get("GEMINI_API_KEY")
-if not API_KEY:
-    print("ERROR: GEMINI_API_KEY environment variable is not set")
+_keys_env = os.environ.get("GEMINI_API_KEYS") or os.environ.get("GEMINI_API_KEY", "")
+API_KEYS = [k.strip() for k in _keys_env.split(",") if k.strip()]
+if not API_KEYS:
+    print("ERROR: No Gemini API keys found in GEMINI_API_KEYS")
     sys.exit(1)
+print(f"Loaded {len(API_KEYS)} API key(s)")
 
 MODEL_CANDIDATES = [
-    "gemini-3.5-flash",
-    "gemini-3.8-flash",
-    "gemini-2.5-flash",
     "gemini-3.5-flash-lite",
     "gemini-3.1-flash-lite",
-    "gemini-2.5-flash-lite",
+    "gemini-3.5-flash",
+    "gemini-3.8-flash",
 ]
 
 BASE_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
@@ -127,8 +127,8 @@ The {item['name']} will be replaced with each calculator's actual name during ge
 Output the full HTML file now:"""
 
 
-def call_gemini_once(prompt, model):
-    url = BASE_URL.format(model=model, key=API_KEY)
+def call_gemini_once(prompt, model, api_key):
+    url = BASE_URL.format(model=model, key=api_key)
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"temperature": 0.4, "maxOutputTokens": 32768},
@@ -139,23 +139,25 @@ def call_gemini_once(prompt, model):
         return json.loads(resp.read().decode("utf-8"))
 
 
-def call_gemini_with_retries(prompt, model):
+def call_gemini_with_retries(prompt, model, api_key):
     last_error = None
     for attempt in range(MAX_RETRIES_PER_MODEL):
         try:
-            print(f"  Attempt {attempt + 1}/{MAX_RETRIES_PER_MODEL} with {model}")
-            data = call_gemini_once(prompt, model)
+            print(f"    Attempt {attempt + 1}/{MAX_RETRIES_PER_MODEL}")
+            data = call_gemini_once(prompt, model, api_key)
             return data["candidates"][0]["content"]["parts"][0]["text"]
         except urllib.error.HTTPError as e:
             error_body = e.read().decode("utf-8", errors="replace")
-            print(f"  HTTP {e.code}: {error_body[:200]}")
+            print(f"    HTTP {e.code}: {error_body[:150]}")
             last_error = e
-            if e.code in (429, 500, 502, 503, 504):
+            if e.code in (429, 404):
+                raise  # don't retry — move to next key/model
+            if e.code in (500, 502, 503, 504):
                 time.sleep(5 * (attempt + 1))
                 continue
             raise
         except (TimeoutError, urllib.error.URLError) as e:
-            print(f"  Network error: {e}")
+            print(f"    Network error: {e}")
             last_error = e
             time.sleep(5 * (attempt + 1))
             continue
@@ -163,17 +165,36 @@ def call_gemini_with_retries(prompt, model):
 
 
 def generate_with_fallback(prompt):
+    """Try each model across all keys before moving to the next model."""
     errors = []
     for model in MODEL_CANDIDATES:
-        print(f"Trying model: {model}")
-        try:
-            result = call_gemini_with_retries(prompt, model)
-            print(f"Success with model: {model}")
-            return result
-        except Exception as e:
-            errors.append(f"{model}: {e}")
+        model_failed = False
+        for key_idx, api_key in enumerate(API_KEYS):
+            key_label = f"key {key_idx + 1}/{len(API_KEYS)}"
+            print(f"Trying {model} with {key_label}")
+            try:
+                result = call_gemini_with_retries(prompt, model, api_key)
+                print(f"Success: {model} ({key_label})")
+                return result
+            except urllib.error.HTTPError as e:
+                if e.code == 404:
+                    print(f"  Model {model} not available — skipping to next model")
+                    errors.append(f"{model}: 404")
+                    model_failed = True
+                    break
+                elif e.code == 429:
+                    print(f"  Quota exhausted on {key_label} — trying next key")
+                    errors.append(f"{model} {key_label}: 429")
+                    continue
+                else:
+                    errors.append(f"{model} {key_label}: {e.code}")
+                    continue
+            except Exception as e:
+                errors.append(f"{model} {key_label}: {e}")
+                continue
+        if model_failed:
             continue
-    raise RuntimeError("All models failed:\n" + "\n".join(errors))
+    raise RuntimeError("All model/key combinations failed:\n" + "\n".join(errors))
 
 
 def extract_html(text):
