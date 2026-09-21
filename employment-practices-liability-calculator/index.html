@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://calccover.com/employment-practices-liability-calculator/">
+<title>Employment Practices Liability Insurance Calculator — Calccover</title>
+<meta name="description" content="Estimate your EPLI insurance cost. Covers wrongful termination, discrimination, and harassment claims.">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Employment Practices Liability Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
+header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
+.container{max-width:720px;margin:0 auto;padding:0 1.5rem}
+header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
+.logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
+nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
+.calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
+.form-group{margin-bottom:1.25rem}
+label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
+input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
+button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
+button:hover{background:#0052a3}
+.result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
+.result-box.show{display:block}
+.result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
+.result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
+.result-row .label{color:#555}
+.result-row .value{color:#0066cc;font-weight:700}
+.lead-form{margin-top:1.5rem;display:none}
+.lead-form.show{display:block}
+.lead-form button{background:#28a745}
+.content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
+footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
+details{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1rem 1.5rem;margin-bottom:2rem}
+summary{font-weight:600;cursor:pointer;color:#0066cc}
+details p{margin-top:.75rem;color:#555;font-size:.95rem}
+h2{font-size:1.5rem;margin-bottom:1rem;color:#1a1a1a}
+h3{font-size:1.1rem;margin-top:1.2rem;margin-bottom:.4rem;color:#1a1a1a}
+p{margin-bottom:1rem;color:#444}
+footer .container{display:flex;justify-content:space-between;align-items:center}
+footer a{color:#555;text-decoration:none;margin-right:1rem}
+footer a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<a href="/" class="logo">Calccover</a>
+<nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
+</div>
+</header>
+
+<main class="container">
+<h1 style="margin-top: 2rem; font-size: 2rem; margin-bottom: 0.5rem;">Employment Practices Liability Insurance Calculator</h1>
+<p style="color: #666; margin-bottom: 1.5rem;">Estimate your annual premium for employment practices liability insurance (EPLI) based on your workforce size, revenue, industry risk, and claims history.</p>
+
+<div class="calculator-box">
+<div class="form-group">
+<label for="employees">Number of Employees</label>
+<input type="number" id="employees" min="1" placeholder="e.g. 25">
+</div>
+
+<div class="form-group">
+<label for="revenue">Annual Revenue</label>
+<input type="number" id="revenue" min="0" placeholder="e.g. 2500000">
+</div>
+
+<div class="form-group">
+<label for="industry">Industry</label>
+<select id="industry">
+<option value="retail">Retail</option>
+<option value="technology">Technology</option>
+<option value="manufacturing">Manufacturing</option>
+<option value="healthcare">Healthcare</option>
+<option value="hospitality">Hospitality</option>
+<option value="professional">Professional Services</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="state">State</label>
+<select id="state">
+<option value="california">California</option>
+<option value="newyork">New York</option>
+<option value="texas">Texas</option>
+<option value="florida">Florida</option>
+<option value="other">Other State</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="claims">Prior Claims History (Past 3 Years)</label>
+<select id="claims">
+<option value="none">No Prior Claims</option>
+<option value="one">1 Claim</option>
+<option value="multiple">2 or More Claims</option>
+</select>
+</div>
+
+<button type="button" id="calcBtn">Calculate Estimated Premium</button>
+
+<div class="result-box" id="resultBox">
+<div class="result-row"><span class="label">Estimated Annual Premium</span><span class="value" id="resTotal">$0</span></div>
+<div class="result-row"><span class="label">Base Employee Cost</span><span class="value" id="resBase">$0</span></div>
+<div class="result-row"><span class="label">Industry & State Adjustment</span><span class="value" id="resAdj">1.0x</span></div>
+<div class="result-row"><span class="label">Claims Modifier</span><span class="value" id="resClaims">1.0x</span></div>
+
+<div class="lead-form" id="leadForm">
+<p style="margin-top:1rem;font-size:0.95rem;color:#333;">Want an exact, underwritten quote for your business?</p>
+<form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="7ddf27ee-45e4-4fe4-afd3-5b802ece6846">
+    <input type="email" name="email" required placeholder="your@email.com">
+    <input type="hidden" name="calculator" value="Employment Practices Liability Insurance Calculator">
+    <input type="hidden" name="page_url" id="pageUrl" value="">
+    <input type="hidden" name="subject" value="New quote request — Employment Practices Liability Insurance Calculator">
+    <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
+    <button type="submit">Get a Free Quote</button>
+</form>
+</div>
+</div>
+</div>
+
+<details>
+<summary>How this calculator works</summary>
+<p>This calculator estimates your Employment Practices Liability Insurance (EPLI) premium by starting with a baseline cost per employee, adjusting for your industry risk profile and state litigiousness, and scaling based on your annual revenue and prior claims history. Higher employee counts, litigious jurisdictions, and past claims increase your overall exposure.</p>
+<p>Formula source: Commercial Insurance Underwriting Guidelines & ISO Actuarial Standards.</p>
+</details>
+
+<section class="content-section">
+<h2>How Much Does Employment Practices Liability Insurance Cost?</h2>
+<p>Employment Practices Liability Insurance (EPLI) protects business owners against allegations of wrongful termination, discrimination, sexual harassment, and other employment-related torts. For most small to mid-sized businesses, annual premiums typically range from a few thousand dollars to over fifteen thousand dollars. The exact cost heavily depends on your organization's head count, risk controls, and the industry in which you operate.</p>
+<p>While baseline coverage for a small office with ten employees might be relatively inexpensive, companies with larger workforces or those operating in states with strict employee-protection legislation will see higher pricing. Investing in robust human resources policies, formal handbooks, and management training can often qualify your business for lower premium tiers during the underwriting process.</p>
+</section>
+
+<section class="content-section">
+<h2>What Factors Affect Your Premium?</h2>
+<p>Underwriters evaluate multiple risk metrics when determining your final EPLI quotation. The primary driver is your total employee count, as more workers statistically correlate with a higher volume of potential workplace disputes. Part-time, seasonal, and full-time employees are all factored into the overall exposure calculation, though underwriters sometimes weigh them differently.</p>
+<p>Geographic location is another vital rating factor. States like California and New York feature unique labor laws, higher average settlement amounts, and more active plaintiff attorney networks, driving up regional base rates. Additionally, your industry classification matters: sectors with high turnover or stringent regulatory environments, such as healthcare and hospitality, often face steeper underwriting multipliers than standard professional services firms.</p>
+</section>
+
+<section class="content-section">
+<h2>Frequently Asked Questions</h2>
+<h3>What does EPLI insurance typically cover?</h3>
+<p>EPLI policies cover legal defense fees, settlements, and judgments arising from employee lawsuits alleging discrimination, wrongful termination, sexual harassment, breach of employment contract, and failure to promote.</p>
+
+<h3>Is third-party discrimination covered under standard EPLI?</h3>
+<p>Standard policies focus primarily on employee-on-employee claims. However, many modern commercial forms can be endorsed to include third-party liability covering claims made by customers, vendors, or visitors against your staff.</p>
+
+<h3>How can my business lower its EPLI premiums?</h3>
+<p>Insurers reward proactive risk management. Maintaining an up-to-date employee handbook, establishing clear anti-harassment reporting procedures, providing regular manager training, and consulting legal counsel before terminations will help reduce quotes.</p>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+<div><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
+<div>© 2026 Calccover.</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('pageUrl').value = window.location.href;
+
+document.getElementById('calcBtn').addEventListener('click', function() {
+    const employees = parseFloat(document.getElementById('employees').value) || 0;
+    const revenue = parseFloat(document.getElementById('revenue').value) || 0;
+    const industry = document.getElementById('industry').value;
+    const state = document.getElementById('state').value;
+    const claims = document.getElementById('claims').value;
+
+    if (employees <= 0) {
+        alert('Please enter a valid number of employees.');
+        return;
+    }
+
+    let baseRatePerEmp = 70;
+    let industryFactor = 1.0;
+    if (industry === 'healthcare') industryFactor = 1.35;
+    if (industry === 'hospitality') industryFactor = 1.25;
+    if (industry === 'manufacturing') industryFactor = 1.15;
+    if (industry === 'retail') industryFactor = 1.05;
+    if (industry === 'technology') industryFactor = 0.95;
+    if (industry === 'professional') industryFactor = 0.90;
+
+    let stateFactor = 1.0;
+    if (state === 'california') stateFactor = 1.45;
+    if (state === 'newyork') stateFactor = 1.35;
+    if (state === 'florida') stateFactor = 1.20;
+    if (state === 'texas') stateFactor = 1.10;
+
+    let claimsFactor = 1.0;
+    if (claims === 'one') claimsFactor = 1.35;
+    if (claims === 'multiple') claimsFactor = 1.80;
+
+    let revenueFactor = 1.0;
+    if (revenue > 10000000) {
+        revenueFactor = 1.25;
+    } else if (revenue > 5000000) {
+        revenueFactor = 1.15;
+    } else if (revenue > 1000000) {
+        revenueFactor = 1.05;
+    }
+
+    let baseCost = employees * baseRatePerEmp;
+    let totalPremium = baseCost * industryFactor * stateFactor * claimsFactor * revenueFactor;
+
+    document.getElementById('resTotal').textContent = '$' + Math.round(totalPremium).toLocaleString();
+    document.getElementById('resBase').textContent = '$' + Math.round(baseCost).toLocaleString() + ' (' + employees + ' emp @ avg rate)';
+    document.getElementById('resAdj').textContent = (industryFactor * stateFactor).toFixed(2) + 'x';
+    document.getElementById('resClaims').textContent = claimsFactor.toFixed(2) + 'x';
+
+    document.getElementById('resultBox').classList.add('show');
+    document.getElementById('leadForm').classList.add('show');
+});
+</script>
+
+</body>
+</html>

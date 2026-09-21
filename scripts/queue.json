@@ -158,7 +158,8 @@
     "description": "Estimate your EPLI insurance cost. Covers wrongful termination, discrimination, and harassment claims.",
     "inputs": "Number of employees, annual revenue, state, industry, claims history",
     "formula": "Base per-employee rate of $40-$120. Revenue factor and state adjustments. Claims history multiplier.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-21T02:19:35.492710Z"
   },
   {
     "slug": "inland-marine-insurance-calculator",
