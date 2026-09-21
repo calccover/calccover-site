@@ -1,11 +1,12 @@
 [
-    {
+  {
     "slug": "cargo-insurance-calculator",
     "name": "Cargo Insurance Calculator",
     "description": "Calculate cargo insurance cost for freight shipments. Enter cargo value, load frequency, and coverage limit for instant premium estimates.",
     "inputs": "Average cargo value per load, loads per year, cargo type (general, refrigerated, hazmat, electronics, produce), coverage limit",
     "formula": "Base rate per $1000 of cargo value: general $0.50, refrigerated $0.70, hazmat $1.20, electronics $0.90, produce $0.60. Coverage limit multiplier based on selected limit ($100K, $250K, $500K). Annual premium = (avg cargo value / 1000) * rate * (loads per year / 12) * coverage factor.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-21T01:52:12.886362Z"
   },
   {
     "slug": "semi-truck-insurance-cost-calculator",

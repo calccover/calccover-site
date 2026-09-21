@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://calccover.com/cargo-insurance-calculator/">
+    <title>Cargo Insurance Calculator — Calccover</title>
+    <meta name="description" content="Calculate cargo insurance cost for freight shipments. Enter cargo value, load frequency, and coverage limit for instant premium estimates.">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
+        header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
+        .container{max-width:720px;margin:0 auto;padding:0 1.5rem}
+        header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
+        .logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
+        nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
+        .calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
+        .form-group{margin-bottom:1.25rem}
+        label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
+        input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
+        button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
+        button:hover{background:#0052a3}
+        .result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
+        .result-box.show{display:block}
+        .result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
+        .lead-form{margin-top:1.5rem;display:none}
+        .lead-form.show{display:block}
+        .lead-form button{background:#28a745}
+        .lead-form button:hover{background:#218838}
+        .lead-form input{margin-bottom:.75rem}
+        .content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
+        footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
+        footer .container{display:flex;justify-content:space-between;align-items:center;max-width:960px;flex-wrap:wrap;gap:1rem}
+        footer a{color:#777;text-decoration:none;margin-right:1rem}
+        footer a:hover{color:#0066cc}
+        .result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
+        .result-row .label{color:#555}
+        .result-row .value{color:#0066cc;font-weight:700}
+        details{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1rem 1.5rem;margin:1.5rem 0;font-size:.95rem}
+        summary{font-weight:600;cursor:pointer;color:#0066cc}
+        details p{margin-top:.5rem;color:#555}
+        .hero-title{text-align:center;margin-top:2rem}
+        .hero-title h1{font-size:2.2rem;color:#1a1a1a;margin-bottom:.5rem}
+        .hero-title p{color:#555;font-size:1.1rem}
+    </style>
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebApplication","name":"Cargo Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="/" class="logo">Calccover</a>
+            <nav>
+                <a href="/about/">About</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="hero-title">
+            <h1>Cargo Insurance Calculator</h1>
+            <p>Estimate your annual cargo insurance premiums instantly by entering your shipment details below.</p>
+        </div>
+
+        <div class="calculator-box">
+            <form id="cargoForm" onsubmit="calculateCargoInsurance(event)">
+                <div class="form-group">
+                    <label for="cargoValue">Average Cargo Value per Load (USD)</label>
+                    <input type="number" id="cargoValue" required min="1" placeholder="e.g. 75000">
+                </div>
+
+                <div class="form-group">
+                    <label for="loadsPerYear">Loads per Year</label>
+                    <input type="number" id="loadsPerYear" required min="1" placeholder="e.g. 120">
+                </div>
+
+                <div class="form-group">
+                    <label for="cargoType">Cargo Type</label>
+                    <select id="cargoType" required>
+                        <option value="">Select cargo type</option>
+                        <option value="general">General Freight</option>
+                        <option value="refrigerated">Refrigerated Goods</option>
+                        <option value="hazmat">Hazardous Materials</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="produce">Fresh Produce</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="coverageLimit">Coverage Limit</label>
+                    <select id="coverageLimit" required>
+                        <option value="">Select coverage limit</option>
+                        <option value="100k">100,000 USD</option>
+                        <option value="250k">250,000 USD</option>
+                        <option value="500k">500,000 USD</option>
+                    </select>
+                </div>
+
+                <button type="submit">Calculate Premium</button>
+            </form>
+
+            <div class="result-box" id="resultBox">
+                <div class="premium" id="premiumDisplay">$0.00</div>
+                <div style="margin-bottom:1rem;color:#555;font-size:.9rem">Estimated Annual Premium</div>
+                
+                <div class="result-row">
+                    <span class="label">Cargo Type</span>
+                    <span class="value" id="resCargoType">-</span>
+                </div>
+                <div class="result-row">
+                    <span class="label">Coverage Limit</span>
+                    <span class="value" id="resLimit">-</span>
+                </div>
+                <div class="result-row">
+                    <span class="label">Estimated Monthly Cost</span>
+                    <span class="value" id="resMonthly">-</span>
+                </div>
+            </div>
+
+            <div class="lead-form" id="leadForm">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+                    <input type="email" name="email" required placeholder="your@email.com">
+                    <input type="hidden" name="calculator" value="Cargo Insurance Calculator">
+                    <input type="hidden" name="page_url" id="pageUrl" value="">
+                    <input type="hidden" name="subject" value="New quote request — Cargo Insurance Calculator">
+                    <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
+                    <button type="submit">Get a Free Quote</button>
+                </form>
+            </div>
+        </div>
+
+        <details>
+            <summary>How this calculator works</summary>
+            <p>This calculator estimates your annual cargo insurance premium based on the average value of your shipments, the frequency of your loads, the type of cargo transported, and your selected coverage limit. It applies a specialized industry risk multiplier for different freight categories to determine a base rate per $1,000 of cargo value, scaled by your annual shipping volume and policy limits.</p>
+            <p>Formula source: Commercial Inland Marine Underwriting Guidelines.</p>
+        </details>
+
+        <section class="content-section">
+            <h2>How Much Does Cargo Insurance Cost?</h2>
+            <p>Cargo insurance costs vary widely depending on the nature of the goods transported and the overall transit volume. For standard dry van freight (general cargo), annual premiums typically range from $500 to $2,000 per vehicle. However, high-value electronics, temperature-sensitive produce, or hazardous chemicals require specialized coverage that can drive annual costs up to $5,000 or more per truck. Most owner-operators and fleet managers can expect to pay a rate based on their total gross revenue or a flat fee per load. By utilizing a cargo insurance calculator, logistics companies can project their annual operating expenses more accurately and select policy limits that align with their contractual agreements with shippers.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>What Factors Affect Your Premium?</h2>
+            <p>Underwriters evaluate several critical risk factors when pricing a commercial cargo insurance policy. The primary driver is the commodity type; commodities prone to theft (like consumer electronics) or spoilage (like refrigerated seafood) command higher rates. Additionally, your operating radius and routes play a major role, as long-haul interstate transit carries higher accident risks than local delivery. Your business's loss history—specifically the frequency and severity of past cargo claims—will directly influence your premium. Finally, the chosen deductible and policy limits (such as $100,000 versus $500,000 per load) scale the final cost. Implementing robust security protocols, such as GPS tracking and driver safety training, can help mitigate these risks and lower your premiums over time.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Frequently Asked Questions</h2>
+            <h3>What is the standard coverage limit for commercial cargo insurance?</h3>
+            <p>Most freight brokers and shippers require carriers to carry a minimum of $100,000 in cargo insurance coverage. However, for high-value shipments such as specialized machinery or electronics, shippers may mandate limits of $250,000, $500,000, or even higher to fully protect their financial assets during transit.</p>
+            <h3>Does cargo insurance cover refrigerated breakdown?</h3>
+            <p>Standard cargo policies may exclude losses due to temperature variation unless a specific reefer breakdown endorsement is added. This endorsement protects against spoilage caused by mechanical failure of the refrigeration unit, provided the carrier has maintained proper maintenance logs and pre-cooling procedures.</p>
+            <h3>What is the difference between cargo insurance and carrier liability?</h3>
+            <p>Carrier liability is limited by law and often only covers damage directly caused by the carrier's negligence, paying out pennies on the dollar based on weight. Cargo insurance, on the other hand, is a first-party coverage that protects the actual value of the goods against a wider range of perils, including theft, accidents, and natural disasters, regardless of fault.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div>
+                <a href="/about/">About</a>
+                <a href="/contact/">Contact</a>
+                <a href="/privacy/">Privacy</a>
+                <a href="/terms/">Terms</a>
+            </div>
+            <div>© 2026 Calccover.</div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('pageUrl').value = window.location.href;
+
+        function calculateCargoInsurance(event) {
+            event.preventDefault();
+
+            const cargoValue = parseFloat(document.getElementById('cargoValue').value);
+            const loadsPerYear = parseFloat(document.getElementById('loadsPerYear').value);
+            const cargoType = document.getElementById('cargoType').value;
+            const coverageLimit = document.getElementById('coverageLimit').value;
+
+            if (!cargoValue || !loadsPerYear || !cargoType || !coverageLimit) {
+                return;
+            }
+
+            // Base rate per $1000 of cargo value
+            let rate = 0.50;
+            let cargoTypeName = "General Freight";
+            if (cargoType === 'general') {
+                rate = 0.50;
+                cargoTypeName = "General Freight";
+            } else if (cargoType === 'refrigerated') {
+                rate = 0.70;
+                cargoTypeName = "Refrigerated Goods";
+            } else if (cargoType === 'hazmat') {
+                rate = 1.20;
+                cargoTypeName = "Hazardous Materials";
+            } else if (cargoType === 'electronics') {
+                rate = 0.90;
+                cargoTypeName = "Electronics";
+            } else if (cargoType === 'produce') {
+                rate = 0.60;
+                cargoTypeName = "Fresh Produce";
+            }
+
+            // Coverage limit multiplier
+            let coverageFactor = 1.0;
+            let limitName = "$100,000 USD";
+            if (coverageLimit === '100k') {
+                coverageFactor = 1.0;
+                limitName = "$100,000 USD";
+            } else if (coverageLimit === '250k') {
+                coverageFactor = 1.25;
+                limitName = "$250,000 USD";
+            } else if (coverageLimit === '500k') {
+                coverageFactor = 1.50;
+                limitName = "$500,000 USD";
+            }
+
+            // Formula: Annual premium = (avg cargo value / 1000) * rate * (loads per year / 12) * coverage factor
+            const annualPremium = (cargoValue / 1000) * rate * (loadsPerYear / 12) * coverageFactor;
+            const monthlyPremium = annualPremium / 12;
+
+            // Format results
+            const formatter = new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            });
+
+            document.getElementById('premiumDisplay').textContent = formatter.format(annualPremium);
+            document.getElementById('resCargoType').textContent = cargoTypeName;
+            document.getElementById('resLimit').textContent = limitName;
+            document.getElementById('resMonthly').textContent = formatter.format(monthlyPremium);
+
+            // Show results and lead form
+            document.getElementById('resultBox').classList.add('show');
+            document.getElementById('leadForm').classList.add('show');
+        }
+    </script>
+</body>
+</html>
