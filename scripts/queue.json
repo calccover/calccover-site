@@ -23,7 +23,8 @@
     "description": "Estimate insurance costs for owner-operators with single trucks. Includes primary liability, cargo, physical damage, and occupational accident coverage.",
     "inputs": "Annual revenue, cargo type, operation radius, driving record, state, truck value, DOT authority age",
     "formula": "Primary liability base $7,000-$12,000 based on radius. Cargo rate based on cargo type. Physical damage 2-4% of truck value. Occupational accident $1,500-$3,000. New authority multiplier 1.25 for first 2 years. State multiplier.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-21T02:12:51.466905Z"
   },
   {
     "slug": "cyber-liability-insurance-calculator",
