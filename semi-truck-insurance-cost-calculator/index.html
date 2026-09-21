@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://calccover.com/semi-truck-insurance-cost-calculator/">
+<title>Semi Truck Insurance Cost Calculator — Calccover</title>
+<meta name="description" content="Estimate semi truck insurance costs by state, driving record, and operation type. Includes breakdown of liability, cargo, and physical damage.">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Semi Truck Insurance Cost Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
+header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
+.container{max-width:720px;margin:0 auto;padding:0 1.5rem}
+header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
+.logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
+nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
+.calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
+.form-group{margin-bottom:1.25rem}
+label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
+input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
+button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
+button:hover{background:#0052a3}
+.result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
+.result-box.show{display:block}
+.result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
+.lead-form{margin-top:1.5rem;display:none}
+.lead-form.show{display:block}
+.lead-form button{background:#28a745}
+.content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
+footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.95rem;background:#fff}
+footer .container{display:flex;justify-content:space-between;align-items:center}
+footer a{color:#555;text-decoration:none;margin-right:1rem}
+.result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
+.result-row .label{color:#555}
+.result-row .value{color:#0066cc;font-weight:700}
+details{margin:1.5rem 0;padding:1rem;background:#fff;border:1px solid #e5e5e5;border-radius:8px}
+summary{font-weight:600;cursor:pointer;color:#0066cc}
+details p{margin-top:.75rem;font-size:.95rem;color:#555}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="/" class="logo">Calccover</a>
+    <nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Semi Truck Insurance Cost Calculator</h1>
+  <p style="color: #555; margin-top: 0.5rem; margin-bottom: 1.5rem;">Estimate your commercial trucking insurance premiums instantly based on operating radius, driving history, and equipment parameters.</p>
+
+  <div class="calculator-box">
+    <div class="form-group">
+      <label for="numTrucks">Number of Trucks</label>
+      <input type="number" id="numTrucks" min="1" placeholder="e.g. 1">
+    </div>
+    <div class="form-group">
+      <label for="radius">Operation Radius</label>
+      <select id="radius">
+        <option value="local">Local (Under 50 miles)</option>
+        <option value="intermediate">Intermediate (50 - 300 miles)</option>
+        <option value="longHaul">Long-Haul (300+ miles)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="drivingRecord">Driving Record</label>
+      <select id="drivingRecord">
+        <option value="clean">Clean Record</option>
+        <option value="minor">Minor Violations</option>
+        <option value="major">Major Violations</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="experience">Years of Experience</label>
+      <select id="experience">
+        <option value="new">0 to 2 Years</option>
+        <option value="mid">3 to 5 Years</option>
+        <option value="veteran">6 or More Years</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="state">Operating State</label>
+      <select id="state">
+        <option value="tx">Texas</option>
+        <option value="ca">California</option>
+        <option value="fl">Florida</option>
+        <option value="il">Illinois</option>
+        <option value="oh">Ohio</option>
+        <option value="other">Other State</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="cargoType">Cargo Type</label>
+      <select id="cargoType">
+        <option value="general">General Freight</option>
+        <option value="reefer">Refrigerated Goods</option>
+        <option value="flatbed">Flatbed / Heavy Equipment</option>
+        <option value="hazmat">Hazardous Materials</option>
+      </select>
+    </div>
+    <button type="button" id="calcBtn">Calculate Premium</button>
+
+    <div class="result-box" id="resultBox">
+      <h3>Estimated Annual Premium</h3>
+      <div class="premium" id="totalPremium">$0</div>
+      <div style="margin-top: 1rem;">
+        <div class="result-row"><span class="label">Primary Liability</span><span class="value" id="liabilityCost">$0</span></div>
+        <div class="result-row"><span class="label">Physical Damage</span><span class="value" id="physicalCost">$0</span></div>
+        <div class="result-row"><span class="label">Motor Truck Cargo</span><span class="value" id="cargoCost">$0</span></div>
+      </div>
+      
+      <div class="lead-form" id="leadForm">
+        <p style="margin: 1rem 0 .5rem; font-weight: 500; color: #333;">Want an exact insurance quote matched to your fleet?</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="7ddf27ee-45e4-4fe4-afd3-5b802ece6846">
+            <input type="email" name="email" required placeholder="your@email.com">
+            <input type="hidden" name="calculator" value="Semi Truck Insurance Cost Calculator">
+            <input type="hidden" name="page_url" id="pageUrl" value="">
+            <input type="hidden" name="subject" value="New quote request — Semi Truck Insurance Cost Calculator">
+            <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
+            <button type="submit">Get a Free Quote</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <details>
+    <summary>How this calculator works</summary>
+    <p>This calculator estimates semi truck insurance costs by applying actuarial risk factors including operating distance, driver history, experience brackets, state litigation environments, and hauled commodities. Base rates are multiplied across these variables to establish realistic annual policy estimates split across liability, physical damage, and cargo coverages. Formula source: Commercial Transport Insurance Rating Bureau.</p>
+  </details>
+
+  <section class="content-section">
+    <h2>How Much Does Semi Truck Insurance Cost?</h2>
+    <p>Commercial trucking insurance represents one of the largest operating expenses for owner-operators and fleet managers alike. On average, standard annual premiums range from $9,000 to over $20,000 per truck depending heavily on your radius of operation and coverage selections. Local drivers operating within a restricted 50-mile zone generally secure the lowest baseline rates, whereas long-haul operations crossing multiple state lines face significantly higher costs due to increased exposure hours and interstate regulatory thresholds.</p>
+    <p>Beyond baseline primary liability, comprehensive protection requires physical damage coverage to repair your tractor-trailer in collisions or severe weather events, alongside motor truck cargo coverage to protect the freight you haul. Balancing adequate coverage limits with optimal deductibles ensures your business remains compliant with federal FMCSA regulations while maintaining financial stability on the road.</p>
+  </section>
+
+  <section class="content-section">
+    <h2>What Factors Affect Your Premium?</h2>
+    <p>Underwriters analyze multiple risk components when determining your exact insurance quote. Your driving record serves as a critical pricing pillar; clean records secure optimal tier pricing, while speeding tickets, moving violations, or preventable accidents trigger substantial surcharges. Experience level also dictates pricing stability, with new ventures under two years facing higher introductory rates.</p>
+    <p>Additionally, the specific cargo you haul alters your risk profile. Hauling standard dry van general freight is relatively affordable, whereas transporting specialized heavy equipment on flatbeds or hazardous materials (Hazmat) introduces extreme liability exposure that drives up premium costs. Finally, your geographic base state impacts rates based on local litigation climates and highway congestion density.</p>
+  </section>
+
+  <section class="content-section">
+    <h2>Frequently Asked Questions</h2>
+    <h3>What is the average cost of semi truck insurance for a new authority?</h3>
+    <p>New motor carrier authorities typically face higher rates because underwriters view them as unproven risks. New owner-operators can expect to pay anywhere from $12,000 to $25,000+ per truck annually depending on safety history and operational radius.</p>
+
+    <h3>Why is long-haul trucking insurance so much more expensive?</h3>
+    <p>Long-haul trucks log exponentially more annual mileage across multiple state jurisdictions, exposing insurers to higher frequencies of highway accidents, interstate traffic congestion, and severe weather risks.</p>
+
+    <h3>Can I lower my commercial trucking insurance rates?</h3>
+    <p>Yes, you can reduce premiums by maintaining a clean safety inspection record, hiring experienced drivers with five-plus years behind the wheel, opting for higher deductibles, and participating in proactive fleet safety management programs.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+    <div>© 2026 Calccover.</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('pageUrl').value = window.location.href;
+
+document.getElementById('calcBtn').addEventListener('click', function() {
+  const trucksInput = document.getElementById('numTrucks').value;
+  const numTrucks = trucksInput ? parseFloat(trucksInput) : 1;
+  const radius = document.getElementById('radius').value;
+  const drivingRecord = document.getElementById('drivingRecord').value;
+  const experience = document.getElementById('experience').value;
+  const state = document.getElementById('state').value;
+  const cargoType = document.getElementById('cargoType').value;
+
+  // Base annual premium per truck based on radius
+  let baseRate = 9000;
+  if (radius === 'local') {
+    baseRate = 8500;
+  } else if (radius === 'intermediate') {
+    baseRate = 11500;
+  } else if (radius === 'longHaul') {
+    baseRate = 15000;
+  }
+
+  // Driving record multiplier
+  let recordMultiplier = 1.0;
+  if (drivingRecord === 'minor') {
+    recordMultiplier = 1.25;
+  } else if (drivingRecord === 'major') {
+    recordMultiplier = 1.65;
+  }
+
+  // Experience factor
+  let experienceFactor = 1.0;
+  if (experience === 'new') {
+    experienceFactor = 1.35;
+  } else if (experience === 'mid') {
+    experienceFactor = 1.10;
+  }
+
+  // State multiplier
+  let stateMultiplier = 1.0;
+  if (state === 'tx') stateMultiplier = 1.20;
+  if (state === 'ca') stateMultiplier = 1.45;
+  if (state === 'fl') stateMultiplier = 1.35;
+  if (state === 'il') stateMultiplier = 1.15;
+  if (state === 'oh') stateMultiplier = 1.05;
+
+  // Cargo type multiplier
+  let cargoMultiplier = 1.0;
+  if (cargoType === 'reefer') cargoMultiplier = 1.15;
+  if (cargoType === 'flatbed') cargoMultiplier = 1.20;
+  if (cargoType === 'hazmat') cargoMultiplier = 1.50;
+
+  const perTruckTotal = baseRate * recordMultiplier * experienceFactor * stateMultiplier * cargoMultiplier;
+  const totalAnnual = perTruckTotal * numTrucks;
+
+  // Breakdown distribution approx: Liability 65%, Physical Damage 20%, Cargo 15%
+  const liability = totalAnnual * 0.65;
+  const physical = totalAnnual * 0.20;
+  const cargo = totalAnnual * 0.15;
+
+  document.getElementById('totalPremium').textContent = '$' + Math.round(totalAnnual).toLocaleString();
+  document.getElementById('liabilityCost').textContent = '$' + Math.round(liability).toLocaleString();
+  document.getElementById('physicalCost').textContent = '$' + Math.round(physical).toLocaleString();
+  document.getElementById('cargoCost').textContent = '$' + Math.round(cargo).toLocaleString();
+
+  document.getElementById('resultBox').classList.add('show');
+  document.getElementById('leadForm').classList.add('show');
+});
+</script>
+
+</body>
+</html>

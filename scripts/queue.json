@@ -14,7 +14,8 @@
     "description": "Estimate semi truck insurance costs by state, driving record, and operation type. Includes breakdown of liability, cargo, and physical damage.",
     "inputs": "Number of trucks, operation radius (local, intermediate, long-haul), driving record (clean, minor violations, major violations), years of experience, state, cargo type",
     "formula": "Base annual premium per truck: $8,000-$15,000 depending on operation radius. Driving record multiplier: clean 1.0, minor 1.25, major 1.65. Experience factor: 0-2 years 1.35, 3-5 years 1.10, 6+ years 1.0. State multiplier. Cargo type multiplier.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-21T02:03:10.664167Z"
   },
   {
     "slug": "owner-operator-insurance-calculator",
