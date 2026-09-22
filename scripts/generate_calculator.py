@@ -116,10 +116,20 @@ The {item['name']} will be replaced with each calculator's actual name during ge
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
 13. Include AdSense in the head:
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
-14. Include in the head:
+14. Include in the head exactly these tags:
 <link rel="canonical" href="https://calccover.com/{item['slug']}/">
 <title>{item['name']} — Calccover</title>
 <meta name="description" content="{item['description']}">
+<meta property="og:title" content="{item['name']} — Calccover">
+<meta property="og:description" content="{item['description']}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://calccover.com/{item['slug']}/">
+<meta property="og:image" content="https://calccover.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{item['name']} — Calccover">
+<meta name="twitter:description" content="{item['description']}">
+<meta name="twitter:image" content="https://calccover.com/og-image.png">
+<link rel="icon" href="/favicon.ico">
 15. All JavaScript inline at bottom of body. Vanilla JS only. No external libraries.
 16. Mobile responsive.
 17. The calculator must produce correct estimates using the formula: {item['formula']}
