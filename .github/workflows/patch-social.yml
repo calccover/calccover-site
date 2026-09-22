@@ -1,8 +1,11 @@
 name: Patch Social Meta Tags
+
 on:
   workflow_dispatch:
+
 permissions:
   contents: write
+
 jobs:
   patch:
     runs-on: ubuntu-latest
