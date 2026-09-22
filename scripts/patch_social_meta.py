@@ -13,7 +13,6 @@ META_BLOCK = '''<meta property="og:image" content="https://calccover.com/og-imag
 <link rel="icon" href="/favicon.ico">
 '''
 
-
 def patch(path):
     with open(path, "r", encoding="utf-8") as f:
         html = f.read()
@@ -23,7 +22,6 @@ def patch(path):
         print(f"  Already has og:image: {path}")
         return False
 
-    # Get title and description for Twitter tags
     title_m = re.search(r"<title>(.*?)</title>", html, re.DOTALL)
     desc_m = re.search(r'<meta name="description" content="(.*?)"', html)
     title = title_m.group(1).strip() if title_m else "Calccover"
@@ -31,7 +29,6 @@ def patch(path):
 
     block = META_BLOCK.replace("{TITLE}", title).replace("{DESC}", desc)
 
-    # Insert right before </head>
     if "</head>" in html:
         html = html.replace("</head>", block + "</head>", 1)
     else:
@@ -40,9 +37,8 @@ def patch(path):
 
     with open(path, "w", encoding="utf-8") as f:
         f.write(html)
-    print(f"  Patched: {path}")
+    print(f"  ✅ Patched: {path}")
     return True
-
 
 def main():
     patched = 0
@@ -54,7 +50,6 @@ def main():
                 if patch(path):
                     patched += 1
     print(f"\nDone. Patched: {patched}")
-
 
 if __name__ == "__main__":
     main()
