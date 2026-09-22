@@ -17,8 +17,8 @@ jobs:
       - run: python scripts/patch_schema.py
         continue-on-error: true
       - run: |
-          git config user.name "DevSecSuite Bot"
-          git config user.email "bot@devsecsuite.com"
+          git config user.name "Calccover Bot"
+          git config user.email "bot@calccover.com"
           if [[ -n $(git status --porcelain) ]]; then
             git add .
             git commit -m "Add JSON-LD structured data to info pages"
