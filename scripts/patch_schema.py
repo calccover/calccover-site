@@ -4,8 +4,8 @@ import os
 import re
 import json
 
-SITE = "https://devsecsuite.com"
-SITE_NAME = "DevSecSuite"
+SITE = "https://calccover.com"
+SITE_NAME = "Calccover"
 
 SKIP = {"scripts", ".github", "node_modules"}
 
