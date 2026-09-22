@@ -1,0 +1,44 @@
+name: On-Page SEO Audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 5 * * 1'
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install beautifulsoup4
+
+      - name: Run SEO audit
+        env:
+          SITE_URL: https://calccover.com
+        run: python scripts/seo_audit.py
+        continue-on-error: true
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-report-${{ github.run_number }}
+          path: seo_report.json
+
+      - name: Post summary
+        if: github.event_name == 'pull_request'
+        run: |
+          SCORE=$(python -c "import json; print(json.load(open('seo_report.json'))['average_score'])")
+          ISSUES=$(python -c "import json; print(json.load(open('seo_report.json'))['critical_issues'])")
+          echo "## SEO Audit Results" >> $GITHUB_STEP_SUMMARY
+          echo "- **Average score:** ${SCORE}/100" >> $GITHUB_STEP_SUMMARY
+          echo "- **Critical issues:** ${ISSUES}" >> $GITHUB_STEP_SUMMARY
