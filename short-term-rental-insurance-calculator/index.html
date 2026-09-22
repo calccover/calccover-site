@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://calccover.com/short-term-rental-insurance-calculator/">
+<title>Short-Term Rental Insurance Calculator — Calccover</title>
+<meta name="description" content="Estimate your Airbnb or VRBO insurance cost. Covers property, liability, and lost rental income.">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
+header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
+.container{max-width:720px;margin:0 auto;padding:0 1.5rem}
+header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
+.logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
+nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
+.calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
+.form-group{margin-bottom:1.25rem}
+label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
+input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
+button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
+button:hover{background:#0052a3}
+.result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
+.result-box.show{display:block}
+.result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
+.result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
+.result-row .label{color:#555}
+.result-row .value{color:#0066cc;font-weight:700}
+.lead-form{margin-top:1.5rem;display:none}
+.lead-form.show{display:block}
+.lead-form button{background:#28a745}
+.content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
+footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
+details{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
+summary{font-weight:600;cursor:pointer;font-size:1.05rem;color:#0066cc}
+details p{margin-top:1rem;color:#555}
+h2{margin-bottom:1rem;font-size:1.5rem;color:#1a1a1a}
+h3{margin:1rem 0 .5rem 0;font-size:1.2rem;color:#333}
+p{margin-bottom:1rem;color:#444}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Short-Term Rental Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+</head>
+<body>
+<header><div class="container"><a href="/" class="logo">Calccover</a><nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
+
+<main class="container">
+    <h1>Short-Term Rental Insurance Calculator</h1>
+    <p>Estimate your Airbnb or VRBO insurance cost covering property, liability, and lost rental income.</p>
+
+    <div class="calculator-box">
+        <div class="form-group">
+            <label for="propertyValue">Property Value ($)</label>
+            <input type="number" id="propertyValue" placeholder="e.g. 450000">
+        </div>
+        <div class="form-group">
+            <label for="annualRevenue">Annual Rental Revenue ($)</label>
+            <input type="number" id="annualRevenue" placeholder="e.g. 60000">
+        </div>
+        <div class="form-group">
+            <label for="nightlyRate">Average Nightly Rate ($)</label>
+            <input type="number" id="nightlyRate" placeholder="e.g. 250">
+        </div>
+        <div class="form-group">
+            <label for="propertyType">Property Type</label>
+            <select id="propertyType">
+                <option value="single">Single Family Home</option>
+                <option value="condo">Condominium or Apartment</option>
+                <option value="cabin">Cabin or Chalet</option>
+                <option value="luxury">Luxury Estate</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="location">Location Risk Profile</label>
+            <select id="location">
+                <option value="suburban">Suburban Residential</option>
+                <option value="urban">Urban Metro Area</option>
+                <option value="coastal">Coastal or Beachfront</option>
+                <option value="mountain">Mountain or Ski Resort</option>
+            </select>
+        </div>
+        <button id="calculateBtn" type="button">Calculate Insurance Cost</button>
+
+        <div id="resultBox" class="result-box">
+            <p>Estimated Annual Premium</p>
+            <div class="premium" id="totalPremium">$0</div>
+            <div style="margin-top:1rem">
+                <div class="result-row"><span class="label">Property Coverage</span><span class="value" id="resProperty">$0</span></div>
+                <div class="result-row"><span class="label">General Liability</span><span class="value" id="resLiability">$0</span></div>
+                <div class="result-row"><span class="label">Lost Rental Income</span><span class="value" id="resIncome">$0</span></div>
+            </div>
+
+            <div class="lead-form" id="leadFormContainer">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="7ddf27ee-45e4-4fe4-afd3-5b802ece6846">
+                    <input type="email" name="email" required placeholder="your@email.com">
+                    <input type="hidden" name="calculator" value="Short-Term Rental Insurance Calculator">
+                    <input type="hidden" name="page_url" id="pageUrl" value="">
+                    <input type="hidden" name="subject" value="New quote request — Short-Term Rental Insurance Calculator">
+                    <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
+                    <button type="submit">Get a Free Quote</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <details>
+        <summary>How this calculator works</summary>
+        <p>This calculator estimates short-term rental insurance premiums by applying a base rate percentage to your annual rental revenue, adjusted for property value replacement costs and regional risk factors. Specific underwriting variables such as security features, guest volume, and deductible choices are also factored into actual commercial policies.</p>
+        <p>Formula source: Insurance Information Institute & Commercial Property Underwriting Standards.</p>
+    </details>
+
+    <section class="content-section">
+        <h2>How Much Does Short-Term Rental Insurance Cost?</h2>
+        <p>Short-term rental insurance policies for platforms like Airbnb and VRBO typically range from 1.5% to 3% of your gross annual rental revenue, translated into an annual premium. For a property generating $60,000 annually, you can expect to pay anywhere from $900 to $1,800 per year depending on your geographical zone, property valuation, and structural characteristics.</p>
+        <p>Standard homeowner policies almost never cover commercial short-term rental activities. Relying solely on host protection guarantees from booking platforms leaves significant coverage gaps, especially regarding liability limits and sustained business interruption losses during unexpected property damage repairs.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>What Factors Affect Your Premium?</h2>
+        <p>Location is one of the most critical drivers of commercial insurance pricing. Properties located in coastal storm zones, wildfire-prone regions, or dense urban centers experience higher base premiums due to elevated frequency and severity risks. Mountain chalets and ski-in properties also carry specialized winter hazard adjustments.</p>
+        <p>Property type and valuation directly impact the rebuilding cost calculation. A luxury estate with high-end finishes and extensive square footage requires higher structural coverage limits than a standard suburban condominium. Additionally, properties with amenities like swimming pools, hot tubs, or wood-burning stoves incur higher general liability endorsements to mitigate slip-and-fall or fire exposure claims.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Frequently Asked Questions</h2>
+        <h3>Does standard homeowners insurance cover Airbnb rentals?</h3>
+        <p>No. Standard homeowners insurance policies explicitly exclude business activities and commercial hosting. If a guest is injured or property is damaged while paying to stay at your home, a standard insurer will likely deny the claim.</p>
+
+        <h3>What does business interruption insurance cover for short-term rentals?</h3>
+        <p>Lost rental income protection covers the revenue you would have earned if a covered peril—such as a fire or severe storm—renders the property uninhabitable, ensuring your mortgage and fixed operating expenses are paid during repairs.</p>
+
+        <h3>Are platform guarantees enough protection?</h3>
+        <p>Host damage and liability guarantees provided by booking websites are helpful, but they often have strict exclusions, lengthy claim approval processes, and high deductibles. Dedicated commercial short-term rental policies provide primary, comprehensive protection without relying on third-party dispute resolutions.</p>
+    </section>
+</main>
+
+<footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+        <div><a href="/about/">About</a> <a href="/contact/">Contact</a> <a href="/privacy/">Privacy</a> <a href="/terms/">Terms</a></div>
+        <div>© 2026 Calccover.</div>
+    </div>
+</footer>
+
+<script>
+document.getElementById('pageUrl').value = window.location.href;
+
+document.getElementById('calculateBtn').addEventListener('click', function() {
+    const propVal = parseFloat(document.getElementById('propertyValue').value) || 300000;
+    const rev = parseFloat(document.getElementById('annualRevenue').value) || 40000;
+    const propertyType = document.getElementById('propertyType').value;
+    const location = document.getElementById('location').value;
+
+    let baseRate = rev * 0.02;
+
+    let typeMultiplier = 1.0;
+    if (propertyType === 'condo') typeMultiplier = 0.85;
+    if (propertyType === 'cabin') typeMultiplier = 1.15;
+    if (propertyType === 'luxury') typeMultiplier = 1.45;
+
+    let locMultiplier = 1.0;
+    if (location === 'urban') locMultiplier = 1.2;
+    if (location === 'coastal') locMultiplier = 1.35;
+    if (location === 'mountain') locMultiplier = 1.25;
+
+    let valFactor = (propVal / 100000) * 50;
+
+    let total = (baseRate * typeMultiplier * locMultiplier) + valFactor;
+    if (total < 600) total = 600;
+
+    let propCover = Math.round(total * 0.55);
+    let liabCover = Math.round(total * 0.30);
+    let incCover = Math.round(total * 0.15);
+    let finalTotal = propCover + liabCover + incCover;
+
+    document.getElementById('totalPremium').textContent = '$' + finalTotal.toLocaleString();
+    document.getElementById('resProperty').textContent = '$' + propCover.toLocaleString();
+    document.getElementById('resLiability').textContent = '$' + liabCover.toLocaleString();
+    document.getElementById('resIncome').textContent = '$' + incCover.toLocaleString();
+
+    document.getElementById('resultBox').classList.add('show');
+    document.getElementById('leadFormContainer').classList.add('show');
+});
+</script>
+</body>
+</html>

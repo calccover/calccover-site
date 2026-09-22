@@ -176,7 +176,8 @@
     "description": "Estimate your Airbnb or VRBO insurance cost. Covers property, liability, and lost rental income.",
     "inputs": "Property value, annual rental revenue, location, property type, nightly rate",
     "formula": "Base rate 1.5-3% of annual rental revenue. Property value factor and location adjustment.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-22T02:03:27.655511Z"
   },
   {
     "slug": "home-based-business-insurance-calculator",
