@@ -1,11 +1,8 @@
 name: Patch Social Meta Tags
-
 on:
   workflow_dispatch:
-
 permissions:
   contents: write
-
 jobs:
   patch:
     runs-on: ubuntu-latest
@@ -21,6 +18,6 @@ jobs:
           git config user.email "bot@calccover.com"
           if [[ -n $(git status --porcelain) ]]; then
             git add .
-            git commit -m "Add og:image, Twitter Card, and favicon"
+            git commit -m "Add social meta tags and favicon"
             git push
           fi
