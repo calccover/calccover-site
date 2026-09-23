@@ -185,7 +185,8 @@
     "description": "Estimate your home-based business insurance cost. Covers liability, equipment, and business interruption.",
     "inputs": "Industry, annual revenue, business equipment value, client visits to home",
     "formula": "Base rate $500-$1500 depending on industry. Equipment value and client traffic adjustments.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-23T02:03:43.011338Z"
   },
   {
     "slug": "cleaning-business-insurance-calculator",
