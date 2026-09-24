@@ -132,7 +132,8 @@ The {item['name']} will be replaced with each calculator's actual name during ge
 <link rel="icon" href="/favicon.ico">
 15. All JavaScript inline at bottom of body. Vanilla JS only. No external libraries.
 16. Mobile responsive.
-17. The calculator must produce correct estimates using the formula: {item['formula']}
+17. Include a FAQPage schema block in the head, using the same 3 Q&A pairs from the FAQ content section. Format: {{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{"@type":"Question","name":"Question text","acceptedAnswer":{{"@type":"Answer","text":"Answer text"}}}},...]}}. This must be in addition to the existing WebApplication schema.
+18. The calculator must produce correct estimates using the formula: {item['formula']}
 
 Output the full HTML file now:"""
 
