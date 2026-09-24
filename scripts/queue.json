@@ -194,7 +194,8 @@
     "description": "Estimate your cleaning business insurance cost. Covers liability, bonding, and workers comp.",
     "inputs": "Revenue, number of employees, residential or commercial focus, state",
     "formula": "Base GL rate $800-$2500. Workers comp based on payroll and class code 9014/9015.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-24T02:03:33.911964Z"
   },
   {
     "slug": "landscaping-insurance-calculator",
