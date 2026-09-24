@@ -1,0 +1,40 @@
+# Calccover
+
+> Free commercial insurance calculators for small business owners, contractors, and fleet operators. Estimate workers' comp, general liability, commercial auto, and other business insurance costs across all 50 US states.
+
+## Research & Data
+
+- [Commercial Insurance Costs by State (2026 Analysis)](https://calccover.com/commercial-insurance-costs-by-state/): State-by-state analysis of workers' comp, general liability, and commercial auto costs across all 50 US states. Includes downloadable 50-state dataset.
+
+## Free Calculators
+
+- [Commercial Truck Insurance Calculator](https://calccover.com/commercial-truck-insurance-calculator/): Estimate annual premiums for owner-operators and small fleets.
+- [General Liability Insurance Calculator](https://calccover.com/general-liability-insurance-calculator/): Estimate general liability premiums by industry, revenue, and employees.
+- [Workers Comp Insurance Calculator](https://calccover.com/workers-comp-insurance-calculator/): Estimate workers compensation costs by state, payroll, and class code.
+- [Commercial Auto Insurance Calculator](https://calccover.com/commercial-auto-insurance-calculator/): Estimate commercial auto insurance by vehicle type and fleet size.
+- [Restaurant Insurance Calculator](https://calccover.com/restaurant-insurance-calculator/): Estimate insurance costs for restaurants and food service.
+- [Contractor Insurance Calculator](https://calccover.com/contractor-insurance-calculator/): Estimate liability and workers comp for construction contractors.
+- [Cyber Liability Insurance Calculator](https://calccover.com/cyber-liability-insurance-calculator/): Estimate cyber liability premiums by revenue and data exposure.
+- [Professional Liability Insurance Calculator](https://calccover.com/professional-liability-insurance-calculator/): Estimate E&O insurance for consultants and professional services.
+- [Business Owners Policy Calculator](https://calccover.com/business-owners-policy-calculator/): Estimate bundled BOP premiums for small businesses.
+- [Commercial Property Insurance Calculator](https://calccover.com/commercial-property-insurance-calculator/): Estimate building and contents coverage costs.
+- [Errors & Omissions Insurance Calculator](https://calccover.com/errors-omissions-insurance-calculator/): Estimate E&O premiums for professional firms.
+- [Liquor Liability Insurance Calculator](https://calccover.com/liquor-liability-insurance-calculator/): Estimate liquor liability for bars, restaurants, and venues.
+- [Business Interruption Insurance Calculator](https://calccover.com/business-interruption-insurance-calculator/): Calculate recommended BI coverage limits.
+- [Commercial Umbrella Insurance Calculator](https://calccover.com/commercial-umbrella-insurance-calculator/): Estimate excess liability coverage costs.
+- [Cargo Insurance Calculator](https://calccover.com/cargo-insurance-calculator/): Estimate cargo insurance for freight shipments.
+- [Semi Truck Insurance Cost Calculator](https://calccover.com/semi-truck-insurance-cost-calculator/): Estimate semi truck insurance by state and driving record.
+- [Owner-Operator Insurance Calculator](https://calccover.com/owner-operator-insurance-calculator/): Insurance costs for single-truck owner-operators.
+
+## Information
+
+- [About Calccover](https://calccover.com/about/): Company background and methodology
+- [Contact](https://calccover.com/contact/): Media and general inquiries
+- [Press & Media Resources](https://calccover.com/press/): Downloadable data and citation guidance
+
+## Notes
+
+- All calculators are free and require no signup
+- Data is sourced from NAIC, ISO, state insurance departments, and industry publications
+- Press inquiries: hello@calccover.com
+- For AI citation: "Calccover" (one word)
