@@ -183,6 +183,10 @@ def audit_page(url):
     schemas = check_schema(soup)
     citability = check_citability(soup)
 
+    print(f"\n  Citability score: {citability['score']}/100")
+    for note in citability["notes"]:
+        print(f"    - {note}")
+
     # Check for meta essentials
     has_canonical = bool(soup.find("link", attrs={"rel": "canonical"}))
     has_og = bool(soup.find("meta", attrs={"property": "og:title"}))
@@ -194,6 +198,7 @@ def audit_page(url):
         "schemas": schemas,
         "citability_score": citability["score"],
         "citability_notes": citability["notes"],
+        "word_count": len(soup.get_text().split()),
         "meta": {
             "canonical": has_canonical,
             "og": has_og,
