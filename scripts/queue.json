@@ -203,7 +203,8 @@
     "description": "Estimate your landscaping or lawn care business insurance cost. Covers liability, workers comp, and commercial auto.",
     "inputs": "Revenue, employees, equipment value, vehicles, state",
     "formula": "Base GL $1200-$3000. Workers comp class 0042. Commercial auto per-vehicle rate.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-24T05:17:24.011278Z"
   },
   {
     "slug": "salon-insurance-calculator",
