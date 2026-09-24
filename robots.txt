@@ -1,18 +1,12 @@
-# ─────────────────────────────────────────────
-# Calccover — robots.txt
+# Calccover robots.txt
 # Last updated: 2026-09-24
-# ─────────────────────────────────────────────
 
-# Default: allow everything
 User-agent: *
 Allow: /
 
-# ─────────────────────────────────────────────
-# AI Crawlers — explicitly allowed
+# AI Crawlers - explicitly allowed
 # These power ChatGPT, Claude, Perplexity, and Google AI Overviews
-# ─────────────────────────────────────────────
 
-# OpenAI
 User-agent: GPTBot
 Allow: /
 
@@ -22,7 +16,6 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
-# Anthropic (Claude)
 User-agent: ClaudeBot
 Allow: /
 
@@ -32,74 +25,53 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
-# Google AI training
 User-agent: Google-Extended
 Allow: /
 
-# Google Search (standard)
 User-agent: Googlebot
 Allow: /
 
-# Microsoft Bing
 User-agent: Bingbot
 Allow: /
 
-# Apple
 User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
-# Common Crawl (used by many AI models for training)
 User-agent: CCBot
 Allow: /
 
-# ByteDance / TikTok AI
 User-agent: Bytespider
 Allow: /
 
-# Amazon AI
 User-agent: Amazonbot
 Allow: /
 
-# Meta AI
 User-agent: FacebookBot
 Allow: /
 
 User-agent: meta-externalagent
 Allow: /
 
-# Cohere
 User-agent: cohere-ai
 Allow: /
 
-# You.com
 User-agent: YouBot
 Allow: /
 
-# Diffbot
 User-agent: Diffbot
 Allow: /
 
-# Imagesift (image AI)
 User-agent: ImagesiftBot
 Allow: /
-
-# ─────────────────────────────────────────────
-# Block — no AI or SEO value, only crawl waste
-# ─────────────────────────────────────────────
 
 User-agent: *
 Disallow: /cdn-cgi/
 Disallow: /thank-you/
-
-# ─────────────────────────────────────────────
-# Sitemap
-# ─────────────────────────────────────────────
 
 Sitemap: https://calccover.com/sitemap.xml
