@@ -212,7 +212,8 @@
     "description": "Estimate your hair salon or barbershop insurance cost. Covers general liability, property, and professional liability.",
     "inputs": "Revenue, number of stylists, chairs, services offered (chemical treatments add risk)",
     "formula": "Base GL $700-$1500. Professional liability adds $300-$800. Property based on value.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-25T02:03:31.339240Z"
   },
   {
     "slug": "auto-repair-insurance-calculator",
