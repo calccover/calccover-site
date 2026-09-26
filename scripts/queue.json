@@ -221,7 +221,8 @@
     "description": "Estimate your auto repair shop insurance cost. Covers garage liability, garage keepers, and property.",
     "inputs": "Revenue, number of bays, employees, vehicles kept overnight, state",
     "formula": "Garage liability $2500-$6000. Garage keepers based on value of customer vehicles. Workers comp class 8380.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-26T02:03:43.201105Z"
   },
   {
     "slug": "retail-store-insurance-calculator",
