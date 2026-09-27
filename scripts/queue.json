@@ -230,7 +230,8 @@
     "description": "Estimate your retail store insurance cost. Covers liability, property, and inventory.",
     "inputs": "Revenue, square footage, inventory value, product type, state",
     "formula": "Base GL $500-$1500. Property based on building and inventory value. Product liability for certain retail types.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-27T02:03:26.841431Z"
   },
   {
     "slug": "electrician-insurance-calculator",
