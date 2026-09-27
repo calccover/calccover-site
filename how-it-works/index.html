@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Calccover Calculates Insurance Premiums — Methodology</title>
+<meta name="description" content="How Calccover's commercial insurance calculators work. Every formula, data source, and assumption we use — explained in plain English.">
+<link rel="canonical" href="https://calccover.com/how-it-works/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://calccover.com/how-it-works/">
+<meta property="og:title" content="How Calccover Works — Methodology">
+<meta property="og:description" content="Every formula, data source, and assumption behind our insurance calculators.">
+<meta property="og:image" content="https://calccover.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Calccover Works — Methodology">
+<meta name="twitter:description" content="Every formula, data source, and assumption behind our insurance calculators.">
+<meta name="twitter:image" content="https://calccover.com/og-image.png">
+<link rel="icon" href="/favicon.ico">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AboutPage","url":"https://calccover.com/how-it-works/","name":"How Calccover Works","description":"Methodology for Calccover's commercial insurance calculators."}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
+header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
+.container{max-width:720px;margin:0 auto;padding:0 1.5rem}
+header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
+.logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
+nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
+nav a:hover{color:#0066cc}
+main{padding:3rem 0}
+h1{font-size:2rem;line-height:1.2;margin-bottom:1rem;color:#111}
+.lead{font-size:1.15rem;color:#555;margin-bottom:2rem}
+h2{font-size:1.3rem;margin:2.5rem 0 1rem;color:#111}
+h3{font-size:1.05rem;margin:1.5rem 0 .5rem;color:#111}
+p{margin-bottom:1rem;color:#444}
+ul,ol{margin:0 0 1.25rem 1.5rem;color:#444}
+li{margin-bottom:.5rem}
+strong{color:#111}
+a{color:#0066cc}
+a:hover{text-decoration:underline}
+.callout{background:#fff;border-left:4px solid #0066cc;border-radius:8px;padding:1.25rem 1.5rem;margin:1.5rem 0}
+.callout p{margin:0;color:#333}
+.verify-box{background:#f0f7ff;border:1px solid #b8d4f0;border-radius:8px;padding:1.5rem;margin:2rem 0}
+.verify-box h3{margin-top:0;color:#0066cc}
+.verify-box ol{margin-bottom:0}
+table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.95rem;background:#fff;border:1px solid #e5e5e5;border-radius:8px;overflow:hidden}
+th,td{text-align:left;padding:.75rem 1rem;border-bottom:1px solid #e5e5e5}
+th{background:#f5f5f5;font-weight:600;color:#111;font-size:.85rem;text-transform:uppercase;letter-spacing:.03em}
+td{color:#444}
+tr:last-child td{border-bottom:none}
+.updated{color:#777;font-size:.9rem;margin-top:3rem;padding-top:1.5rem;border-top:1px solid #e5e5e5}
+footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
+footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+footer a{color:#555;text-decoration:none;margin-right:1rem}
+footer a:hover{color:#0066cc}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<a href="/" class="logo">Calccover</a>
+<nav>
+<a href="/how-it-works/">How It Works</a>
+<a href="/about/">About</a>
+<a href="/contact/">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+<div class="container">
+
+<h1>How Calccover calculates your estimate</h1>
+<p class="lead">Every calculator on this site uses a transparent formula built from publicly available insurance industry data. This page explains exactly how each calculation works — no black boxes, no hidden assumptions.</p>
+
+<h2>The core principle: transparent formulas</h2>
+<p>Commercial insurance pricing is complex, but it's not secret. Carriers use rate factors that are published by rating bureaus like ISO (Verisk) and summarized in public research from the Insurance Information Institute (III) and the National Association of Insurance Commissioners (NAIC). Our calculators use those same public factors to give you a realistic estimate in seconds.</p>
+<p>We don't have access to your actual claims history, credit-based insurance score, or the specific underwriting guidelines of any individual carrier — so our estimates are ballpark figures, not quotes. But they're grounded in the same data your broker will use.</p>
+
+<div class="callout">
+<p><strong>Bottom line:</strong> our calculators tell you what a policy <em>typically</em> costs. For a binding price, you need a licensed broker to run your specific risk.</p>
+</div>
+
+<h2>The general formula</h2>
+<p>Every commercial insurance calculator follows a similar structure:</p>
+<table>
+<tr><th>Component</th><th>What it does</th></tr>
+<tr><td>Base rate</td><td>The starting premium for your industry class, taken from published rate tables</td></tr>
+<tr><td>Revenue factor</td><td>Scales the premium up as your revenue (exposure) grows</td></tr>
+<tr><td>Employee factor</td><td>Adjusts for headcount — more employees means more exposure</td></tr>
+<tr><td>State factor</td><td>Multiplies for local tort environment and regulatory costs</td></tr>
+<tr><td>Coverage limit factor</td><td>Adjusts for the limit you choose ($1M, $2M, etc.)</td></tr>
+</table>
+<p>The final premium is roughly: <strong>Base rate × Revenue factor × Employee factor × State factor × Limit factor</strong>. Each calculator on the site tailors these factors to its specific line of insurance.</p>
+
+<h2>Where the numbers come from</h2>
+<ul>
+<li><strong>Insurance Information Institute (III)</strong> — annual industry reports on commercial premium averages</li>
+<li><strong>NAIC</strong> — state-by-state regulatory filings and market data</li>
+<li><strong>ISO / Verisk</strong> — publicly summarized commercial rating factors</li>
+<li><strong>Bureau of Labor Statistics (BLS)</strong> — injury rates by industry, used for workers' comp calculations</li>
+<li><strong>State insurance departments</strong> — published rate filings for workers' comp and commercial auto</li>
+</ul>
+
+<h2>How to verify a calculation yourself</h2>
+<p>You don't have to trust this page. Here's how to sanity-check any of our estimates:</p>
+
+<div class="verify-box">
+<h3>The 3-step verification</h3>
+<ol>
+<li>Run a calculation on any calculator (e.g., <a href="/general-liability-insurance-calculator/">General Liability</a>).</li>
+<li>Open the "How this calculator works" details block below the tool — it shows the exact formula used.</li>
+<li>Cross-check the result against III industry averages, which are free to read at iii.org.</li>
+</ol>
+<p>If our estimate is outside the published average range for your industry, one of the inputs (usually state factor or revenue) is likely off. Adjust and try again.</p>
+</div>
+
+<h2>What our calculators do NOT do</h2>
+<ul>
+<li><strong>They don't see your claims history.</strong> A single prior claim can change a real premium by 20–40%.</li>
+<li><strong>They don't apply credit-based insurance scores.</strong> Many states allow carriers to use these; we don't have access to yours.</li>
+<li><strong>They don't account for policy endorsements.</strong> Additional insureds, waivers of subrogation, and special coverages all add cost.</li>
+<li><strong>They don't replace a broker.</strong> A licensed broker can often find you a better rate than the average we estimate.</li>
+</ul>
+
+<h2>How often we update the data</h2>
+<p>We review our rate factors quarterly and update them when new III or NAIC reports are published. The "Last updated" date on this page reflects our most recent review.</p>
+
+<h2>Who runs Calccover</h2>
+<p>Calccover is built and maintained by Emiliano, a developer based in Bangkok. There is no insurance carrier or broker behind the site — it's an independent tool built for small business owners who want a ballpark number before they talk to a broker. See the <a href="/about/">About page</a> for more.</p>
+
+<h2>Report an error</h2>
+<p>If a calculator gives a wildly wrong estimate for your industry, <a href="/contact/">let us know</a>. We take accuracy seriously and update factors quickly when errors are reported.</p>
+
+<p class="updated">Last updated: 2026-09-27. Maintained by Emiliano.</p>
+
+</div>
+</main>
+
+<footer>
+<div class="container">
+<div>
+<a href="/">Home</a>
+<a href="/how-it-works/">How It Works</a>
+<a href="/about/">About</a>
+<a href="/contact/">Contact</a>
+<a href="/privacy/">Privacy</a>
+<a href="/terms/">Terms</a>
+</div>
+<div>© 2026 Calccover.</div>
+</div>
+</footer>
+
+</body>
+</html>
