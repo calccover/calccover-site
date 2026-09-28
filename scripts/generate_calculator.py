@@ -85,13 +85,16 @@ REQUIREMENTS:
    - `.content-section{{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}}`
    - `footer{{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}}`
    Do NOT use CSS custom properties. Do NOT use dark theme. The primary action button MUST be #0066cc blue.
-3. Header: `<header><div class="container"><a href="/" class="logo">Calccover</a><nav><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>`
+3. Header: `<header><div class="container"><a href="/" class="logo">Calccover</a><nav><a href="/how-it-works/">How It Works</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>`
 4. Include a `.calculator-box` with labeled inputs relevant to commercial insurance (industry type, annual revenue, number of employees, state, coverage limits, claims history where applicable). All monetary values are in USD. No unit toggle is needed — insurance is a financial product, not a physical one. STRICT RULES — do not violate:
 - Do NOT include internal calculation factors, base rates, multipliers, or any numeric annotation in the visible label or option text. For example, write "Retail" not "Retail (3,200 base)". Write "California" not "California (1.35X)".
 - Do NOT prefill any input field. No value="..." attribute on number, text, or email inputs.
 - Do NOT use the selected attribute on any <option>.
 - All option text must be plain English names only.
 - Factors and multipliers belong ONLY inside the JavaScript function, never in the HTML labels.
+4b. Immediately after the H1 and the intro paragraph, include this exact byline line:
+    <p style="color:#777;font-size:.85rem;margin-bottom:.75rem">By Emiliano · Last updated 2026-09-27</p>
+    This is MANDATORY on every generated page.
 5. Include a `.result-box` (hidden by default, shows on Calculate) with result rows. Each row uses `<div class="result-row"><span class="label">...</span><span class="value">...</span></div>` inside the result box. Add CSS: `.result-row{{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}}` and `.result-row .label{{color:#555}}` and `.result-row .value{{color:#0066cc;font-weight:700}}`.
 6. Include a `.lead-form` below the result box that appears when results show. Use this exact form structure:
 <form action="https://api.web3forms.com/submit" method="POST">
@@ -107,9 +110,15 @@ REQUIREMENTS:
 No JavaScript alert functions. No FormSubmit. Form submits directly to Web3Forms.
 The {item['name']} will be replaced with each calculator's actual name during generation. No JavaScript alert functions.
 7. Include a collapsible `<details>` section immediately below the calculator (before content sections) titled "How this calculator works". Inside: 2-3 sentences explaining the formula in plain English, plus one line: "Formula source: [Source]." This <details> section is MANDATORY. Do not skip it. It must appear immediately after the lead form, before the first content H2.
-8. Include 3 content sections, each wrapped in `<section class="content-section">`: "How Much Does [X] Cost?", "What Factors Affect Your Premium?", and "Frequently Asked Questions" with 3 Q&As each. Each section 100-200 words with real commercial insurance industry detail. Every content section MUST be wrapped in <section class="content-section">. The CSS MUST include .content-section{{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}}. Do NOT skip this wrapper. Each content section must contain at least one bulleted or numbered list (use <ul><li> or <ol><li>). Lists should present 3-5 items. This improves AI citability.
+7b. Immediately AFTER the closing </details> tag, include this exact line:
+    <p style="margin:1.5rem 0;font-size:.9rem">📊 <a href="/commercial-insurance-costs-by-state/">See how your state compares — 50-state cost analysis</a></p>
+    This is MANDATORY on every generated page.
+8. Include 3 content sections, each wrapped in `<section class="content-section">`: "How Much Does [X] Cost?", "What Factors Affect Your Premium?", and "Frequently Asked Questions" with 3 Q&As each. Each section 150-250 words with real commercial insurance industry detail. Every content section MUST be wrapped in <section class="content-section">. Do NOT skip this wrapper. Each content section MUST contain:
+   - At least 3 concrete statistics (numbers, percentages, or dollar amounts). Example: "$0.25 to $5.80 per $100 of payroll" or "23x spread between cheapest and most expensive class codes" or "5x variation across states".
+   - At least one bulleted or numbered list with 3-5 items (use <ul><li> or <ol><li>).
+   No section may be pure paragraphs. Statistics + lists are MANDATORY in every content section. This improves AI citability.
 9. For FAQ, use `<h3>Question</h3><p>Answer</p>` for each Q&A. Never put multiple Q&As in one `<p>`. Never use "Q:" or "A:" prefixes.
-10. Include footer: `<footer><div class="container"><div><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div><div>© 2026 Calccover.</div></div></footer>`
+10. Include footer: `<footer><div class="container"><div><a href="/">Home</a><a href="/how-it-works/">How It Works</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div><div>© 2026 Calccover.</div></div></footer>`
 11. Include JSON-LD schema: {{"@context":"https://schema.org","@type":"WebApplication","name":"{item['name']}","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{{"@type":"Offer","price":"0","priceCurrency":"USD"}}}}
 12. Include these two lines in the head exactly:
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
