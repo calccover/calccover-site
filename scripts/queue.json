@@ -248,7 +248,8 @@
     "description": "Estimate your plumbing business insurance cost. Covers liability, workers comp, and commercial auto.",
     "inputs": "Revenue, employees, vehicles, state, service or new construction",
     "formula": "GL $1200-$3000. Workers comp class 5183 at $2-$5 per $100 payroll. Commercial auto per vehicle.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-28T10:08:47.550963Z"
   },
   {
     "slug": "roofing-contractor-insurance-calculator",
