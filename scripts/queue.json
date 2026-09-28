@@ -239,7 +239,8 @@
     "description": "Estimate your electrician business insurance cost. Covers liability, workers comp, and tools.",
     "inputs": "Revenue, employees, state, commercial vs residential focus",
     "formula": "GL $1500-$3500. Workers comp class 5190 at $3-$6 per $100 payroll. Tools coverage based on value.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-28T02:03:56.658103Z"
   },
   {
     "slug": "plumber-insurance-calculator",
