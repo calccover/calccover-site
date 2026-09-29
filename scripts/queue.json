@@ -257,7 +257,8 @@
     "description": "Estimate your roofing contractor insurance cost. Covers liability, workers comp, and equipment.",
     "inputs": "Revenue, employees, subcontractor usage, state, residential or commercial",
     "formula": "GL $2500-$6000. Workers comp class 5551 at $8-$15 per $100 payroll. Highest risk trade.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-29T02:03:44.604828Z"
   },
   {
     "slug": "event-planner-insurance-calculator",
