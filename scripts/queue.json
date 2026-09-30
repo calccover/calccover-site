@@ -266,7 +266,8 @@
     "description": "Estimate your event planning business insurance cost. Covers liability, cancellation, and vendor issues.",
     "inputs": "Annual revenue, events per year, average event size, alcohol served at events",
     "formula": "GL $500-$1500. Event cancellation $500-$2000 based on event value. Liquor liability if alcohol served.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-09-30T02:04:34.899266Z"
   },
   {
     "slug": "personal-trainer-insurance-calculator",
