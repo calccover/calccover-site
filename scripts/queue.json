@@ -275,7 +275,8 @@
     "description": "Estimate your personal trainer insurance cost. Covers liability and professional liability.",
     "inputs": "Revenue, clients, online or in-person, studio or gym-based",
     "formula": "Base policy $200-$600 per year. Professional liability adds $100-$300. Coverage limits affect premium.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-01T02:04:51.127139Z"
   },
   {
     "slug": "dental-office-insurance-calculator",
