@@ -284,7 +284,8 @@
     "description": "Estimate your dental practice insurance cost. Covers malpractice, property, and workers comp.",
     "inputs": "Number of dentists, hygienists, staff, annual revenue, state",
     "formula": "Malpractice $2000-$8000 per dentist. GL and property based on office size. Workers comp class 8832.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-02T02:05:02.936201Z"
   },
   {
     "slug": "medical-office-insurance-calculator",
