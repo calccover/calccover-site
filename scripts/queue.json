@@ -293,7 +293,8 @@
     "description": "Estimate your medical practice insurance cost. Covers malpractice, property, and business interruption.",
     "inputs": "Specialty, number of providers, staff, revenue, state",
     "formula": "Malpractice varies by specialty $3000-$20000 per provider. Property and GL based on office.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-03T02:03:14.528210Z"
   },
   {
     "slug": "daycare-insurance-calculator",
