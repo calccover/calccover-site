@@ -302,7 +302,8 @@
     "description": "Estimate your daycare or childcare insurance cost. Covers liability, property, and abuse coverage.",
     "inputs": "Number of children, staff, home-based or commercial, state",
     "formula": "GL $1500-$4000. Abuse coverage required in most states. Workers comp class 8834.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-04T04:05:19.399639Z"
   },
   {
     "slug": "nonprofit-insurance-calculator",
