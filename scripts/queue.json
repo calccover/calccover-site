@@ -311,7 +311,8 @@
     "description": "Estimate your nonprofit organization insurance cost. Covers D&O, GL, and property.",
     "inputs": "Annual budget, number of staff, board size, services offered",
     "formula": "D&O $800-$3000. GL $500-$1500. Property based on assets. Total package discounts available.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-05T02:04:34.898694Z"
   },
   {
     "slug": "it-consultant-insurance-calculator",
