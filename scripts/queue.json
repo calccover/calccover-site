@@ -329,7 +329,8 @@
     "description": "Estimate your real estate E&O insurance cost. Required in most states for licensed agents.",
     "inputs": "Annual commission revenue, transactions per year, state, brokerage size",
     "formula": "Base E&O $400-$900. Per-transaction rate $25-$75. State requirements vary.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-07T02:05:43.112811Z"
   },
   {
     "slug": "trucking-cargo-insurance-calculator",
