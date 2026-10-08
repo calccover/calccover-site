@@ -338,7 +338,8 @@
     "description": "Estimate your cargo insurance cost. Covers freight in transit up to your policy limit.",
     "inputs": "Annual revenue, cargo value per load, cargo type, coverage limit",
     "formula": "Rate per $1000 of cargo value $0.50-$2.00. Hazmat higher. Coverage limit $100k typical.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-08T02:06:08.646892Z"
   },
   {
     "slug": "garage-keepers-insurance-calculator",
