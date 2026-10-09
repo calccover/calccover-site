@@ -347,7 +347,8 @@
     "description": "Estimate your garage keepers insurance cost. Covers customer vehicles in your care.",
     "inputs": "Number of vehicles on premises, average vehicle value, type of business",
     "formula": "Rate 1-3% of maximum value of vehicles in care. Auto dealers, repair shops, and valet services.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-09T02:05:54.268044Z"
   },
   {
     "slug": "farm-insurance-calculator",
