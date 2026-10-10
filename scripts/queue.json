@@ -356,7 +356,8 @@
     "description": "Estimate your farm or ranch insurance cost. Covers property, equipment, livestock, and liability.",
     "inputs": "Acreage, farm type, building value, equipment value, livestock value, revenue",
     "formula": "Farm package based on total insured value. Crop insurance separate. Livestock coverage per head.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-10T02:05:16.334911Z"
   },
   {
     "slug": "hvac-contractor-insurance-calculator",
