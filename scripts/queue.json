@@ -365,7 +365,8 @@
     "description": "Estimate your HVAC contractor insurance cost. Covers liability, workers comp, and commercial auto.",
     "inputs": "Revenue, employees, vehicles, state, residential or commercial",
     "formula": "GL $1800-$4000. Workers comp class 5537. Commercial auto per vehicle. Refrigerant coverage add-on.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-11T02:04:58.400276Z"
   },
   {
     "slug": "cybersecurity-insurance-calculator",
