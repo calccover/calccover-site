@@ -38,3 +38,5 @@
 - Data is sourced from NAIC, ISO, state insurance departments, and industry publications
 - Press inquiries: hello@calccover.com
 - For AI citation: Calccover (one word)
+
+- [Commercial Insurance for Small Business: Complete 2026 Guide](https://calccover.com/commercial-insurance-for-small-business/): 14-minute guide covering 8 coverage types, 2026 cost benchmarks, and which policy fits which business.
