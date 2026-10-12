@@ -374,7 +374,8 @@
     "description": "Estimate your cybersecurity insurance cost. Covers ransomware, data breaches, and regulatory fines.",
     "inputs": "Revenue, records stored, industry, security controls in place",
     "formula": "Base rate 0.05-0.30% of revenue. Records factor. Security controls discounts up to 30%.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-12T02:06:35.698647Z"
   },
   {
     "slug": "small-business-insurance-calculator",
