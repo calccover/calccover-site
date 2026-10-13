@@ -383,7 +383,8 @@
     "description": "Estimate your small business insurance cost. Bundles general liability and property into a BOP.",
     "inputs": "Industry, revenue, employees, property value, state",
     "formula": "BOP base $500-$3000 depending on industry. Property rider per $100 of value. Bundle discounts.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-13T02:06:57.048571Z"
   },
   {
     "slug": "commercial-trucking-insurance-calculator",
