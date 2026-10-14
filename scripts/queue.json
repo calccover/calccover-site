@@ -392,7 +392,8 @@
     "description": "Estimate your commercial trucking insurance cost. Covers primary liability, cargo, and physical damage.",
     "inputs": "Number of trucks, annual revenue, cargo type, states operated, DOT number",
     "formula": "Primary liability $6000-$15000 per truck. Cargo based on limit. Physical damage based on vehicle value.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-14T02:15:34.546404Z"
   },
   {
     "slug": "business-owners-policy-calculator",
