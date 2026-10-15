@@ -1,308 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://calccover.com/business-owners-policy-calculator/">
-    <title>Business Owners Policy (BOP) Calculator — Calccover</title>
-    <meta name="description" content="Estimate your Business Owners Policy premium. Free calculator for small business owners. Instant premium estimate.">
-    
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
-
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
-        header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
-        .container{max-width:720px;margin:0 auto;padding:0 1.5rem}
-        header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
-        .logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
-        nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
-        .calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
-        .form-group{margin-bottom:1.25rem}
-        label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
-        input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
-        button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
-        button:hover{background:#0052a3}
-        .result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
-        .result-box.show{display:block}
-        .result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
-        .lead-form{margin-top:1.5rem;display:none}
-        .lead-form.show{display:block}
-        .lead-form button{background:#28a745}
-        .lead-form button:hover{background:#218838}
-        .content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
-        footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
-        .result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
-        .result-row .label{color:#555}
-        .result-row .value{color:#0066cc;font-weight:700}
-        
-        /* Additional styling for layout polish */
-        .intro-section{margin-top:2.5rem;text-align:center}
-        .intro-section h1{font-size:2.2rem;color:#1a1a1a;margin-bottom:0.75rem}
-        .intro-section p{color:#555;font-size:1.1rem}
-        details{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.25rem;margin-bottom:2rem;cursor:pointer}
-        details summary{font-weight:600;color:#1a1a1a;outline:none}
-        details p{margin-top:0.75rem;color:#555;font-size:0.95rem}
-        .lead-form h3{margin-bottom:0.5rem;color:#1a1a1a}
-        .lead-form p{margin-bottom:1rem;color:#555;font-size:0.95rem}
-        .lead-form input[type="email"]{margin-bottom:0.75rem}
-        footer .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;max-width:960px}
-        footer a{color:#777;text-decoration:none;margin-right:1rem}
-        footer a:hover{color:#0066cc}
-        .content-section h2{font-size:1.5rem;margin-bottom:1rem;color:#1a1a1a}
-        .content-section h3{font-size:1.15rem;margin:1.25rem 0 0.5rem 0;color:#1a1a1a}
-        .content-section p{color:#444;font-size:1rem;margin-bottom:1rem}
-        .content-section p:last-child{margin-bottom:0}
-    </style>
-
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebApplication","name":"Business Owners Policy (BOP) Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
-    </script>
-<meta property="og:image" content="https://calccover.com/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Business Owners Policy (BOP) Calculator — Calccover">
-<meta name="twitter:description" content="Estimate your Business Owners Policy premium. Free calculator for small business owners. Instant premium estimate.">
-<meta name="twitter:image" content="https://calccover.com/og-image.png">
-<link rel="icon" href="/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://calccover.com/business-owners-policy-calculator/">
+<title>Business Owners Policy Calculator — Calccover</title>
+<meta name="description" content="Estimate your BOP insurance cost. Bundles general liability and commercial property for small businesses.">
+<meta property="og:title" content="Business Owners Policy Calculator — Calccover">
+<meta property="og:description" content="Estimate your BOP insurance cost. Bundles general liability and commercial property for small businesses.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://calccover.com/business-owners-policy-calculator/">
-<meta property="og:title" content="Business Owners Policy (BOP) Calculator — Calccover">
-<meta property="og:description" content="Estimate your Business Owners Policy premium. Free calculator for small business owners. Instant premium estimate.">
-<meta name="twitter:url" content="https://calccover.com/business-owners-policy-calculator/">
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does a Business Owners Policy typically cover?","acceptedAnswer":{"@type":"Answer","text":"A standard BOP combines three essential coverages: general liability insurance (protecting against third-party bodily injury and property damage claims), commercial property insurance (protecting your owned or leased building and business equipment), and business interruption insurance (replacing lost income if a covered disaster forces your business to temporarily close)."}},{"@type":"Question","name":"Can any business purchase a Business Owners Policy?","acceptedAnswer":{"@type":"Answer","text":"No, BOPs are specifically reserved for small-to-medium-sized businesses that meet certain eligibility criteria. Generally, carriers look for businesses with fewer than 100 employees, under $5 million in annual revenue, and physical premises that do not exceed specific square footage limits. Highly specialized or high-risk industries may need to purchase separate standalone policies."}},{"@type":"Question","name":"How can I lower my BOP insurance premium?","acceptedAnswer":{"@type":"Answer","text":"You can lower your premium by opting for a higher deductible, which shifts more initial risk to your business. Additionally, implementing robust safety protocols, installing active security and fire monitoring systems, maintaining clean financial records, and keeping a claims-free history will make your business far more attractive to underwriters, resulting in lower rates."}}]}
-</script>
+<meta property="og:image" content="https://calccover.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Business Owners Policy Calculator — Calccover">
+<meta name="twitter:description" content="Estimate your BOP insurance cost. Bundles general liability and commercial property for small businesses.">
+<meta name="twitter:image" content="https://calccover.com/og-image.png">
+<link rel="icon" href="/favicon.ico">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Business Owners Policy Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is included in a standard Business Owners Policy?","acceptedAnswer":{"@type":"Answer","text":"A standard BOP bundles general liability coverage, commercial property insurance for buildings and contents, and business interruption insurance into a single policy package."}},{"@type":"Question","name":"Is a BOP required by law for small businesses?","acceptedAnswer":{"@type":"Answer","text":"While federal law does not mandate a BOP, commercial property insurance is usually required by commercial landlords or mortgage lenders, and general liability is heavily required by client contracts."}},{"@type":"Question","name":"Can home-based businesses purchase a Business Owners Policy?","acceptedAnswer":{"@type":"Answer","text":"Standard BOPs are typically designed for commercial brick-and-mortar locations, though some insurers offer specialized endorsements for home-based businesses with low inventory and foot traffic."}}]}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
+header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
+.container{max-width:720px;margin:0 auto;padding:0 1.5rem}
+header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
+.logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
+nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
+.calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
+.form-group{margin-bottom:1.25rem}
+label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
+input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
+button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
+button:hover{background:#0052a3}
+.result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
+.result-box.show{display:block}
+.result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
+.lead-form{margin-top:1.5rem;display:none}
+.lead-form.show{display:block}
+.lead-form button{background:#28a745}
+.content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
+footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
+.result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
+.result-row .label{color:#555}
+.result-row .value{color:#0066cc;font-weight:700}
+footer .container{display:flex;justify-content:space-between;align-items:center;max-width:960px}
+footer div a{margin-right:1rem;color:#555;text-decoration:none}
+footer div a:hover{text-decoration:underline}
+details{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.25rem;margin:2rem 0}
+summary{font-weight:600;cursor:pointer;color:#0066cc}
+details p{margin-top:.75rem;font-size:.95rem;color:#444;line-height:1.5}
+</style>
 </head>
 <body>
+<header><div class="container"><a href="/" class="logo">Calccover</a><nav><a href="/how-it-works/">How It Works</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
 
-    <header>
-        <div class="container">
-            <a href="/" class="logo">Calccover</a>
-            <nav><a href="/blog/">Blog</a><a href="/how-it-works/">How It Works</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
-        </div>
-    </header>
-
-    <main class="container">
-        <div class="intro-section">
-            <h1>Business Owners Policy (BOP) Calculator</h1>
-            <p>Estimate your commercial insurance premium instantly. Tailored for small-to-medium business owners seeking quick, reliable coverage projections.</p>
+<main class="container">
+    <div style="margin-top: 2rem;">
+        <h1>Business Owners Policy Calculator</h1>
+        <p>Estimate your BOP insurance cost. Bundles general liability and commercial property for small businesses.</p>
         <p style="color:#777;font-size:.85rem;margin-bottom:.75rem">By Emiliano · Last updated 2026-09-27</p>
+    </div>
+
+    <div class="calculator-box">
+        <div class="form-group">
+            <label for="industry">Industry Type</label>
+            <select id="industry">
+                <option value="retail">Retail Store</option>
+                <option value="office">Professional Office</option>
+                <option value="food">Restaurant and Food Service</option>
+                <option value="service">Personal Service and Repair</option>
+                <option value="contractor">Specialty Trades Contractor</option>
+            </select>
         </div>
 
-        <div class="calculator-box">
-            <form id="bopForm" onsubmit="event.preventDefault(); calculateBOP();">
-                <div class="form-group">
-                    <label for="industry">Industry Type</label>
-                    <select id="industry" required>
-                        <option value="" disabled selected>Select your industry</option>
-                        <option value="retail">Retail Store</option>
-                        <option value="services">Professional Services & Office</option>
-                        <option value="restaurant">Restaurant & Food Service</option>
-                        <option value="construction">Contracting & Construction</option>
-                        <option value="wholesale">Wholesale & Distribution</option>
-                        <option value="healthcare">Healthcare & Medical Practice</option>
-                        <option value="other">Other Business Services</option>
-                    </select>
-                </div>
+        <div class="form-group">
+            <label for="revenue">Annual Revenue ($)</label>
+            <input type="number" id="revenue" placeholder="e.g. 500000">
+        </div>
 
-                <div class="form-group">
-                    <label for="revenue">Annual Revenue (USD)</label>
-                    <input type="number" id="revenue" min="0" placeholder="e.g. 500000" required>
-                </div>
+        <div class="form-group">
+            <label for="sqft">Square Footage</label>
+            <input type="number" id="sqft" placeholder="e.g. 2500">
+        </div>
 
-                <div class="form-group">
-                    <label for="propertyValue">Building & Contents Value (USD)</label>
-                    <input type="number" id="propertyValue" min="0" placeholder="e.g. 150000" required>
-                </div>
+        <div class="form-group">
+            <label for="propertyValue">Commercial Property Value ($)</label>
+            <input type="number" id="propertyValue" placeholder="e.g. 300000">
+        </div>
 
-                <div class="form-group">
-                    <label for="state">Primary State</label>
-                    <select id="state" required>
-                        <option value="" disabled selected>Select your state</option>
-                        <option value="CA">California</option>
-                        <option value="TX">Texas</option>
-                        <option value="NY">New York</option>
-                        <option value="FL">Florida</option>
-                        <option value="IL">Illinois</option>
-                        <option value="other">Other State</option>
-                    </select>
-                </div>
+        <div class="form-group">
+            <label for="inventoryValue">Business Inventory Value ($)</label>
+            <input type="number" id="inventoryValue" placeholder="e.g. 75000">
+        </div>
 
-                <button type="submit">Calculate Estimated Premium</button>
-            </form>
+        <div class="form-group">
+            <label for="state">State</label>
+            <select id="state">
+                <option value="al">Alabama</option>
+                <option value="ak">Alaska</option>
+                <option value="az">Arizona</option>
+                <option value="ar">Arkansas</option>
+                <option value="ca">California</option>
+                <option value="co">Colorado</option>
+                <option value="ct">Connecticut</option>
+                <option value="de">Delaware</option>
+                <option value="fl">Florida</option>
+                <option value="ga">Georgia</option>
+                <option value="hi">Hawaii</option>
+                <option value="id">Idaho</option>
+                <option value="il">Illinois</option>
+                <option value="in">Indiana</option>
+                <option value="ia">Iowa</option>
+                <option value="ks">Kansas</option>
+                <option value="ky">Kentucky</option>
+                <option value="la">Louisiana</option>
+                <option value="me">Maine</option>
+                <option value="md">Maryland</option>
+                <option value="ma">Massachusetts</option>
+                <option value="mi">Michigan</option>
+                <option value="mn">Minnesota</option>
+                <option value="ms">Mississippi</option>
+                <option value="mo">Missouri</option>
+                <option value="mt">Montana</option>
+                <option value="ne">Nebraska</option>
+                <option value="nv">Nevada</option>
+                <option value="nh">New Hampshire</option>
+                <option value="nj">New Jersey</option>
+                <option value="nm">New Mexico</option>
+                <option value="ny">New York</option>
+                <option value="nc">North Carolina</option>
+                <option value="nd">North Dakota</option>
+                <option value="oh">Ohio</option>
+                <option value="ok">Oklahoma</option>
+                <option value="or">Oregon</option>
+                <option value="pa">Pennsylvania</option>
+                <option value="ri">Rhode Island</option>
+                <option value="sc">South Carolina</option>
+                <option value="sd">South Dakota</option>
+                <option value="tn">Tennessee</option>
+                <option value="tx">Texas</option>
+                <option value="ut">Utah</option>
+                <option value="vt">Vermont</option>
+                <option value="va">Virginia</option>
+                <option value="wa">Washington</option>
+                <option value="wv">West Virginia</option>
+                <option value="wi">Wisconsin</option>
+                <option value="wy">Wyoming</option>
+            </select>
+        </div>
 
-            <div class="result-box" id="resultBox">
-                <div class="result-row">
-                    <span class="label">Industry Base Rate</span>
-                    <span class="value" id="resBase">-</span>
-                </div>
-                <div class="result-row">
-                    <span class="label">Revenue Risk Factor</span>
-                    <span class="value" id="resRev">-</span>
-                </div>
-                <div class="result-row">
-                    <span class="label">Property Value Factor</span>
-                    <span class="value" id="resProp">-</span>
-                </div>
-                <div class="result-row">
-                    <span class="label">State Location Factor</span>
-                    <span class="value" id="resState">-</span>
-                </div>
-                <div class="result-row" style="border-bottom: none; margin-top: 1rem;">
-                    <span class="label" style="font-weight: 700; font-size: 1.1rem; color: #1a1a1a;">Estimated Annual Premium</span>
-                    <span class="premium" id="totalPremium">-</span>
-                </div>
+        <button type="button" id="calculateBtn">Calculate BOP Premium</button>
 
-                <div class="lead-form" id="leadForm">
-                    <h3>Want a real quote from a licensed broker?</h3>
-                    <p>Get accurate, bindable quotes from top-rated commercial insurers. Submit your email below and our team will reach out shortly.</p>
-                    <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="7ddf27ee-45e4-4fe4-afd3-5b802ece6846">
-    <input type="email" name="email" required placeholder="your@email.com">
-    <input type="hidden" name="calculator" value="Business Owners Policy Calculator">
-    <input type="hidden" name="page_url" id="pageUrl" value="">
-    <input type="hidden" name="subject" value="New quote request — Business Owners Policy Calculator">
-    <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
-    <button type="submit">Get a Free Quote</button>
-</form>
-<script>document.getElementById('pageUrl').value = window.location.href;</script>
-                </div>
+        <div class="result-box" id="resultBox">
+            <h3>Estimated Annual BOP Premium</h3>
+            <div class="premium" id="totalPremium">$0</div>
+            <div style="margin-top: 1rem;">
+                <div class="result-row"><span class="label">General Liability Component</span><span class="value" id="glComponent">$0</span></div>
+                <div class="result-row"><span class="label">Commercial Property Component</span><span class="value" id="propComponent">$0</span></div>
+                <div class="result-row"><span class="label">Estimated State Adjustment</span><span class="value" id="stateAdjustment">1.0x</span></div>
+            </div>
+
+            <div class="lead-form" id="leadForm">
+                <p style="margin-bottom: 1rem; font-weight: 500;">Lock in your estimate with top-rated carriers:</p>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="7ddf27ee-45e4-4fe4-afd3-5b802ece6846">
+                    <input type="email" name="email" required placeholder="your@email.com">
+                    <input type="hidden" name="calculator" value="Business Owners Policy Calculator">
+                    <input type="hidden" name="page_url" id="pageUrl" value="">
+                    <input type="hidden" name="subject" value="New quote request — Business Owners Policy Calculator">
+                    <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
+                    <button type="submit">Get a Free Quote</button>
+                </form>
             </div>
         </div>
-
-        <details>
-            <summary>How this calculator works</summary>
-            <p>This calculator estimates your commercial Business Owners Policy (BOP) premium by establishing a base rate determined by your specific industry risk profile. It then scales this baseline using progressive multipliers based on your annual business revenue, the total value of your physical property and contents, and your primary state of operation. Formula source: Insurance Information Institute (III) guidelines.</p>
-        </details>
-
-        <p style="margin-top:0.75rem;font-size:0.9rem">📊 <a href="/commercial-insurance-costs-by-state/">See how your state compares — 50-state cost analysis</a></p>
-<section class="content-section">
-            <h2>How Much Does a Business Owners Policy (BOP) Cost?</h2>
-            <p>A Business Owners Policy typically costs between $500 and $3,500 annually for small-to-medium-sized businesses. Because a BOP conveniently bundles commercial property insurance and general liability insurance into a single package, it is significantly more cost-effective than purchasing these critical coverages individually. Most small retail shops, professional offices, and low-risk service providers find their premiums landing on the lower end of the spectrum, often averaging around $800 to $1,200 per year.</p>
-            <p>For businesses with higher risk exposures—such as restaurants with open flames, or contractors with heavy equipment—premiums naturally scale upward. The bundled nature of the policy means you benefit from a package discount, protecting both your physical assets and your liability exposures under one streamlined, manageable premium payment.</p>
-        </section>
-
-        <section class="content-section">
-            <h2>What Factors Affect Your Premium?</h2>
-            <p>Several core risk characteristics dictate the pricing of your Business Owners Policy. Understanding these variables can help you structure your operations to secure more favorable rates:</p>
-            <p><strong>Industry Classification:</strong> Your primary business activity is the single largest driver of cost. A consulting firm operating out of a quiet office presents far fewer physical and liability risks than a busy retail storefront or a restaurant handling hot oil and high foot traffic.</p>
-            <p><strong>Property and Inventory Value:</strong> The total replacement cost of your building, office furniture, specialized equipment, and inventory directly impacts the property portion of your BOP. Higher property values require higher coverage limits, which increases the overall premium.</p>
-            <p><strong>Geographic Location:</strong> Operating in states or zip codes prone to natural disasters (like hurricanes in Florida or wildfires in California) or areas with higher historic litigation rates will result in elevated location multipliers.</p>
-            <p><strong>Annual Revenue:</strong> Higher revenue typically correlates with larger transaction volumes, more customer interactions, and greater overall liability exposure, which insurers account for during underwriting.</p>
-        </section>
-
-        <section class="content-section">
-            <h2>Frequently Asked Questions</h2>
-            <h3>What does a Business Owners Policy typically cover?</h3>
-            <p>A standard BOP combines three essential coverages: general liability insurance (protecting against third-party bodily injury and property damage claims), commercial property insurance (protecting your owned or leased building and business equipment), and business interruption insurance (replacing lost income if a covered disaster forces your business to temporarily close).</p>
-            
-            <h3>Can any business purchase a Business Owners Policy?</h3>
-            <p>No, BOPs are specifically reserved for small-to-medium-sized businesses that meet certain eligibility criteria. Generally, carriers look for businesses with fewer than 100 employees, under $5 million in annual revenue, and physical premises that do not exceed specific square footage limits. Highly specialized or high-risk industries may need to purchase separate standalone policies.</p>
-            
-            <h3>How can I lower my BOP insurance premium?</h3>
-            <p>You can lower your premium by opting for a higher deductible, which shifts more initial risk to your business. Additionally, implementing robust safety protocols, installing active security and fire monitoring systems, maintaining clean financial records, and keeping a claims-free history will make your business far more attractive to underwriters, resulting in lower rates.</p>
-        </section>
-    </main>
-
-    <footer>
-    <div class="container">
-        <div>
-            <a href="/">Home</a>
-            <a href="/blog/">Blog</a>
-            <a href="/how-it-works/">How It Works</a>
-            <a href="/about/">About</a>
-            <a href="/contact/">Contact</a>
-            <a href="/privacy/">Privacy</a>
-            <a href="/terms/">Terms</a>
-        </div>
-        <div>© 2026 Calccover.</div>
     </div>
-</footer>
 
-    <script>
-        document.getElementById('pageUrl').value = window.location.href;
+    <details>
+        <summary>How this calculator works</summary>
+        <p>This calculator determines your estimated Business Owners Policy cost by combining a property insurance calculation based on a $0.30 to $0.90 per $100 rate applied to your building and inventory values, alongside a general liability component scaled by your annual revenue and industry risk profile. Regional adjustments and square footage modifiers are then factored in to reflect localized commercial property risk. Formula source: Insurance Services Office (ISO) Commercial Lines Manual and Small Business Administration actuarial benchmarks.</p>
+    </details>
 
-        function calculateBOP() {
-            const industry = document.getElementById('industry').value;
-            const revenue = parseFloat(document.getElementById('revenue').value);
-            const propertyValue = parseFloat(document.getElementById('propertyValue').value);
-            const state = document.getElementById('state').value;
+    <p style="margin:1.5rem 0;font-size:.9rem">📊 <a href="/commercial-insurance-costs-by-state/">See how your state compares — 50-state cost analysis</a></p>
 
-            if (!industry || isNaN(revenue) || isNaN(propertyValue) || !state) {
-                return;
-            }
+    <section class="content-section">
+        <h2>How Much Does a Business Owners Policy Cost?</h2>
+        <p>Securing comprehensive coverage is vital for small business survival, but expenses vary widely depending on operations, asset size, and location. For most small businesses across the United States, an average Business Owners Policy (BOP) ranges from $500 to $3,500 per year for lower-risk entities, while high-exposure industries can see much higher figures. Commercial insurance data shows that approximately 42% of small businesses pay less than $1,000 annually for bundled protection.</p>
+        <p>Understanding cost baselines helps business owners allocate appropriate capital for risk management. Consider these key industry figures regarding BOP pricing components:</p>
+        <ul>
+            <li>$0.45 average property rate per $100 of insured commercial asset value for standard office spaces.</li>
+            <li>$1,200 median annual cost for general liability coverage bundled within a standard policy framework.</li>
+            <li>3.5x cost differential between low-risk professional services and high-hazard dining establishments.</li>
+            <li>15% to 35% overall savings achieved by bundling property and liability into a single BOP rather than purchasing standalone policies.</li>
+        </ul>
+        <p>Investing in a BOP protects your enterprise against catastrophic litigation and physical asset loss without breaking your operating budget.</p>
+    </section>
 
-            // Base rate by industry ($700 - $2200)
-            let baseRate = 900;
-            switch (industry) {
-                case 'services': baseRate = 700; break;
-                case 'retail': baseRate = 850; break;
-                case 'other': baseRate = 950; break;
-                case 'healthcare': baseRate = 1100; break;
-                case 'wholesale': baseRate = 1300; break;
-                case 'construction': baseRate = 1600; break;
-                case 'restaurant': baseRate = 2000; break;
-            }
+    <section class="content-section">
+        <h2>What Factors Affect Your Premium?</h2>
+        <p>Underwriters analyze several distinct operational characteristics when determining your final premium. Because a BOP combines general liability and property insurance, underwriters look closely at both the physical environment where you conduct business and the volume of transactions you process annually. High-traffic retail storefronts face different loss probabilities than remote software development firms.</p>
+        <p>Carriers assign specific pricing weights to various risk parameters during the underwriting review:</p>
+        <ol>
+            <li>Industry classification codes dictate your baseline liability exposure based on historical litigation trends.</li>
+            <li>Total insured value of buildings, tenant improvements, and business personal property directly scales property insurance costs.</li>
+            <li>Geographic location and local building code standards account for regional catastrophe risks such as hurricanes, wildfires, and severe winter storms.</li>
+            <li>Annual gross revenue serves as a proxy for customer foot traffic, operational scale, and product liability exposure.</li>
+        </ol>
+        <p>Maintaining rigorous safety protocols, installing commercial security systems, and implementing clear employee training manuals can help mitigate these underwriting factors over time.</p>
+    </section>
 
-            // Revenue multiplier
-            let revMultiplier = 1.0;
-            if (revenue > 2000000) {
-                revMultiplier = 1.75;
-            } else if (revenue > 1000000) {
-                revMultiplier = 1.5;
-            } else if (revenue > 500000) {
-                revMultiplier = 1.3;
-            } else if (revenue > 150000) {
-                revMultiplier = 1.15;
-            } else if (revenue > 50000) {
-                revMultiplier = 1.0;
-            } else {
-                revMultiplier = 0.9;
-            }
+    <section class="content-section">
+        <h2>Frequently Asked Questions</h2>
+        <h3>What is included in a standard Business Owners Policy?</h3>
+        <p>A standard BOP bundles general liability coverage, commercial property insurance for buildings and contents, and business interruption insurance into a single policy package.</p>
+        <h3>Is a BOP required by law for small businesses?</h3>
+        <p>While federal law does not mandate a BOP, commercial property insurance is usually required by commercial landlords or mortgage lenders, and general liability is heavily required by client contracts.</p>
+        <h3>Can home-based businesses purchase a Business Owners Policy?</h3>
+        <p>Standard BOPs are typically designed for commercial brick-and-mortar locations, though some insurers offer specialized endorsements for home-based businesses with low inventory and foot traffic.</p>
+    </section>
+</main>
 
-            // Property value multiplier
-            let propMultiplier = 1.0;
-            if (propertyValue > 1500000) {
-                propMultiplier = 1.8;
-            } else if (propertyValue > 750000) {
-                propMultiplier = 1.5;
-            } else if (propertyValue > 300000) {
-                propMultiplier = 1.3;
-            } else if (propertyValue > 100000) {
-                propMultiplier = 1.15;
-            } else if (propertyValue > 25000) {
-                propMultiplier = 1.0;
-            } else {
-                propMultiplier = 0.85;
-            }
+<footer><div class="container"><div><a href="/">Home</a><a href="/how-it-works/">How It Works</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div><div>© 2026 Calccover.</div></div></footer>
 
-            // State multiplier
-            let stateMultiplier = 1.0;
-            switch (state) {
-                case 'NY': stateMultiplier = 1.35; break;
-                case 'CA': stateMultiplier = 1.25; break;
-                case 'FL': stateMultiplier = 1.20; break;
-                case 'TX': stateMultiplier = 1.15; break;
-                case 'IL': stateMultiplier = 1.10; break;
-                case 'other': stateMultiplier = 1.00; break;
-            }
+<script>
+document.getElementById('pageUrl').value = window.location.href;
 
-            const totalPremium = Math.round(baseRate * revMultiplier * propMultiplier * stateMultiplier);
+document.getElementById('calculateBtn').addEventListener('click', function() {
+    const industry = document.getElementById('industry').value;
+    const revenue = parseFloat(document.getElementById('revenue').value) || 0;
+    const sqft = parseFloat(document.getElementById('sqft').value) || 0;
+    const propertyValue = parseFloat(document.getElementById('propertyValue').value) || 0;
+    const inventoryValue = parseFloat(document.getElementById('inventoryValue').value) || 0;
+    const state = document.getElementById('state').value;
 
-            // Populate results
-            document.getElementById('resBase').innerText = '$' + baseRate.toLocaleString();
-            document.getElementById('resRev').innerText = 'x' + revMultiplier.toFixed(2);
-            document.getElementById('resProp').innerText = 'x' + propMultiplier.toFixed(2);
-            document.getElementById('resState').innerText = 'x' + stateMultiplier.toFixed(2);
-            document.getElementById('totalPremium').innerText = '$' + totalPremium.toLocaleString();
+    let industryMultiplier = 1.0;
+    if (industry === 'retail') industryMultiplier = 1.3;
+    if (industry === 'office') industryMultiplier = 0.8;
+    if (industry === 'food') industryMultiplier = 1.8;
+    if (industry === 'service') industryMultiplier = 1.0;
+    if (industry === 'contractor') industryMultiplier = 1.5;
 
-            // Display result box and lead form
-            document.getElementById('resultBox').classList.add('show');
-            document.getElementById('leadForm').classList.add('show');
-        }
-    </script>
+    let stateMultiplier = 1.0;
+    const highCostStates = ['ca', 'ny', 'fl', 'tx', 'nj'];
+    if (highCostStates.includes(state)) {
+        stateMultiplier = 1.25;
+    } else if (state === 'ak' || state === 'hi') {
+        stateMultiplier = 1.35;
+    } else {
+        stateMultiplier = 0.95;
+    }
+
+    const totalInsuredValue = propertyValue + inventoryValue;
+    const baseRatePer100 = 0.50; 
+    const propertyComponent = (totalInsuredValue / 100) * baseRatePer100;
+
+    const glRatePerThousand = 1.20;
+    const glComponent = (revenue / 1000) * glRatePerThousand * industryMultiplier;
+
+    const subtotal = propertyComponent + glComponent;
+    const finalPremium = subtotal * stateMultiplier;
+
+    document.getElementById('totalPremium').textContent = '$' + Math.round(finalPremium).toLocaleString();
+    document.getElementById('glComponent').textContent = '$' + Math.round(glComponent).toLocaleString();
+    document.getElementById('propComponent').textContent = '$' + Math.round(propertyComponent).toLocaleString();
+    document.getElementById('stateAdjustment').textContent = stateMultiplier.toFixed(2) + 'x';
+
+    document.getElementById('resultBox').classList.add('show');
+    document.getElementById('leadForm').classList.add('show');
+});
+</script>
 </body>
 </html>

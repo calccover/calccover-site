@@ -401,7 +401,8 @@
     "description": "Estimate your BOP insurance cost. Bundles general liability and commercial property for small businesses.",
     "inputs": "Industry, revenue, square footage, property value, inventory value, state",
     "formula": "BOP base rate $0.30-$0.90 per $100 of insured value. GL component based on revenue and industry.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-15T02:18:18.697636Z"
   },
   {
     "slug": "workers-compensation-by-state-calculator",
