@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://calccover.com/workers-compensation-by-state-calculator/">
+<title>Workers Compensation Insurance Calculator — Calccover</title>
+<meta name="description" content="Estimate workers comp costs by state, class code, and payroll. Essential for all employers.">
+<meta property="og:title" content="Workers Compensation Insurance Calculator — Calccover">
+<meta property="og:description" content="Estimate workers comp costs by state, class code, and payroll. Essential for all employers.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://calccover.com/workers-compensation-by-state-calculator/">
+<meta property="og:image" content="https://calccover.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Workers Compensation Insurance Calculator — Calccover">
+<meta name="twitter:description" content="Estimate workers comp costs by state, class code, and payroll. Essential for all employers.">
+<meta name="twitter:image" content="https://calccover.com/og-image.png">
+<link rel="icon" href="/favicon.ico">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3KC8D1S3M2"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KC8D1S3M2');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2475849248056642" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Workers Compensation Insurance Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is workers compensation insurance mandatory for all businesses?","acceptedAnswer":{"@type":"Answer","text":"In almost every state, employers are legally required to carry workers compensation insurance once they reach a specific employee threshold, often as low as one or three employees."}},{"@type":"Question","name":"How does the experience modification rate impact my premium?","acceptedAnswer":{"@type":"Answer","text":"Your experience mod compares your company's actual losses against the expected losses for your industry. A mod score below 1.0 indicates a safer-than-average safety record, resulting in a premium discount."}},{"@type":"Question","name":"Can I lower my class code rating if my employees change duties?","acceptedAnswer":{"@type":"Answer","text":"Yes, implementing formal return-to-work programs and segregating payroll for administrative versus manual tasks can help assign workers to lower-cost classification codes."}}]}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fafafa}
+header{background:#fff;border-bottom:1px solid #e5e5e5;padding:1rem 1.5rem}
+.container{max-width:720px;margin:0 auto;padding:0 1.5rem}
+header .container{display:flex;align-items:center;justify-content:space-between;max-width:960px}
+.logo{font-size:1.4rem;font-weight:700;color:#0066cc;text-decoration:none}
+nav a{margin-left:1.5rem;color:#555;text-decoration:none;font-size:.95rem}
+.calculator-box{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin:2rem 0}
+.form-group{margin-bottom:1.25rem}
+label{display:block;font-weight:500;margin-bottom:.4rem;font-size:.95rem}
+input,select{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
+button{background:#0066cc;color:#fff;border:none;padding:1rem 2rem;font-size:1.05rem;font-weight:600;border-radius:6px;cursor:pointer;width:100%;margin-top:.5rem}
+button:hover{background:#0052a3}
+.result-box{background:#e6f0fa;border:2px solid #0066cc;border-radius:8px;padding:1.5rem;margin-top:1.5rem;text-align:center;display:none}
+.result-box.show{display:block}
+.result-box .premium{font-size:2rem;font-weight:700;color:#0066cc}
+.lead-form{margin-top:1.5rem;display:none}
+.lead-form.show{display:block}
+.lead-form button{background:#28a745}
+.content-section{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:2rem}
+footer{border-top:1px solid #e5e5e5;padding:2rem 0;margin-top:3rem;color:#777;font-size:.9rem;background:#fff}
+.result-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #c9dcf0}
+.result-row .label{color:#555}
+.result-row .value{color:#0066cc;font-weight:700}
+details{background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:1.25rem;margin-bottom:2rem}
+summary{font-weight:600;cursor:pointer;color:#0066cc}
+footer .container{display:flex;justify-content:space-between;align-items:center;max-width:960px}
+footer div a{margin-right:1rem;color:#555;text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="container"><a href="/" class="logo">Calccover</a><nav><a href="/how-it-works/">How It Works</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
+
+<main class="container">
+    <h1>Workers Compensation Insurance Calculator</h1>
+    <p style="color:#777;font-size:.85rem;margin-bottom:.75rem">By Emiliano · Last updated 2026-09-27</p>
+    <p>Estimate your annual workers compensation insurance premium based on state risk profiles, employee payroll, and safety history.</p>
+
+    <div class="calculator-box">
+        <div class="form-group">
+            <label for="stateSelect">State</label>
+            <select id="stateSelect">
+                <option value="1.35">California</option>
+                <option value="1.15">New York</option>
+                <option value="1.05">Texas</option>
+                <option value="1.20">Florida</option>
+                <option value="0.95">Illinois</option>
+                <option value="1.00">Pennsylvania</option>
+                <option value="1.10">Ohio</option>
+                <option value="0.90">Georgia</option>
+                <option value="1.05">North Carolina</option>
+                <option value="0.85">Michigan</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="classSelect">Industry Class Code</label>
+            <select id="classSelect">
+                <option value="0.35">Clerical Office Work</option>
+                <option value="1.85">Retail Store Operations</option>
+                <option value="3.40">Restaurant and Food Service</option>
+                <option value="6.50">Manufacturing and Assembly</option>
+                <option value="11.20">Commercial Construction</option>
+                <option value="8.75">Trucking and Freight Delivery</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="payrollInput">Annual Payroll (USD)</label>
+            <input type="number" id="payrollInput" placeholder="e.g. 250000">
+        </div>
+
+        <div class="form-group">
+            <label for="modInput">Experience Modification Rate</label>
+            <input type="number" step="0.01" id="modInput" placeholder="e.g. 1.00">
+        </div>
+
+        <div class="form-group">
+            <label for="employeesInput">Number of Employees</label>
+            <input type="number" id="employeesInput" placeholder="e.g. 10">
+        </div>
+
+        <button type="button" id="calcBtn">Calculate Premium</button>
+
+        <div class="result-box" id="resultBox">
+            <div class="result-row"><span class="label">Estimated Annual Premium</span><span class="value" id="resPremium">$0.00</span></div>
+            <div class="result-row"><span class="label">Effective Rate per $100</span><span class="value" id="resRate">$0.00</span></div>
+            <div class="result-row"><span class="label">Cost Per Employee</span><span class="value" id="resPerEmp">$0.00</span></div>
+
+            <div class="lead-form" id="leadFormContainer">
+                <p style="margin:1rem 0 0.5rem 0;font-weight:600;color:#0066cc">Lock in your estimated rate with top commercial insurers:</p>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="7ddf27ee-45e4-4fe4-afd3-5b802ece6846">
+                    <input type="email" name="email" required placeholder="your@email.com" style="margin-bottom:0.75rem">
+                    <input type="hidden" name="calculator" value="Workers Compensation Insurance Calculator">
+                    <input type="hidden" name="page_url" id="pageUrl" value="">
+                    <input type="hidden" name="subject" value="New quote request — Workers Compensation Insurance Calculator">
+                    <input type="hidden" name="redirect" value="https://calccover.com/thank-you/">
+                    <button type="submit">Get a Free Quote</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <details>
+        <summary>How this calculator works</summary>
+        <p>This calculator determines your estimated workers compensation premium by dividing your total annual payroll by 100, multiplying it by the assigned industry classification rate, and adjusting the final figure by your state factor and experience modification score. Base rates typically span from $0.25 to $15.00 per $100 of payroll depending on hazard levels.</p>
+        <p style="margin-top:0.75rem">Formula source: National Council on Compensation Insurance (NCCI) rating standards.</p>
+    </details>
+
+    <p style="margin:1.5rem 0;font-size:.9rem">📊 <a href="/commercial-insurance-costs-by-state/">See how your state compares — 50-state cost analysis</a></p>
+
+    <section class="content-section">
+        <h2>How Much Does Workers Compensation Insurance Cost?</h2>
+        <p>Workers compensation insurance costs vary dramatically across the United States, influenced heavily by state legislative environments, medical cost trends, and local legal frameworks. Nationally, businesses pay an average of $0.75 to $2.25 per $100 of payroll for low-risk office positions, while heavy industrial sectors can exceed $12.00 per $100. Understanding these cost drivers helps employers budget accurately and implement safety initiatives to drive down expenses.</p>
+        <p>Key statistics regarding workers compensation pricing nationwide include:</p>
+        <ul>
+            <li>$0.45 to $14.80 per $100 of payroll range across standard industry class codes.</li>
+            <li>5x total cost variance between the least expensive and most expensive states.</li>
+            <li>1.00 industry average experience modifier baseline used by commercial underwriters.</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>What Factors Affect Your Premium?</h2>
+        <p>Insurance carriers evaluate multiple variables when underwriting a workers compensation policy. The primary component is your total payroll categorized by specific job duties, since desk workers present a vastly different injury profile than heavy machinery operators. Additionally, your company's claims history plays a pivotal role in determining whether you receive a debit or credit modifier on your final bill.</p>
+        <p>Core underwriting elements that directly shift your premium calculation include:</p>
+        <ul>
+            <li>Industry classification codes reflecting the inherent occupational hazard level.</li>
+            <li>Annual gross payroll across all active full-time and part-time personnel.</li>
+            <li>Experience modification rating derived from your past three years of loss history.</li>
+            <li>State-specific statutory benefit mandates and local medical cost inflation indices.</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Frequently Asked Questions</h2>
+        <h3>Is workers compensation insurance mandatory for all businesses?</h3>
+        <p>In almost every state, employers are legally required to carry workers compensation insurance once they reach a specific employee threshold, often as low as one or three employees.</p>
+        <h3>How does the experience modification rate impact my premium?</h3>
+        <p>Your experience mod compares your company's actual losses against the expected losses for your industry. A mod score below 1.0 indicates a safer-than-average safety record, resulting in a premium discount.</p>
+        <h3>Can I lower my class code rating if my employees change duties?</h3>
+        <p>Yes, implementing formal return-to-work programs and segregating payroll for administrative versus manual tasks can help assign workers to lower-cost classification codes.</p>
+    </section>
+</main>
+
+<footer><div class="container"><div><a href="/">Home</a><a href="/how-it-works/">How It Works</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div><div>© 2026 Calccover.</div></div></footer>
+
+<script>
+document.getElementById('pageUrl').value = window.location.href;
+
+document.getElementById('calcBtn').addEventListener('click', function() {
+    const stateFactor = parseFloat(document.getElementById('stateSelect').value) || 1.0;
+    const classRate = parseFloat(document.getElementById('classSelect').value) || 1.0;
+    const payroll = parseFloat(document.getElementById('payrollInput').value) || 0;
+    const expMod = parseFloat(document.getElementById('modInput').value) || 1.0;
+    const employees = parseInt(document.getElementById('employeesInput').value) || 1;
+
+    // Formula: Premium = (payroll / 100) * class_rate * experience_mod * state_factor
+    const effectiveRate = classRate * stateFactor;
+    const premium = (payroll / 100) * effectiveRate * expMod;
+    const perEmployee = employees > 0 ? premium / employees : 0;
+
+    document.getElementById('resPremium').textContent = '$' + premium.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    document.getElementById('resRate').textContent = '$' + effectiveRate.toFixed(2);
+    document.getElementById('resPerEmp').textContent = '$' + perEmployee.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+
+    document.getElementById('resultBox').classList.add('show');
+    document.getElementById('leadFormContainer').classList.add('show');
+});
+</script>
+</body>
+</html>

@@ -410,6 +410,7 @@
     "description": "Estimate workers comp costs by state, class code, and payroll. Essential for all employers.",
     "inputs": "State, industry class code, annual payroll, experience mod, employees",
     "formula": "Premium = (payroll / 100) * class_rate * experience_mod. Rates vary 0.25-15.00 per $100 by class and state.",
-    "status": "pending"
+    "status": "done",
+    "generated_at": "2026-10-16T02:18:23.958750Z"
   }
 ]
