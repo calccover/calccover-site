@@ -128,9 +128,14 @@ def main():
     rows = query_gsc(token, start_date.isoformat(), end_date.isoformat())
     print(f"Got {len(rows)} pages with data.")
 
+        SKIP_PATTERNS = ("/terms", "/privacy", "/contact", "/about", "/press", "/disclaimer", "/refund")
+
     striking = []
     for row in rows:
         pos = row.get("position", 0)
+        url = row["keys"][0]
+        if any(skip in url for skip in SKIP_PATTERNS):
+            continue
         if STRIKING_MIN <= pos <= STRIKING_MAX:
             striking.append({
                 "url": row["keys"][0],
