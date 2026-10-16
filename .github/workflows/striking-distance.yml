@@ -1,0 +1,37 @@
+name: Monthly Striking Distance Report
+
+on:
+  schedule:
+    - cron: '0 9 1 * *'
+  workflow_dispatch:
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install cryptography
+
+      - name: Run striking distance script
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS_JSON: ${{ secrets.GSC_CREDENTIALS_JSON }}
+        run: python scripts/striking_distance.py
+
+      - name: Show report in log
+        run: |
+          echo "## Striking Distance Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          cat striking_distance_report.md >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: striking-distance-report
+          path: striking_distance_report.md
+          retention-days: 365
