@@ -56,3 +56,5 @@
 - [Independent Contractor Insurance Estimate: 2026 Cost Guide](https://calccover.com/independent-contractor-insurance-estimate/): 2026 cost data for independent contractors by trade, revenue, and state — GL, E&O, workers' comp, auto, and BOP benchmarks.
 
 - Industry hubs: 10 pages at /[industry]-insurance/ covering contractor, restaurant, trucking, professional services, beauty & wellness, real estate, retail, healthcare, home services, and nonprofit.
+
+- Commercial Property Insurance Cost (2026): https://calccover.com/commercial-property-insurance-cost/
