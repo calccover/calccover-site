@@ -120,12 +120,57 @@ details p{margin-top:.75rem;color:#555;font-size:.95rem}
 <div class="form-group">
 <label for="state">Primary State</label>
 <select id="state">
+<option value="national">Select your state (or national average)</option>
+<option value="alabama">Alabama</option>
+<option value="alaska">Alaska</option>
+<option value="arizona">Arizona</option>
+<option value="arkansas">Arkansas</option>
 <option value="california">California</option>
-<option value="texas">Texas</option>
+<option value="colorado">Colorado</option>
+<option value="connecticut">Connecticut</option>
+<option value="delaware">Delaware</option>
 <option value="florida">Florida</option>
-<option value="newyork">New York</option>
+<option value="georgia">Georgia</option>
+<option value="hawaii">Hawaii</option>
+<option value="idaho">Idaho</option>
 <option value="illinois">Illinois</option>
-<option value="other">Other State</option>
+<option value="indiana">Indiana</option>
+<option value="iowa">Iowa</option>
+<option value="kansas">Kansas</option>
+<option value="kentucky">Kentucky</option>
+<option value="louisiana">Louisiana</option>
+<option value="maine">Maine</option>
+<option value="maryland">Maryland</option>
+<option value="massachusetts">Massachusetts</option>
+<option value="michigan">Michigan</option>
+<option value="minnesota">Minnesota</option>
+<option value="mississippi">Mississippi</option>
+<option value="missouri">Missouri</option>
+<option value="montana">Montana</option>
+<option value="nebraska">Nebraska</option>
+<option value="nevada">Nevada</option>
+<option value="new-hampshire">New Hampshire</option>
+<option value="new-jersey">New Jersey</option>
+<option value="new-mexico">New Mexico</option>
+<option value="new-york">New York</option>
+<option value="north-carolina">North Carolina</option>
+<option value="north-dakota">North Dakota</option>
+<option value="ohio">Ohio</option>
+<option value="oklahoma">Oklahoma</option>
+<option value="oregon">Oregon</option>
+<option value="pennsylvania">Pennsylvania</option>
+<option value="rhode-island">Rhode Island</option>
+<option value="south-carolina">South Carolina</option>
+<option value="south-dakota">South Dakota</option>
+<option value="tennessee">Tennessee</option>
+<option value="texas">Texas</option>
+<option value="utah">Utah</option>
+<option value="vermont">Vermont</option>
+<option value="virginia">Virginia</option>
+<option value="washington">Washington</option>
+<option value="west-virginia">West Virginia</option>
+<option value="wisconsin">Wisconsin</option>
+<option value="wyoming">Wyoming</option>
 </select>
 </div>
 <button type="button" id="calculateBtn">Calculate Premium</button>
@@ -299,13 +344,23 @@ document.getElementById('calculateBtn').addEventListener('click', function() {
     else if (constructionType === 'nonCombustible') constMultiplier = 0.95;
     else if (constructionType === 'fireResistive') constMultiplier = 0.80;
 
-    let stateMultiplier = 1.0;
-    if (state === 'california') stateMultiplier = 1.30;
-    else if (state === 'texas') stateMultiplier = 1.40;
-    else if (state === 'florida') stateMultiplier = 1.50;
-    else if (state === 'newyork') stateMultiplier = 1.20;
-    else if (state === 'illinois') stateMultiplier = 1.05;
-    else if (state === 'other') stateMultiplier = 1.00;
+       const stateMultipliers = {
+      national: 1.00,
+      alabama: 1.20, alaska: 1.15, arizona: 0.95, arkansas: 1.10,
+      california: 1.30, colorado: 1.15, connecticut: 1.10, delaware: 1.05,
+      florida: 1.55, georgia: 1.15, hawaii: 1.25, idaho: 0.90,
+      illinois: 1.10, indiana: 1.05, iowa: 1.05, kansas: 1.20,
+      kentucky: 1.05, louisiana: 1.50, maine: 0.95, maryland: 1.05,
+      massachusetts: 1.15, michigan: 1.00, minnesota: 1.05, mississippi: 1.35,
+      missouri: 1.15, montana: 1.00, nebraska: 1.15, nevada: 0.90,
+      "new-hampshire": 0.95, "new-jersey": 1.20, "new-mexico": 0.90, "new-york": 1.20,
+      "north-carolina": 1.15, "north-dakota": 0.90, ohio: 1.00, oklahoma: 1.30,
+      oregon: 1.10, pennsylvania: 1.00, "rhode-island": 1.15, "south-carolina": 1.20,
+      "south-dakota": 0.95, tennessee: 1.10, texas: 1.40, utah: 0.90,
+      vermont: 0.90, virginia: 1.05, washington: 1.10, "west-virginia": 1.00,
+      wisconsin: 1.00, wyoming: 0.95,
+    };
+    const stateMultiplier = stateMultipliers[state] || 1.00;
 
     const combinedMultiplier = constMultiplier * stateMultiplier;
     const annualPremium = (tiv / 100) * baseRate * combinedMultiplier;
