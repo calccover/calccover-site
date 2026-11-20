@@ -1,0 +1,1996 @@
+{
+  "site": "https://calccover.com",
+  "avg_citability": 98.39416058394161,
+  "pages_audited": 137,
+  "results": [
+    {
+      "url": "https://calccover.com/",
+      "schemas": [
+        "WebSite",
+        "Organization"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "7 statistics found",
+        "2 lists found",
+        "2 question-based headings"
+      ],
+      "word_count": 947
+    },
+    {
+      "url": "https://calccover.com/about/",
+      "schemas": [
+        "AboutPage"
+      ],
+      "citability_score": 90,
+      "citability_notes": [
+        "Only 3 statistics found (aim for 10+)",
+        "2 lists found",
+        "4 question-based headings"
+      ],
+      "word_count": 544
+    },
+    {
+      "url": "https://calccover.com/contact/",
+      "schemas": [
+        "ContactPage"
+      ],
+      "citability_score": 90,
+      "citability_notes": [
+        "Only 0 statistics found (aim for 10+)",
+        "2 lists found",
+        "3 question-based headings"
+      ],
+      "word_count": 174
+    },
+    {
+      "url": "https://calccover.com/privacy/",
+      "schemas": [
+        "WebPage"
+      ],
+      "citability_score": 90,
+      "citability_notes": [
+        "Only 1 statistics found (aim for 10+)",
+        "3 lists found",
+        "1 question-based headings"
+      ],
+      "word_count": 375
+    },
+    {
+      "url": "https://calccover.com/terms/",
+      "schemas": [
+        "WebPage"
+      ],
+      "citability_score": 90,
+      "citability_notes": [
+        "Only 2 statistics found (aim for 10+)",
+        "2 lists found"
+      ],
+      "word_count": 444
+    },
+    {
+      "url": "https://calccover.com/commercial-truck-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "10 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "6 question-based headings"
+      ],
+      "word_count": 680
+    },
+    {
+      "url": "https://calccover.com/general-liability-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "9 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "6 question-based headings"
+      ],
+      "word_count": 530
+    },
+    {
+      "url": "https://calccover.com/workers-comp-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "24 statistics found",
+        "2 lists found",
+        "6 question-based headings"
+      ],
+      "word_count": 600
+    },
+    {
+      "url": "https://calccover.com/commercial-auto-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "35 statistics found",
+        "4 lists found",
+        "4 question-based headings"
+      ],
+      "word_count": 1182
+    },
+    {
+      "url": "https://calccover.com/restaurant-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "30 statistics found",
+        "3 lists found",
+        "4 question-based headings"
+      ],
+      "word_count": 1088
+    },
+    {
+      "url": "https://calccover.com/contractor-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "20 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "6 question-based headings"
+      ],
+      "word_count": 732
+    },
+    {
+      "url": "https://calccover.com/cyber-liability-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "8 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "6 question-based headings"
+      ],
+      "word_count": 598
+    },
+    {
+      "url": "https://calccover.com/professional-liability-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "8 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "6 question-based headings"
+      ],
+      "word_count": 588
+    },
+    {
+      "url": "https://calccover.com/business-owners-policy-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "17 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 688
+    },
+    {
+      "url": "https://calccover.com/commercial-property-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "28 statistics found",
+        "3 lists found",
+        "4 question-based headings"
+      ],
+      "word_count": 940
+    },
+    {
+      "url": "https://calccover.com/errors-omissions-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "9 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "6 question-based headings"
+      ],
+      "word_count": 625
+    },
+    {
+      "url": "https://calccover.com/liquor-liability-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "7 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "5 question-based headings"
+      ],
+      "word_count": 620
+    },
+    {
+      "url": "https://calccover.com/business-interruption-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "9 statistics found",
+        "3 lists found",
+        "4 question-based headings"
+      ],
+      "word_count": 884
+    },
+    {
+      "url": "https://calccover.com/commercial-umbrella-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "18 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "6 question-based headings"
+      ],
+      "word_count": 635
+    },
+    {
+      "url": "https://calccover.com/cargo-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "10 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "5 question-based headings"
+      ],
+      "word_count": 589
+    },
+    {
+      "url": "https://calccover.com/semi-truck-insurance-cost-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "8 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "5 question-based headings"
+      ],
+      "word_count": 579
+    },
+    {
+      "url": "https://calccover.com/owner-operator-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "13 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "5 question-based headings"
+      ],
+      "word_count": 704
+    },
+    {
+      "url": "https://calccover.com/employment-practices-liability-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 85,
+      "citability_notes": [
+        "Only 4 statistics found (aim for 10+)",
+        "Only 0 lists (aim for 3+)",
+        "5 question-based headings"
+      ],
+      "word_count": 540
+    },
+    {
+      "url": "https://calccover.com/inland-marine-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "10 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "5 question-based headings"
+      ],
+      "word_count": 564
+    },
+    {
+      "url": "https://calccover.com/short-term-rental-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "9 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "5 question-based headings"
+      ],
+      "word_count": 511
+    },
+    {
+      "url": "https://calccover.com/home-based-business-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "6 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "5 question-based headings"
+      ],
+      "word_count": 439
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-costs-by-state/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "98 statistics found",
+        "3 lists found",
+        "4 data table(s) found",
+        "8 question-based headings"
+      ],
+      "word_count": 2131
+    },
+    {
+      "url": "https://calccover.com/press/",
+      "schemas": [
+        "WebPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "11 statistics found",
+        "2 lists found"
+      ],
+      "word_count": 610
+    },
+    {
+      "url": "https://calccover.com/cleaning-business-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "12 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "5 question-based headings"
+      ],
+      "word_count": 624
+    },
+    {
+      "url": "https://calccover.com/landscaping-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "34 statistics found",
+        "4 lists found",
+        "3 question-based headings"
+      ],
+      "word_count": 1064
+    },
+    {
+      "url": "https://calccover.com/salon-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "11 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 616
+    },
+    {
+      "url": "https://calccover.com/auto-repair-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "13 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 601
+    },
+    {
+      "url": "https://calccover.com/retail-store-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "8 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 529
+    },
+    {
+      "url": "https://calccover.com/electrician-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "24 statistics found",
+        "3 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 693
+    },
+    {
+      "url": "https://calccover.com/plumber-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "25 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 600
+    },
+    {
+      "url": "https://calccover.com/roofing-contractor-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "28 statistics found",
+        "3 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 811
+    },
+    {
+      "url": "https://calccover.com/event-planner-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "18 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 590
+    },
+    {
+      "url": "https://calccover.com/personal-trainer-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "26 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 711
+    },
+    {
+      "url": "https://calccover.com/dental-office-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "20 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 587
+    },
+    {
+      "url": "https://calccover.com/medical-office-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "13 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 604
+    },
+    {
+      "url": "https://calccover.com/daycare-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "17 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 512
+    },
+    {
+      "url": "https://calccover.com/nonprofit-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "26 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 667
+    },
+    {
+      "url": "https://calccover.com/it-consultant-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "19 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 642
+    },
+    {
+      "url": "https://calccover.com/real-estate-agent-eo-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "19 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 564
+    },
+    {
+      "url": "https://calccover.com/trucking-cargo-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "19 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 696
+    },
+    {
+      "url": "https://calccover.com/garage-keepers-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "24 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 687
+    },
+    {
+      "url": "https://calccover.com/farm-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "10 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 483
+    },
+    {
+      "url": "https://calccover.com/hvac-contractor-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "22 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 579
+    },
+    {
+      "url": "https://calccover.com/cybersecurity-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "20 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 658
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-for-small-business/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "93 statistics found",
+        "3 lists found",
+        "1 data table(s) found",
+        "6 question-based headings"
+      ],
+      "word_count": 2889
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-2026/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "274 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "3 data table(s) found",
+        "3 question-based headings"
+      ],
+      "word_count": 2071
+    },
+    {
+      "url": "https://calccover.com/small-business-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "17 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 607
+    },
+    {
+      "url": "https://calccover.com/business-owners-policy-bop-guide/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "95 statistics found",
+        "8 lists found",
+        "3 data table(s) found",
+        "8 question-based headings"
+      ],
+      "word_count": 2407
+    },
+    {
+      "url": "https://calccover.com/general-liability-insurance-cost/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "104 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "2 question-based headings"
+      ],
+      "word_count": 686
+    },
+    {
+      "url": "https://calccover.com/do-i-need-workers-comp-for-1-employee/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "32 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "2 question-based headings"
+      ],
+      "word_count": 823
+    },
+    {
+      "url": "https://calccover.com/what-is-a-certificate-of-insurance/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "8 statistics found",
+        "4 lists found",
+        "1 data table(s) found",
+        "2 question-based headings"
+      ],
+      "word_count": 818
+    },
+    {
+      "url": "https://calccover.com/blog/",
+      "schemas": [
+        "Blog"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "8 statistics found",
+        "Only 0 lists (aim for 3+)",
+        "3 question-based headings"
+      ],
+      "word_count": 454
+    },
+    {
+      "url": "https://calccover.com/commercial-trucking-insurance-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "18 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 697
+    },
+    {
+      "url": "https://calccover.com/average-malpractice-insurance-athletic-trainers/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "83 statistics found",
+        "7 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1586
+    },
+    {
+      "url": "https://calccover.com/independent-contractor-insurance-estimate/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "164 statistics found",
+        "5 lists found",
+        "2 data table(s) found",
+        "3 question-based headings"
+      ],
+      "word_count": 1910
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-alabama/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1124
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-alaska/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1120
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-arizona/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1126
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-arkansas/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1128
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-california/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1142
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-colorado/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "67 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1123
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-connecticut/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1140
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-delaware/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1132
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-florida/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "70 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1123
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-georgia/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1115
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-hawaii/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1137
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-idaho/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1120
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-illinois/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "70 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1122
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-indiana/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1121
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-iowa/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "67 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1119
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-kansas/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "67 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1117
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-kentucky/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1118
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-louisiana/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "70 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1126
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-maine/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1128
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-maryland/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1131
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-massachusetts/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1132
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-michigan/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "70 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1120
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-minnesota/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "67 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1115
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-mississippi/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1119
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-missouri/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "67 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1115
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-montana/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1121
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-nebraska/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "67 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1116
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-nevada/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1120
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-new-hampshire/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1171
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-new-jersey/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1175
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-new-mexico/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1163
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-new-york/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "70 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1191
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-north-carolina/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1156
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-north-dakota/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1167
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-ohio/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1126
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-oklahoma/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "67 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1124
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-oregon/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "70 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1106
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-pennsylvania/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1127
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-rhode-island/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1175
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-south-carolina/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1154
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-south-dakota/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "70 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1156
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-tennessee/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1112
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-texas/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "65 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1170
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-utah/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1128
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-vermont/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1130
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-virginia/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1118
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-washington/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "70 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1109
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-west-virginia/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1165
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-wisconsin/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1114
+    },
+    {
+      "url": "https://calccover.com/commercial-insurance-cost-in-wyoming/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "69 statistics found",
+        "3 lists found",
+        "2 data table(s) found",
+        "4 question-based headings"
+      ],
+      "word_count": 1126
+    },
+    {
+      "url": "https://calccover.com/compare/hiscox-vs-next-insurance/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "22 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 624
+    },
+    {
+      "url": "https://calccover.com/compare/hiscox-vs-thimble/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "18 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 615
+    },
+    {
+      "url": "https://calccover.com/compare/next-insurance-vs-thimble/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "18 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 623
+    },
+    {
+      "url": "https://calccover.com/compare/coverwallet-vs-hiscox/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "22 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 624
+    },
+    {
+      "url": "https://calccover.com/compare/simply-business-vs-hiscox/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "22 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 638
+    },
+    {
+      "url": "https://calccover.com/compare/the-hartford-vs-hiscox/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "22 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 634
+    },
+    {
+      "url": "https://calccover.com/compare/progressive-commercial-vs-the-hartford/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "18 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 656
+    },
+    {
+      "url": "https://calccover.com/compare/nationwide-vs-hiscox/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "22 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 606
+    },
+    {
+      "url": "https://calccover.com/compare/embroker-vs-vouch/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "14 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 614
+    },
+    {
+      "url": "https://calccover.com/compare/hiscox-vs-simply-business/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "22 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 638
+    },
+    {
+      "url": "https://calccover.com/best/commercial-insurance-carriers/",
+      "schemas": [
+        "Article"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "65 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 862
+    },
+    {
+      "url": "https://calccover.com/best/general-liability-insurance/",
+      "schemas": [
+        "Article"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "37 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 535
+    },
+    {
+      "url": "https://calccover.com/best/bop-insurance/",
+      "schemas": [
+        "Article"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "42 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 517
+    },
+    {
+      "url": "https://calccover.com/best/workers-comp-insurance/",
+      "schemas": [
+        "Article"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "37 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 513
+    },
+    {
+      "url": "https://calccover.com/best/commercial-auto-insurance/",
+      "schemas": [
+        "Article"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "29 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 453
+    },
+    {
+      "url": "https://calccover.com/best/cheap-commercial-insurance/",
+      "schemas": [
+        "Article"
+      ],
+      "citability_score": 95,
+      "citability_notes": [
+        "40 statistics found",
+        "Only 1 lists (aim for 3+)",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 546
+    },
+    {
+      "url": "https://calccover.com/workers-compensation-by-state-calculator/",
+      "schemas": [
+        "WebApplication",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "17 statistics found",
+        "2 lists found",
+        "5 question-based headings"
+      ],
+      "word_count": 528
+    },
+    {
+      "url": "https://calccover.com/contractor-insurance/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "67 statistics found",
+        "2 lists found",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 616
+    },
+    {
+      "url": "https://calccover.com/restaurant-insurance/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "51 statistics found",
+        "2 lists found",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 599
+    },
+    {
+      "url": "https://calccover.com/trucking-insurance/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "46 statistics found",
+        "2 lists found",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 606
+    },
+    {
+      "url": "https://calccover.com/professional-services-insurance/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "54 statistics found",
+        "2 lists found",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 617
+    },
+    {
+      "url": "https://calccover.com/beauty-and-wellness-insurance/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "48 statistics found",
+        "2 lists found",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 577
+    },
+    {
+      "url": "https://calccover.com/real-estate-insurance/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "37 statistics found",
+        "2 lists found",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 570
+    },
+    {
+      "url": "https://calccover.com/retail-insurance/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "47 statistics found",
+        "2 lists found",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 549
+    },
+    {
+      "url": "https://calccover.com/healthcare-practice-insurance/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "44 statistics found",
+        "2 lists found",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 569
+    },
+    {
+      "url": "https://calccover.com/home-services-insurance/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "53 statistics found",
+        "2 lists found",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 566
+    },
+    {
+      "url": "https://calccover.com/nonprofit-insurance/",
+      "schemas": [
+        "Article",
+        "FAQPage"
+      ],
+      "citability_score": 100,
+      "citability_notes": [
+        "41 statistics found",
+        "2 lists found",
+        "1 data table(s) found",
+        "1 question-based headings"
+      ],
+      "word_count": 555
+    }
+  ]
+}

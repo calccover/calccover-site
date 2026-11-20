@@ -1,0 +1,25 @@
+name: Add cost guide links to state pages
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  add-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python scripts/add_cost_guide_links.py
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No changes."
+          else
+            git add -A
+            git commit -m "Add cost guide links to 50 state pages"
+            git push
+          fi
