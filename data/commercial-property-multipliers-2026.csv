@@ -1,0 +1,9 @@
+category,name,multiplier,base_rate_per_100
+occupancy,office,1.00,0.40
+occupancy,retail,1.50,0.60
+occupancy,warehouse,1.75,0.70
+occupancy,manufacturing,2.13,0.85
+construction,fire-resistive,0.80,0.32
+construction,non-combustible,0.95,0.38
+construction,joisted-masonry,1.15,0.46
+construction,frame,1.35,0.54

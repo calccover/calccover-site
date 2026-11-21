@@ -1,0 +1,51 @@
+state,state_slug,state_multiplier,rate_per_100_office_fr,premium_500k_office_fr,rank,vs_national_pct
+Florida,florida,1.55,0.496,2480,1,55.00
+Louisiana,louisiana,1.50,0.480,2400,2,50.00
+Texas,texas,1.40,0.448,2240,3,40.00
+Mississippi,mississippi,1.35,0.432,2160,4,35.00
+California,california,1.30,0.416,2080,5,30.00
+Oklahoma,oklahoma,1.30,0.416,2080,5,30.00
+Hawaii,hawaii,1.25,0.400,2000,7,25.00
+Alabama,alabama,1.20,0.384,1920,8,20.00
+Kansas,kansas,1.20,0.384,1920,8,20.00
+New Jersey,new-jersey,1.20,0.384,1920,8,20.00
+New York,new-york,1.20,0.384,1920,8,20.00
+South Carolina,south-carolina,1.20,0.384,1920,8,20.00
+Alaska,alaska,1.15,0.368,1840,13,15.00
+Colorado,colorado,1.15,0.368,1840,13,15.00
+Georgia,georgia,1.15,0.368,1840,13,15.00
+Massachusetts,massachusetts,1.15,0.368,1840,13,15.00
+Missouri,missouri,1.15,0.368,1840,13,15.00
+Nebraska,nebraska,1.15,0.368,1840,13,15.00
+North Carolina,north-carolina,1.15,0.368,1840,13,15.00
+Rhode Island,rhode-island,1.15,0.368,1840,13,15.00
+Arkansas,arkansas,1.10,0.352,1760,21,10.00
+Connecticut,connecticut,1.10,0.352,1760,21,10.00
+Illinois,illinois,1.10,0.352,1760,21,10.00
+Oregon,oregon,1.10,0.352,1760,21,10.00
+Tennessee,tennessee,1.10,0.352,1760,21,10.00
+Washington,washington,1.10,0.352,1760,21,10.00
+Delaware,delaware,1.05,0.336,1680,27,5.00
+Indiana,indiana,1.05,0.336,1680,27,5.00
+Iowa,iowa,1.05,0.336,1680,27,5.00
+Kentucky,kentucky,1.05,0.336,1680,27,5.00
+Maryland,maryland,1.05,0.336,1680,27,5.00
+Minnesota,minnesota,1.05,0.336,1680,27,5.00
+Virginia,virginia,1.05,0.336,1680,27,5.00
+Michigan,michigan,1.00,0.320,1600,34,0.00
+Montana,montana,1.00,0.320,1600,34,0.00
+Ohio,ohio,1.00,0.320,1600,34,0.00
+Pennsylvania,pennsylvania,1.00,0.320,1600,34,0.00
+West Virginia,west-virginia,1.00,0.320,1600,34,0.00
+Wisconsin,wisconsin,1.00,0.320,1600,34,0.00
+Arizona,arizona,0.95,0.304,1520,40,-5.00
+Maine,maine,0.95,0.304,1520,40,-5.00
+New Hampshire,new-hampshire,0.95,0.304,1520,40,-5.00
+South Dakota,south-dakota,0.95,0.304,1520,40,-5.00
+Wyoming,wyoming,0.95,0.304,1520,40,-5.00
+Idaho,idaho,0.90,0.288,1440,45,-10.00
+Nevada,nevada,0.90,0.288,1440,45,-10.00
+New Mexico,new-mexico,0.90,0.288,1440,45,-10.00
+North Dakota,north-dakota,0.90,0.288,1440,45,-10.00
+Utah,utah,0.90,0.288,1440,45,-10.00
+Vermont,vermont,0.90,0.288,1440,45,-10.00
