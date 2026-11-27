@@ -1,0 +1,39 @@
+name: Outreach Automation
+on:
+  schedule:
+    - cron: '0 9 * * *'  # Run daily at 9 AM UTC
+  workflow_dispatch:      # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  outreach:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+        
+      - name: Find Emails
+        run: python scripts/outreach/find_emails.py
+        
+      - name: Send Emails
+        env:
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          TRACKING_BASE_URL: ${{ secrets.TRACKING_BASE_URL }}
+        run: python scripts/outreach/send_emails.py
+        
+      - name: Commit updated status
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add scripts/outreach/data/targets.csv
+          git diff --staged --quiet || git commit -m "Update outreach status"
+          git push
